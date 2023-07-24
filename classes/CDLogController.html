@@ -1,1244 +1,1267 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Documentation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="../">
-    <link rel="icon" href="images/favicon.ico"/>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/template.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
-                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
-        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
-        <script src="js/search.js"></script>
-        <script defer src="js/searchIndex.js"></script>
-    </head>
-<body id="top">
-    <header class="phpdocumentor-header phpdocumentor-section">
-    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
-    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
-    <label class="phpdocumentor-header__menu-icon" for="menu-button">
-        <i class="fas fa-bars"></i>
-    </label>
-    <section data-search-form class="phpdocumentor-search">
-    <label>
-        <span class="visually-hidden">Search for</span>
-        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
-            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
-        </svg>
-        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
-    </label>
-</section>
+<?php require('../layouts/header.html'); ?>
 
-    <nav class="phpdocumentor-topnav">
-    <ul class="phpdocumentor-topnav__menu">
-        </ul>
-</nav>
-</header>
-
-    <main class="phpdocumentor">
-        <div class="phpdocumentor-section">
-            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
-<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
-    Menu
-</label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/application.html"><abbr title="\Application">Application</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/application-controller.html"><abbr title="\Application\Controller">Controller</abbr></a></li>
-                                            <li><a href="namespaces/application-model.html"><abbr title="\Application\Model">Model</abbr></a></li>
-                                            <li><a href="namespaces/application-views.html"><abbr title="\Application\Views">Views</abbr></a></li>
-                                    </ul>
-                        </section>
-
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Default.html"><abbr title="\Default">Default</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/PasswordManager.html"><abbr title="\PasswordManager">PasswordManager</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/BoltCheck.html"><abbr title="\BoltCheck">BoltCheck</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/CDLogs.html"><abbr title="\CDLogs">CDLogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Dashboard.html"><abbr title="\Dashboard">Dashboard</abbr></a></h3>
-                        </section>
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
-                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
-    </section>
-
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
-    </section>
-</aside>
-
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+    <ul class="phpdocumentor-breadcrumbs">
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    CDLogController
+            CDLogController
 
-        <span class="phpdocumentor-element__extends">
-        extends <abbr title="\SupportClass">SupportClass</abbr>
-    </span>
-    
+            <span class="phpdocumentor-element__extends">
+                extends <abbr title="\SupportClass">SupportClass</abbr>
+            </span>
+
             <div class="phpdocumentor-element__package">
-            in package
-            <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/CDLogs.html">CDLogs</a></li>
-                            </ul>
-        </div>
-    
-    
-    </h2>
+                in package
+                <ul class="phpdocumentor-breadcrumbs">
+                    <li class="phpdocumentor-breadcrumb"><a href="packages/CDLogs.html">CDLogs</a></li>
+                </ul>
+            </div>
+
+
+        </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">21</span>
-</aside>
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a
+                    href="files/application-controller-cdlogcontroller.html"><abbr
+                        title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">21</span>
+        </aside>
 
-            <p class="phpdocumentor-summary">CD Logs Controller</p>
+        <p class="phpdocumentor-summary">CD Logs Controller</p>
 
-    <section class="phpdocumentor-description"><p>This object contains Change Document Logs (CD Logs) activities.
-It involves Create, Read, Update, Delete data from the database.
-It also has the function of data monitoring and reports summary.</p>
-<p>Datatabase/s Connected: idsporta_1dsP0rt4l</p>
-</section>
-
-
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">example</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Actual Code</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">filesource</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>/home/jojo/WebServer/portal_docu_files/application/controller/CDLogController.php</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">link</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        <a class="phpdocumentor-tag-link" href="https://www.idsincportal.com/index.php?act=cd-log&amp;mode=0&amp;menu_uid=47&amp;uid=1388&amp;cmd=view&amp;jobno=201603"> https://www.idsincportal.com/index.php?act=cd-log&amp;mode=0&amp;menu_uid=47&amp;uid=1388&amp;cmd=view&amp;jobno=201603 </a>
-                    
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">author</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Jojo De Jesus <a href="mailto:jojo.webdeveloper@gmail.com">jojo.webdeveloper@gmail.com</a></p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">copyright</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Copyright (c) 2015 - 2021, Isometric Diagonal Scheme, Inc.</p>
-</section>
-
-                                    </dd>
-                        </dl>
+        <section class="phpdocumentor-description">
+            <p>This object contains Change Document Logs (CD Logs) activities.
+                It involves Create, Read, Update, Delete data from the database.
+                It also has the function of data monitoring and reports summary.</p>
+            <p>Datatabase/s Connected: idsporta_1dsP0rt4l</p>
+        </section>
 
 
+        <h5 class="phpdocumentor-tag-list__heading" id="tags">
+            Tags
+            <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        </h5>
+        <dl class="phpdocumentor-tag-list">
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">example</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>Actual Code</p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">filesource</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>/home/jojo/WebServer/portal_docu_files/application/controller/CDLogController.php</p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">link</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+                <a class="phpdocumentor-tag-link"
+                    href="https://www.idsincportal.com/index.php?act=cd-log&amp;mode=0&amp;menu_uid=47&amp;uid=1388&amp;cmd=view&amp;jobno=201603">
+                    https://www.idsincportal.com/index.php?act=cd-log&amp;mode=0&amp;menu_uid=47&amp;uid=1388&amp;cmd=view&amp;jobno=201603
+                </a>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">author</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>Jojo De Jesus <a href="mailto:jojo.webdeveloper@gmail.com">jojo.webdeveloper@gmail.com</a></p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">copyright</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>Copyright (c) 2015 - 2021, Isometric Diagonal Scheme, Inc.</p>
+                </section>
+
+            </dd>
+        </dl>
 
 
 
 
-<h3 id="toc">
-    Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
 
-<dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/CDLogController.html#method___construct">__construct()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Default constructor</dd>
+
+        <h3 id="toc">
+            Table of Contents
+            <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+
+        <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+                <a href="classes/CDLogController.html#method___construct">__construct()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Default constructor</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/CDLogController.html#method_ajaxSaveRequestForCDCalc">ajaxSaveRequestForCDCalc()</a>
-    <span>
-                        &nbsp;: mixed|<abbr title="\excel">excel</abbr>    </span>
-</dt>
-<dd>Save CD Calculation</dd>
+                <a href="classes/CDLogController.html#method_ajaxSaveRequestForCDCalc">ajaxSaveRequestForCDCalc()</a>
+                <span>
+                    &nbsp;: mixed|<abbr title="\excel">excel</abbr> </span>
+            </dt>
+            <dd>Save CD Calculation</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/CDLogController.html#method_cdLoggingDataTable">cdLoggingDataTable()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Retrieve all uninvoiced CD and generate it as json for Datatable</dd>
+                <a href="classes/CDLogController.html#method_cdLoggingDataTable">cdLoggingDataTable()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Retrieve all uninvoiced CD and generate it as json for Datatable</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/CDLogController.html#method_cdLoggingExport">cdLoggingExport()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Summary Report of CD Logging</dd>
+                <a href="classes/CDLogController.html#method_cdLoggingExport">cdLoggingExport()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Summary Report of CD Logging</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/CDLogController.html#method_cdLoggingReport">cdLoggingReport()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Retrieve all uninvoiced CD</dd>
+                <a href="classes/CDLogController.html#method_cdLoggingReport">cdLoggingReport()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Retrieve all uninvoiced CD</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/CDLogController.html#method_cdLogPage">cdLogPage()</a>
-    <span>
-                        &nbsp;: string|<abbr title="\html">html</abbr>    </span>
-</dt>
-<dd>CD Log HTML Form</dd>
+                <a href="classes/CDLogController.html#method_cdLogPage">cdLogPage()</a>
+                <span>
+                    &nbsp;: string|<abbr title="\html">html</abbr> </span>
+            </dt>
+            <dd>CD Log HTML Form</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/CDLogController.html#method_cdNotSentToCustomerExport">cdNotSentToCustomerExport()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>CD not sent to the customer for export to excel function.</dd>
+                <a href="classes/CDLogController.html#method_cdNotSentToCustomerExport">cdNotSentToCustomerExport()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>CD not sent to the customer for export to excel function.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/CDLogController.html#method_cdNotSentToCustomerReport">cdNotSentToCustomerReport()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Summary Report of CD’s not sent to customer</dd>
+                <a href="classes/CDLogController.html#method_cdNotSentToCustomerReport">cdNotSentToCustomerReport()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Summary Report of CD’s not sent to customer</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/CDLogController.html#method_cdNotSentToDataTable">cdNotSentToDataTable()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Datatable for Summary Report of CD’s not sent to the customer</dd>
+                <a href="classes/CDLogController.html#method_cdNotSentToDataTable">cdNotSentToDataTable()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Datatable for Summary Report of CD’s not sent to the customer</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/CDLogController.html#method_cdOverTwoWeeksOldDataTable">cdOverTwoWeeksOldDataTable()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Datatable for Summary Report of CD&#039;s that are over 2 weeks old</dd>
+                <a
+                    href="classes/CDLogController.html#method_cdOverTwoWeeksOldDataTable">cdOverTwoWeeksOldDataTable()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Datatable for Summary Report of CD&#039;s that are over 2 weeks old</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/CDLogController.html#method_cdOverTwoWeeksOldExport">cdOverTwoWeeksOldExport()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Export to excel of Summary Report of CD&#039;s that are over 2 weeks old</dd>
+                <a href="classes/CDLogController.html#method_cdOverTwoWeeksOldExport">cdOverTwoWeeksOldExport()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Export to excel of Summary Report of CD&#039;s that are over 2 weeks old</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/CDLogController.html#method_cdOverTwoWeeksOldReport">cdOverTwoWeeksOldReport()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Summary Report of CD&#039;s that are over 2 weeks old</dd>
+                <a href="classes/CDLogController.html#method_cdOverTwoWeeksOldReport">cdOverTwoWeeksOldReport()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Summary Report of CD&#039;s that are over 2 weeks old</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/CDLogController.html#method_cdUnInvoicedDataTable">cdUnInvoicedDataTable()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Retrieve all Unvoice CD to Datatable format</dd>
+                <a href="classes/CDLogController.html#method_cdUnInvoicedDataTable">cdUnInvoicedDataTable()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Retrieve all Unvoice CD to Datatable format</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/CDLogController.html#method_cdUnInvoicedExport">cdUnInvoicedExport()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Retrieve all Unvoice CD and export to excel file</dd>
+                <a href="classes/CDLogController.html#method_cdUnInvoicedExport">cdUnInvoicedExport()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Retrieve all Unvoice CD and export to excel file</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/CDLogController.html#method_cdUnInvoicedReport">cdUnInvoicedReport()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Summary Report of Unvinvoiced CD</dd>
+                <a href="classes/CDLogController.html#method_cdUnInvoicedReport">cdUnInvoicedReport()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Summary Report of Unvinvoiced CD</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/CDLogController.html#method_colorCell">colorCell()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>PHPExcel function for cell background-color</dd>
+                <a href="classes/CDLogController.html#method_colorCell">colorCell()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>PHPExcel function for cell background-color</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/CDLogController.html#method_dateValidate">dateValidate()</a>
-    <span>
-                        &nbsp;: <abbr title="\date">date</abbr>    </span>
-</dt>
-<dd>Date Format conversion</dd>
+                <a href="classes/CDLogController.html#method_dateValidate">dateValidate()</a>
+                <span>
+                    &nbsp;: <abbr title="\date">date</abbr> </span>
+            </dt>
+            <dd>Date Format conversion</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/CDLogController.html#method_getCDLogInfo">getCDLogInfo()</a>
-    <span>
-                        &nbsp;: mixed|<abbr title="\excel">excel</abbr>    </span>
-</dt>
-<dd>Export CD Log Information</dd>
+                <a href="classes/CDLogController.html#method_getCDLogInfo">getCDLogInfo()</a>
+                <span>
+                    &nbsp;: mixed|<abbr title="\excel">excel</abbr> </span>
+            </dt>
+            <dd>Export CD Log Information</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/CDLogController.html#method_getCDLogInfoLPM">getCDLogInfoLPM()</a>
-    <span>
-                        &nbsp;: mixed|<abbr title="\excel">excel</abbr>    </span>
-</dt>
-<dd>Export CD Log Information for LPM</dd>
+                <a href="classes/CDLogController.html#method_getCDLogInfoLPM">getCDLogInfoLPM()</a>
+                <span>
+                    &nbsp;: mixed|<abbr title="\excel">excel</abbr> </span>
+            </dt>
+            <dd>Export CD Log Information for LPM</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/CDLogController.html#method_getSharedJob">getSharedJob()</a>
-    <span>
-                        &nbsp;: string|array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd>Identify Shared Job</dd>
+                <a href="classes/CDLogController.html#method_getSharedJob">getSharedJob()</a>
+                <span>
+                    &nbsp;: string|array&lt;string|int, mixed&gt; </span>
+            </dt>
+            <dd>Identify Shared Job</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/CDLogController.html#method_getSharedJobForLPM">getSharedJobForLPM()</a>
-    <span>
-                        &nbsp;: string    </span>
-</dt>
-<dd>Identify Shared Job for LPM</dd>
+                <a href="classes/CDLogController.html#method_getSharedJobForLPM">getSharedJobForLPM()</a>
+                <span>
+                    &nbsp;: string </span>
+            </dt>
+            <dd>Identify Shared Job for LPM</dd>
 
         </dl>
 
 
 
-        
 
-        
 
-            <section class="phpdocumentor-methods">
-        <h3 class="phpdocumentor-elements__header" id="methods">
-            Methods
-            <a href="classes/CDLogController.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
-        </h3>
-                    <article
-        class="phpdocumentor-element
+
+
+        <section class="phpdocumentor-methods">
+            <h3 class="phpdocumentor-elements__header" id="methods">
+                Methods
+                <a href="classes/CDLogController.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/CDLogController.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">30</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method___construct">
+                    __construct()
+                    <a href="classes/CDLogController.html#method___construct" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">30</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Default constructor</p>
+                <p class="phpdocumentor-summary">Default constructor</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Assign the other objects to global properties</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Assign the other objects to global properties</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_ajaxSaveRequestForCDCalc">
-        ajaxSaveRequestForCDCalc()
-        <a href="classes/CDLogController.html#method_ajaxSaveRequestForCDCalc" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">427</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_ajaxSaveRequestForCDCalc">
+                    ajaxSaveRequestForCDCalc()
+                    <a href="classes/CDLogController.html#method_ajaxSaveRequestForCDCalc" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">427</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Save CD Calculation</p>
+                <p class="phpdocumentor-summary">Save CD Calculation</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">ajaxSaveRequestForCDCalc</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|<abbr title="\excel">excel</abbr></span></code>
 
-        <section class="phpdocumentor-description"><p>This method will save cd calculation</p>
-<p>Tables Connected: id_job_list, uty_user_logs, il_cd_log_details</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>This method will save cd calculation</p>
+                    <p>Tables Connected: id_job_list, uty_user_logs, il_cd_log_details</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\excel">excel</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>file</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\excel">excel</abbr></span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>file</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_cdLoggingDataTable">
-        cdLoggingDataTable()
-        <a href="classes/CDLogController.html#method_cdLoggingDataTable" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1075</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_cdLoggingDataTable">
+                    cdLoggingDataTable()
+                    <a href="classes/CDLogController.html#method_cdLoggingDataTable" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1075</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Retrieve all uninvoiced CD and generate it as json for Datatable</p>
+                <p class="phpdocumentor-summary">Retrieve all uninvoiced CD and generate it as json for Datatable</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">cdLoggingDataTable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>If a CD has a date sent to the customer and date accomplished but nothing in the invoice number column</p>
-<p>Tables Connected: il_cd_log_details, id_job_list, im_employees</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>If a CD has a date sent to the customer and date accomplished but nothing in the invoice number
+                        column</p>
+                    <p>Tables Connected: il_cd_log_details, id_job_list, im_employees</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>return multiple recordsets as JSON</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>return multiple recordsets as JSON</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_cdLoggingExport">
-        cdLoggingExport()
-        <a href="classes/CDLogController.html#method_cdLoggingExport" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1269</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_cdLoggingExport">
+                    cdLoggingExport()
+                    <a href="classes/CDLogController.html#method_cdLoggingExport" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1269</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Summary Report of CD Logging</p>
+                <p class="phpdocumentor-summary">Summary Report of CD Logging</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">cdLoggingExport</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>If a CD has a date sent to the customer and date accomplished but nothing in the invoice no.  column</p>
-<p>function : retrieve all uninvoiced cd
-script   : CDunInvoiceReport.php
-type     : main form
-return   : script</p>
-<p>Table Connected: im_employees</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>If a CD has a date sent to the customer and date accomplished but nothing in the invoice no. 
+                        column</p>
+                    <p>function : retrieve all uninvoiced cd
+                        script : CDunInvoiceReport.php
+                        type : main form
+                        return : script</p>
+                    <p>Table Connected: im_employees</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>return multiple recordsets as JSON</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>return multiple recordsets as JSON</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_cdLoggingReport">
-        cdLoggingReport()
-        <a href="classes/CDLogController.html#method_cdLoggingReport" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1231</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_cdLoggingReport">
+                    cdLoggingReport()
+                    <a href="classes/CDLogController.html#method_cdLoggingReport" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1231</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Retrieve all uninvoiced CD</p>
+                <p class="phpdocumentor-summary">Retrieve all uninvoiced CD</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">cdLoggingReport</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>If a CD has a date sent to the customer and date accomplished but nothing in the invoice number column</p>
-<p>function : retrieve all uninvoiced cd
-script   : CDunInvoiceReport.php
-type     : main form
-return   : script</p>
-<p>Table Connected: im_employees</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>If a CD has a date sent to the customer and date accomplished but nothing in the invoice number
+                        column</p>
+                    <p>function : retrieve all uninvoiced cd
+                        script : CDunInvoiceReport.php
+                        type : main form
+                        return : script</p>
+                    <p>Table Connected: im_employees</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>return html elements /application/views/report/cd/CDloggingReport.php</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>return html elements /application/views/report/cd/CDloggingReport.php</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_cdLogPage">
-        cdLogPage()
-        <a href="classes/CDLogController.html#method_cdLogPage" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">50</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_cdLogPage">
+                    cdLogPage()
+                    <a href="classes/CDLogController.html#method_cdLogPage" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">50</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">CD Log HTML Form</p>
+                <p class="phpdocumentor-summary">CD Log HTML Form</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">cdLogPage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|<abbr title="\html">html</abbr></span></code>
 
-        <section class="phpdocumentor-description"><p>This method shows the main HTML form to load the CD Logs spreadsheets</p>
-<p>Tables Connected: il_cd_log_details, id_job_list, im_employees, im_remote_employees,
-uty_user_logs, id_job_combined_logs, il_cd_calc</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>This method shows the main HTML form to load the CD Logs spreadsheets</p>
+                    <p>Tables Connected: il_cd_log_details, id_job_list, im_employees, im_remote_employees,
+                        uty_user_logs, id_job_combined_logs, il_cd_calc</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|<abbr title="\html">html</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>file CDLog.php, CDLogByJob.php, CDLogAddon.php, CDLogLPM.php, CDLogLPMbyJob.php</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">string|<abbr title="\html">html</abbr></span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>file CDLog.php, CDLogByJob.php, CDLogAddon.php, CDLogLPM.php, CDLogLPMbyJob.php</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_cdNotSentToCustomerExport">
-        cdNotSentToCustomerExport()
-        <a href="classes/CDLogController.html#method_cdNotSentToCustomerExport" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1354</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_cdNotSentToCustomerExport">
+                    cdNotSentToCustomerExport()
+                    <a href="classes/CDLogController.html#method_cdNotSentToCustomerExport" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1354</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">CD not sent to the customer for export to excel function.</p>
+                <p class="phpdocumentor-summary">CD not sent to the customer for export to excel function.</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">cdNotSentToCustomerExport</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>If a CD has a date sent to the customer and date accomplished but nothing in the invoice no.  column</p>
-<p>Table Connected: im_employees</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>If a CD has a date sent to the customer and date accomplished but nothing in the invoice no. 
+                        column</p>
+                    <p>Table Connected: im_employees</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>return multiple recordsets /application/views/report/cd/CDNotSentToCustomerExcel.php</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>return multiple recordsets /application/views/report/cd/CDNotSentToCustomerExcel.php</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_cdNotSentToCustomerReport">
-        cdNotSentToCustomerReport()
-        <a href="classes/CDLogController.html#method_cdNotSentToCustomerReport" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">687</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_cdNotSentToCustomerReport">
+                    cdNotSentToCustomerReport()
+                    <a href="classes/CDLogController.html#method_cdNotSentToCustomerReport" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">687</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Summary Report of CD’s not sent to customer</p>
+                <p class="phpdocumentor-summary">Summary Report of CD’s not sent to customer</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">cdNotSentToCustomerReport</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>This needs to be accessible for just US office only.  This will tell us
-if we have estimated the CD and not sent it to the customer.</p>
-<p>The trigger would be if we have hours in the hours submitted to customer
-column but no date in the date sent to customer column then it will show
-up on this report.  This needs to be sortable by LPM and job#/call letters.</p>
-<p>Table Connected: im_employees</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>This needs to be accessible for just US office only. This will tell us
+                        if we have estimated the CD and not sent it to the customer.</p>
+                    <p>The trigger would be if we have hours in the hours submitted to customer
+                        column but no date in the date sent to customer column then it will show
+                        up on this report. This needs to be sortable by LPM and job#/call letters.</p>
+                    <p>Table Connected: im_employees</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>html form CD_Not_Sent_To_Customer_Report.php</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>html form CD_Not_Sent_To_Customer_Report.php</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_cdNotSentToDataTable">
-        cdNotSentToDataTable()
-        <a href="classes/CDLogController.html#method_cdNotSentToDataTable" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">721</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_cdNotSentToDataTable">
+                    cdNotSentToDataTable()
+                    <a href="classes/CDLogController.html#method_cdNotSentToDataTable" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">721</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Datatable for Summary Report of CD’s not sent to the customer</p>
+                <p class="phpdocumentor-summary">Datatable for Summary Report of CD’s not sent to the customer</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">cdNotSentToDataTable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Retrieve all CD's not sent to the customer and generate it as json for Datatable</p>
-<p>Tables Connected: il_cd_log_details, id_job_list, im_employees</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Retrieve all CD's not sent to the customer and generate it as json for Datatable</p>
+                    <p>Tables Connected: il_cd_log_details, id_job_list, im_employees</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>return multiple recordset as json</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>return multiple recordset as json</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_cdOverTwoWeeksOldDataTable">
-        cdOverTwoWeeksOldDataTable()
-        <a href="classes/CDLogController.html#method_cdOverTwoWeeksOldDataTable" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">504</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_cdOverTwoWeeksOldDataTable">
+                    cdOverTwoWeeksOldDataTable()
+                    <a href="classes/CDLogController.html#method_cdOverTwoWeeksOldDataTable" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">504</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Datatable for Summary Report of CD&#039;s that are over 2 weeks old</p>
+                <p class="phpdocumentor-summary">Datatable for Summary Report of CD&#039;s that are over 2 weeks old</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">cdOverTwoWeeksOldDataTable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Retrieve all CD Invoice details and generate it as json for Datatable</p>
-<p>Tables Connected: il_cd_log_details, id_job_list, im_employees</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Retrieve all CD Invoice details and generate it as json for Datatable</p>
+                    <p>Tables Connected: il_cd_log_details, id_job_list, im_employees</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>return multiple recordset as json</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>return multiple recordset as json</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_cdOverTwoWeeksOldExport">
-        cdOverTwoWeeksOldExport()
-        <a href="classes/CDLogController.html#method_cdOverTwoWeeksOldExport" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">636</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_cdOverTwoWeeksOldExport">
+                    cdOverTwoWeeksOldExport()
+                    <a href="classes/CDLogController.html#method_cdOverTwoWeeksOldExport" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">636</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Export to excel of Summary Report of CD&#039;s that are over 2 weeks old</p>
+                <p class="phpdocumentor-summary">Export to excel of Summary Report of CD&#039;s that are over 2 weeks
+                    old</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">cdOverTwoWeeksOldExport</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Retrieve all CD Invoice details and generate it as an excel file</p>
-<p>Tables Connected: il_cd_log_details, id_job_list, im_employees</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Retrieve all CD Invoice details and generate it as an excel file</p>
+                    <p>Tables Connected: il_cd_log_details, id_job_list, im_employees</p>
+                </section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\getCDtwoWeeksOlder()">getCDtwoWeeksOlder()</abbr></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                        </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>return HTML CD_TwoWeeks_Older_ReportExcel.php</p>
-</section>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><abbr
+                                title="\getCDtwoWeeksOlder()">getCDtwoWeeksOlder()</abbr></span>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>return HTML CD_TwoWeeks_Older_ReportExcel.php</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_cdOverTwoWeeksOldReport">
-        cdOverTwoWeeksOldReport()
-        <a href="classes/CDLogController.html#method_cdOverTwoWeeksOldReport" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">471</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_cdOverTwoWeeksOldReport">
+                    cdOverTwoWeeksOldReport()
+                    <a href="classes/CDLogController.html#method_cdOverTwoWeeksOldReport" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">471</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Summary Report of CD&#039;s that are over 2 weeks old</p>
+                <p class="phpdocumentor-summary">Summary Report of CD&#039;s that are over 2 weeks old</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">cdOverTwoWeeksOldReport</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>This needs to be accessible by everyone. This will replace the master CDlog information that was sent out and eliminates the need to send that out.</p>
-<p>The trigger would be if the date in the date received is 2 weeks or older and nothing is in the date estimated column then it will show up on this report. This needs to be sortable by PPM, LPM, and Job No. call letters.</p>
-<ul>
-<li> function : retrieve all cd invoice </li>
-<li> script   : Job_Invoice_CD_Report.php </li>
-<li> type     : main form </li>
-<li> return   : script </li>
-</ul>
-<p>Table Connected: im_employees</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>This needs to be accessible by everyone. This will replace the master CDlog information that was
+                        sent out and eliminates the need to send that out.</p>
+                    <p>The trigger would be if the date in the date received is 2 weeks or older and nothing is in the
+                        date estimated column then it will show up on this report. This needs to be sortable by PPM,
+                        LPM, and Job No. call letters.</p>
+                    <ul>
+                        <li> function : retrieve all cd invoice </li>
+                        <li> script : Job_Invoice_CD_Report.php </li>
+                        <li> type : main form </li>
+                        <li> return : script </li>
+                    </ul>
+                    <p>Table Connected: im_employees</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>CD_TwoWeeks_Older_Report.php</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>CD_TwoWeeks_Older_Report.php</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_cdUnInvoicedDataTable">
-        cdUnInvoicedDataTable()
-        <a href="classes/CDLogController.html#method_cdUnInvoicedDataTable" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">905</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_cdUnInvoicedDataTable">
+                    cdUnInvoicedDataTable()
+                    <a href="classes/CDLogController.html#method_cdUnInvoicedDataTable" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">905</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Retrieve all Unvoice CD to Datatable format</p>
+                <p class="phpdocumentor-summary">Retrieve all Unvoice CD to Datatable format</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">cdUnInvoicedDataTable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>If a CD has a date sent to the customer and date accomplished but nothing in the invoice no.  column</p>
-<p>Table Connected: il_cd_log_details, id_job_list, im_employees</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>If a CD has a date sent to the customer and date accomplished but nothing in the invoice no. 
+                        column</p>
+                    <p>Table Connected: il_cd_log_details, id_job_list, im_employees</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>return multiple recordset as JSON</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>return multiple recordset as JSON</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_cdUnInvoicedExport">
-        cdUnInvoicedExport()
-        <a href="classes/CDLogController.html#method_cdUnInvoicedExport" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1016</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_cdUnInvoicedExport">
+                    cdUnInvoicedExport()
+                    <a href="classes/CDLogController.html#method_cdUnInvoicedExport" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1016</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Retrieve all Unvoice CD and export to excel file</p>
+                <p class="phpdocumentor-summary">Retrieve all Unvoice CD and export to excel file</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">cdUnInvoicedExport</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>If a CD has a date sent to the customer and date accomplished but
-nothing in the invoice no. column</p>
-<p>Tables Connected: il_cd_log_details, id_job_list, im_employees</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>If a CD has a date sent to the customer and date accomplished but
+                        nothing in the invoice no. column</p>
+                    <p>Tables Connected: il_cd_log_details, id_job_list, im_employees</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>return multiple recordset for excel file application/views/report/cd/CDunInvoiceReportExcel.php</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>return multiple recordset for excel file application/views/report/cd/CDunInvoiceReportExcel.php
+                    </p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_cdUnInvoicedReport">
-        cdUnInvoicedReport()
-        <a href="classes/CDLogController.html#method_cdUnInvoicedReport" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">872</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_cdUnInvoicedReport">
+                    cdUnInvoicedReport()
+                    <a href="classes/CDLogController.html#method_cdUnInvoicedReport" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">872</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Summary Report of Unvinvoiced CD</p>
+                <p class="phpdocumentor-summary">Summary Report of Unvinvoiced CD</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">cdUnInvoicedReport</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>If a CD has a date sent to the customer and date accomplished but nothing in the invoice no. column</p>
-<p>Table Connected: im_employees</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>If a CD has a date sent to the customer and date accomplished but nothing in the invoice no.
+                        column</p>
+                    <p>Table Connected: im_employees</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>return html form /application/report/cd/CDunInvoiceReport.php</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>return html form /application/report/cd/CDunInvoiceReport.php</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_colorCell">
-        colorCell()
-        <a href="classes/CDLogController.html#method_colorCell" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1479</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_colorCell">
+                    colorCell()
+                    <a href="classes/CDLogController.html#method_colorCell" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1479</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">PHPExcel function for cell background-color</p>
+                <p class="phpdocumentor-summary">PHPExcel function for cell background-color</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">colorCell</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$color</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: none</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: none</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$color</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$color</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>return array value for PHPExcel Stylesheet for background color</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>return array value for PHPExcel Stylesheet for background color</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_dateValidate">
-        dateValidate()
-        <a href="classes/CDLogController.html#method_dateValidate" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1522</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_dateValidate">
+                    dateValidate()
+                    <a href="classes/CDLogController.html#method_dateValidate" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1522</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Date Format conversion</p>
+                <p class="phpdocumentor-summary">Date Format conversion</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">dateValidate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\date">date</abbr></span></code>
 
-        <section class="phpdocumentor-description"><p>Convert date format from yyyy-mm-dd to mm/dd/yyyy</p>
-<p>Table Connected: none</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Convert date format from yyyy-mm-dd to mm/dd/yyyy</p>
+                    <p>Table Connected: none</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$date</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$date</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\date">date</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>return new date format</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type"><abbr title="\date">date</abbr></span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>return new date format</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getCDLogInfo">
-        getCDLogInfo()
-        <a href="classes/CDLogController.html#method_getCDLogInfo" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">295</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getCDLogInfo">
+                    getCDLogInfo()
+                    <a href="classes/CDLogController.html#method_getCDLogInfo" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">295</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Export CD Log Information</p>
+                <p class="phpdocumentor-summary">Export CD Log Information</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getCDLogInfo</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|<abbr title="\excel">excel</abbr></span></code>
 
-        <section class="phpdocumentor-description"><p>This method will export all information of CD Logs to excel file format</p>
-<p>Tables Connected: id_job_list, uty_user_logs, il_cd_log_details</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>This method will export all information of CD Logs to excel file format</p>
+                    <p>Tables Connected: id_job_list, uty_user_logs, il_cd_log_details</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\excel">excel</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>file</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\excel">excel</abbr></span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>file</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getCDLogInfoLPM">
-        getCDLogInfoLPM()
-        <a href="classes/CDLogController.html#method_getCDLogInfoLPM" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">344</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getCDLogInfoLPM">
+                    getCDLogInfoLPM()
+                    <a href="classes/CDLogController.html#method_getCDLogInfoLPM" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">344</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Export CD Log Information for LPM</p>
+                <p class="phpdocumentor-summary">Export CD Log Information for LPM</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getCDLogInfoLPM</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|<abbr title="\excel">excel</abbr></span></code>
 
-        <section class="phpdocumentor-description"><p>This method is dedicated to LPM to export all information of CD Logs to excel file format</p>
-<p>Tables Connected: id_job_list, uty_user_logs, il_cd_log_details</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>This method is dedicated to LPM to export all information of CD Logs to excel file format</p>
+                    <p>Tables Connected: id_job_list, uty_user_logs, il_cd_log_details</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\excel">excel</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>file</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\excel">excel</abbr></span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>file</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getSharedJob">
-        getSharedJob()
-        <a href="classes/CDLogController.html#method_getSharedJob" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">207</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getSharedJob">
+                    getSharedJob()
+                    <a href="classes/CDLogController.html#method_getSharedJob" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">207</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Identify Shared Job</p>
+                <p class="phpdocumentor-summary">Identify Shared Job</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">getSharedJob</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$jobid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$empid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"><p>This method will identify if the Job is assigned to more than one Remote Office.</p>
-<p>Tables Connected: id_job_combined_logs, im_remote_employees, im_remote_office</p>
-<code class="prettyprint">
+                <section class="phpdocumentor-description">
+                    <p>This method will identify if the Job is assigned to more than one Remote Office.</p>
+                    <p>Tables Connected: id_job_combined_logs, im_remote_employees, im_remote_office</p>
+                    <code class="prettyprint">
 $this->getSharedJob(101, 268);
 </code>
-</section>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$jobid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Job ID in id_job_list table</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$jobid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Job ID in id_job_list table</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$empid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>remote office Employee ID in ie_remote_employees table</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$empid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>remote office Employee ID in ie_remote_employees table</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">string|array&lt;string|int, mixed&gt;</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getSharedJobForLPM">
-        getSharedJobForLPM()
-        <a href="classes/CDLogController.html#method_getSharedJobForLPM" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/CDLogController.php"><a href="files/application-controller-cdlogcontroller.html"><abbr title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">256</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getSharedJobForLPM">
+                    getSharedJobForLPM()
+                    <a href="classes/CDLogController.html#method_getSharedJobForLPM" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/CDLogController.php"><a
+                            href="files/application-controller-cdlogcontroller.html"><abbr
+                                title="application/controller/CDLogController.php">CDLogController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">256</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Identify Shared Job for LPM</p>
+                <p class="phpdocumentor-summary">Identify Shared Job for LPM</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">getSharedJobForLPM</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$jobid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$colno</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"><p>This method is dedicated to LPM to identify if the Job is assigned to more than one Remote Office.</p>
-<p>Tables Connected: id_job_combined_logs, im_remote_employees, im_remote_office</p>
-<code class="prettyprint">
+                <section class="phpdocumentor-description">
+                    <p>This method is dedicated to LPM to identify if the Job is assigned to more than one Remote
+                        Office.</p>
+                    <p>Tables Connected: id_job_combined_logs, im_remote_employees, im_remote_office</p>
+                    <code class="prettyprint">
 $this->getSharedJobForLPM(101, 268);
 </code>
-</section>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$jobid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Job ID in id_job_list table</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$jobid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Job ID in id_job_list table</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$colno</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>remote office Employee ID in ie_remote_employees table</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$colno</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>remote office Employee ID in ie_remote_employees table</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>remote office name</p>
-</section>
 
-    
-</article>
-            </section>
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">string</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>remote office name</p>
+                </section>
+
+
+            </article>
+        </section>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
-    <section class="phpdocumentor-search-results__dialog">
-        <header class="phpdocumentor-search-results__header">
-            <h2 class="phpdocumentor-search-results__title">Search results</h2>
-            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
-        </header>
-        <section class="phpdocumentor-search-results__body">
-            <ul class="phpdocumentor-search-results__entries"></ul>
+    <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+        <section class="phpdocumentor-search-results__dialog">
+            <header class="phpdocumentor-search-results__header">
+                <h2 class="phpdocumentor-search-results__title">Search results</h2>
+                <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+            </header>
+            <section class="phpdocumentor-search-results__body">
+                <ul class="phpdocumentor-search-results__entries"></ul>
+            </section>
         </section>
     </section>
-</section>
-            </div>
-        </div>
-        <a href="classes/CDLogController.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+</div>
+</div>
+<a href="classes/CDLogController.html#top" class="phpdocumentor-back-to-top"><i
+        class="fas fa-chevron-circle-up"></i></a>
 
-    </main>
-
-    <script>
-        cssVars({});
-    </script>
-</body>
-</html>
+<?php require('../layouts/footer.html'); ?>

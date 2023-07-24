@@ -1,1348 +1,1282 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Documentation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="../">
-    <link rel="icon" href="images/favicon.ico"/>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/template.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
-                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
-        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
-        <script src="js/search.js"></script>
-        <script defer src="js/searchIndex.js"></script>
-    </head>
-<body id="top">
-    <header class="phpdocumentor-header phpdocumentor-section">
-    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
-    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
-    <label class="phpdocumentor-header__menu-icon" for="menu-button">
-        <i class="fas fa-bars"></i>
-    </label>
-    <section data-search-form class="phpdocumentor-search">
-    <label>
-        <span class="visually-hidden">Search for</span>
-        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
-            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
-        </svg>
-        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
-    </label>
-</section>
+<?php require('../layouts/header.html'); ?>
 
-    <nav class="phpdocumentor-topnav">
-    <ul class="phpdocumentor-topnav__menu">
-        </ul>
-</nav>
-</header>
-
-    <main class="phpdocumentor">
-        <div class="phpdocumentor-section">
-            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
-<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
-    Menu
-</label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/application.html"><abbr title="\Application">Application</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/application-controller.html"><abbr title="\Application\Controller">Controller</abbr></a></li>
-                                            <li><a href="namespaces/application-model.html"><abbr title="\Application\Model">Model</abbr></a></li>
-                                            <li><a href="namespaces/application-views.html"><abbr title="\Application\Views">Views</abbr></a></li>
-                                    </ul>
-                        </section>
-
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Default.html"><abbr title="\Default">Default</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/PasswordManager.html"><abbr title="\PasswordManager">PasswordManager</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/BoltCheck.html"><abbr title="\BoltCheck">BoltCheck</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/CDLogs.html"><abbr title="\CDLogs">CDLogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Dashboard.html"><abbr title="\Dashboard">Dashboard</abbr></a></h3>
-                        </section>
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
-                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
-    </section>
-
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
-    </section>
-</aside>
-
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+    <ul class="phpdocumentor-breadcrumbs">
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    RFILogModel
+            RFILogModel
 
-        <span class="phpdocumentor-element__extends">
-        extends <abbr title="\SupportClass">SupportClass</abbr>
-    </span>
-    
+            <span class="phpdocumentor-element__extends">
+                extends <abbr title="\SupportClass">SupportClass</abbr>
+            </span>
+
             <div class="phpdocumentor-element__package">
-            in package
-            <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Default.html">Default</a></li>
-                            </ul>
-        </div>
-    
-    
-    </h2>
+                in package
+                <ul class="phpdocumentor-breadcrumbs">
+                    <li class="phpdocumentor-breadcrumb"><a href="packages/Default.html">Default</a></li>
+                </ul>
+            </div>
+
+
+        </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">7</span>
-</aside>
-
-        
-
-
+            <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                    href="files/application-model-rfilogmodel.html"><abbr
+                        title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">7</span>
+        </aside>
 
 
 
 
 
 
-<h3 id="toc">
-    Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
 
-<dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_countTotalRequestInfo">countTotalRequestInfo()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+
+
+
+        <h3 id="toc">
+            Table of Contents
+            <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+
+        <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+                <a href="classes/RFILogModel.html#method_countTotalRequestInfo">countTotalRequestInfo()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_createNewRow">createNewRow()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/RFILogModel.html#method_createNewRow">createNewRow()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_getLastSequence">getLastSequence()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/RFILogModel.html#method_getLastSequence">getLastSequence()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_getRFIdelinquent">getRFIdelinquent()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/RFILogModel.html#method_getRFIdelinquent">getRFIdelinquent()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_getRFIdetails">getRFIdetails()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/RFILogModel.html#method_getRFIdetails">getRFIdetails()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_getRFIdetails2">getRFIdetails2()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/RFILogModel.html#method_getRFIdetails2">getRFIdetails2()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_getRow">getRow()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/RFILogModel.html#method_getRow">getRow()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_insertRFILog">insertRFILog()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/RFILogModel.html#method_insertRFILog">insertRFILog()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_jobDetailsLog">jobDetailsLog()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/RFILogModel.html#method_jobDetailsLog">jobDetailsLog()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_loadLogDetails">loadLogDetails()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/RFILogModel.html#method_loadLogDetails">loadLogDetails()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_removeRow">removeRow()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/RFILogModel.html#method_removeRow">removeRow()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_requestInformationListing">requestInformationListing()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/RFILogModel.html#method_requestInformationListing">requestInformationListing()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_rfiLogDetails">rfiLogDetails()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/RFILogModel.html#method_rfiLogDetails">rfiLogDetails()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_rfiLogDetailsLastSequence">rfiLogDetailsLastSequence()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/RFILogModel.html#method_rfiLogDetailsLastSequence">rfiLogDetailsLastSequence()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_saveColorLogs">saveColorLogs()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/RFILogModel.html#method_saveColorLogs">saveColorLogs()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_saveRequestForInformation">saveRequestForInformation()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/RFILogModel.html#method_saveRequestForInformation">saveRequestForInformation()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_saveTableData">saveTableData()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/RFILogModel.html#method_saveTableData">saveTableData()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_saveTableDataUSA">saveTableDataUSA()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/RFILogModel.html#method_saveTableDataUSA">saveTableDataUSA()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_totalRows1">totalRows1()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/RFILogModel.html#method_totalRows1">totalRows1()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_updateDetailLog">updateDetailLog()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/RFILogModel.html#method_updateDetailLog">updateDetailLog()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/RFILogModel.html#method_updateMainDate">updateMainDate()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/RFILogModel.html#method_updateMainDate">updateMainDate()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
         </dl>
 
 
 
-        
 
-        
 
-            <section class="phpdocumentor-methods">
-        <h3 class="phpdocumentor-elements__header" id="methods">
-            Methods
-            <a href="classes/RFILogModel.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
-        </h3>
-                    <article
-        class="phpdocumentor-element
+
+
+        <section class="phpdocumentor-methods">
+            <h3 class="phpdocumentor-elements__header" id="methods">
+                Methods
+                <a href="classes/RFILogModel.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_countTotalRequestInfo">
-        countTotalRequestInfo()
-        <a href="classes/RFILogModel.html#method_countTotalRequestInfo" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">805</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_countTotalRequestInfo">
+                    countTotalRequestInfo()
+                    <a href="classes/RFILogModel.html#method_countTotalRequestInfo" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">805</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">countTotalRequestInfo</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$jobId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$jobId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$jobId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_createNewRow">
-        createNewRow()
-        <a href="classes/RFILogModel.html#method_createNewRow" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">83</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_createNewRow">
+                    createNewRow()
+                    <a href="classes/RFILogModel.html#method_createNewRow" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">83</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">createNewRow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$rowId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$rowId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getLastSequence">
-        getLastSequence()
-        <a href="classes/RFILogModel.html#method_getLastSequence" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">695</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getLastSequence">
+                    getLastSequence()
+                    <a href="classes/RFILogModel.html#method_getLastSequence" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">695</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getLastSequence</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$jobId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$jobId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$jobId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getRFIdelinquent">
-        getRFIdelinquent()
-        <a href="classes/RFILogModel.html#method_getRFIdelinquent" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">985</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getRFIdelinquent">
+                    getRFIdelinquent()
+                    <a href="classes/RFILogModel.html#method_getRFIdelinquent" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">985</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getRFIdelinquent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sql_where</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$count</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$sql_where</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
+                        <span class="phpdocumentor-signature__argument__name">$sql_where</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$count</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$count</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getRFIdetails">
-        getRFIdetails()
-        <a href="classes/RFILogModel.html#method_getRFIdetails" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">828</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getRFIdetails">
+                    getRFIdetails()
+                    <a href="classes/RFILogModel.html#method_getRFIdetails" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">828</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getRFIdetails</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$rowId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$rowId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getRFIdetails2">
-        getRFIdetails2()
-        <a href="classes/RFILogModel.html#method_getRFIdetails2" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">836</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getRFIdetails2">
+                    getRFIdetails2()
+                    <a href="classes/RFILogModel.html#method_getRFIdetails2" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">836</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getRFIdetails2</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$rowId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$rowId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getRow">
-        getRow()
-        <a href="classes/RFILogModel.html#method_getRow" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">36</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getRow">
+                    getRow()
+                    <a href="classes/RFILogModel.html#method_getRow" class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">36</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getRow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$number</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
+                        <span class="phpdocumentor-signature__argument__name">$number</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_insertRFILog">
-        insertRFILog()
-        <a href="classes/RFILogModel.html#method_insertRFILog" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">946</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_insertRFILog">
+                    insertRFILog()
+                    <a href="classes/RFILogModel.html#method_insertRFILog" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">946</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">insertRFILog</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$jobId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lastSeq</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$jobId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
+                        <span class="phpdocumentor-signature__argument__name">$jobId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$lastSeq</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$lastSeq</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_jobDetailsLog">
-        jobDetailsLog()
-        <a href="classes/RFILogModel.html#method_jobDetailsLog" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">956</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_jobDetailsLog">
+                    jobDetailsLog()
+                    <a href="classes/RFILogModel.html#method_jobDetailsLog" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">956</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">jobDetailsLog</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$field_name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$field_name</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$field_name</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_loadLogDetails">
-        loadLogDetails()
-        <a href="classes/RFILogModel.html#method_loadLogDetails" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">174</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_loadLogDetails">
+                    loadLogDetails()
+                    <a href="classes/RFILogModel.html#method_loadLogDetails" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">174</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">loadLogDetails</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_removeRow">
-        removeRow()
-        <a href="classes/RFILogModel.html#method_removeRow" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">138</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_removeRow">
+                    removeRow()
+                    <a href="classes/RFILogModel.html#method_removeRow" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">138</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">removeRow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$rowId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$rowId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_requestInformationListing">
-        requestInformationListing()
-        <a href="classes/RFILogModel.html#method_requestInformationListing" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">818</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_requestInformationListing">
+                    requestInformationListing()
+                    <a href="classes/RFILogModel.html#method_requestInformationListing" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">818</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">requestInformationListing</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$jobId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sql</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$orderBy</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$jobId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$sql</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$orderBy</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
 
-    
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$jobId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$sql</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$orderBy</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
+                </dl>
+
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_rfiLogDetails">
-        rfiLogDetails()
-        <a href="classes/RFILogModel.html#method_rfiLogDetails" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">707</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_rfiLogDetails">
+                    rfiLogDetails()
+                    <a href="classes/RFILogModel.html#method_rfiLogDetails" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">707</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">rfiLogDetails</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_rfiLogDetailsLastSequence">
-        rfiLogDetailsLastSequence()
-        <a href="classes/RFILogModel.html#method_rfiLogDetailsLastSequence" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">844</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_rfiLogDetailsLastSequence">
+                    rfiLogDetailsLastSequence()
+                    <a href="classes/RFILogModel.html#method_rfiLogDetailsLastSequence" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">844</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">rfiLogDetailsLastSequence</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$jobId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$jobId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$jobId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_saveColorLogs">
-        saveColorLogs()
-        <a href="classes/RFILogModel.html#method_saveColorLogs" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">274</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_saveColorLogs">
+                    saveColorLogs()
+                    <a href="classes/RFILogModel.html#method_saveColorLogs" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">274</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">saveColorLogs</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row_cel</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$col_cel</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$row_cel</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$col_cel</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
 
-    
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$row_cel</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$col_cel</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$type</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
+                </dl>
+
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_saveRequestForInformation">
-        saveRequestForInformation()
-        <a href="classes/RFILogModel.html#method_saveRequestForInformation" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">855</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_saveRequestForInformation">
+                    saveRequestForInformation()
+                    <a href="classes/RFILogModel.html#method_saveRequestForInformation" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">855</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">saveRequestForInformation</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arrayPost</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$jobId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lastSequence</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$arrayPost</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$jobId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$rowId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$action</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$lastSequence</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
 
-    
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$arrayPost</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$jobId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$rowId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$action</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$lastSequence</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
+                </dl>
+
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_saveTableData">
-        saveTableData()
-        <a href="classes/RFILogModel.html#method_saveTableData" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">347</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_saveTableData">
+                    saveTableData()
+                    <a href="classes/RFILogModel.html#method_saveTableData" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">347</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">saveTableData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arrayPost</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$jobId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$arrayPost</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
+                        <span class="phpdocumentor-signature__argument__name">$arrayPost</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$jobId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$jobId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_saveTableDataUSA">
-        saveTableDataUSA()
-        <a href="classes/RFILogModel.html#method_saveTableDataUSA" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">482</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_saveTableDataUSA">
+                    saveTableDataUSA()
+                    <a href="classes/RFILogModel.html#method_saveTableDataUSA" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">482</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">saveTableDataUSA</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arrayPost</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$jobId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$arrayPost</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
+                        <span class="phpdocumentor-signature__argument__name">$arrayPost</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$jobId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$jobId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_totalRows1">
-        totalRows1()
-        <a href="classes/RFILogModel.html#method_totalRows1" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">11</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_totalRows1">
+                    totalRows1()
+                    <a href="classes/RFILogModel.html#method_totalRows1" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">11</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">totalRows1</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_updateDetailLog">
-        updateDetailLog()
-        <a href="classes/RFILogModel.html#method_updateDetailLog" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">639</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_updateDetailLog">
+                    updateDetailLog()
+                    <a href="classes/RFILogModel.html#method_updateDetailLog" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">639</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">updateDetailLog</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$counter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldname</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lastid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$newval</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$counter</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$fieldname</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$lastid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$newval</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
 
-    
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$counter</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$fieldname</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$type</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$lastid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$newval</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
+                </dl>
+
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_updateMainDate">
-        updateMainDate()
-        <a href="classes/RFILogModel.html#method_updateMainDate" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a href="files/application-model-rfilogmodel.html"><abbr title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">618</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_updateMainDate">
+                    updateMainDate()
+                    <a href="classes/RFILogModel.html#method_updateMainDate" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file" title="application/model/RFILogModel.php"><a
+                            href="files/application-model-rfilogmodel.html"><abbr
+                                title="application/model/RFILogModel.php">RFILogModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">618</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">updateMainDate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-            </section>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+        </section>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
-    <section class="phpdocumentor-search-results__dialog">
-        <header class="phpdocumentor-search-results__header">
-            <h2 class="phpdocumentor-search-results__title">Search results</h2>
-            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
-        </header>
-        <section class="phpdocumentor-search-results__body">
-            <ul class="phpdocumentor-search-results__entries"></ul>
+    <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+        <section class="phpdocumentor-search-results__dialog">
+            <header class="phpdocumentor-search-results__header">
+                <h2 class="phpdocumentor-search-results__title">Search results</h2>
+                <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+            </header>
+            <section class="phpdocumentor-search-results__body">
+                <ul class="phpdocumentor-search-results__entries"></ul>
+            </section>
         </section>
     </section>
-</section>
-            </div>
-        </div>
-        <a href="classes/RFILogModel.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+</div>
+</div>
+<a href="classes/RFILogModel.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
-    </main>
-
-    <script>
-        cssVars({});
-    </script>
-</body>
-</html>
+<?php require('../layouts/footer.html'); ?>

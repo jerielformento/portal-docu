@@ -1,1823 +1,1823 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Documentation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="../">
-    <link rel="icon" href="images/favicon.ico"/>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/template.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
-                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
-        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
-        <script src="js/search.js"></script>
-        <script defer src="js/searchIndex.js"></script>
-    </head>
-<body id="top">
-    <header class="phpdocumentor-header phpdocumentor-section">
-    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
-    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
-    <label class="phpdocumentor-header__menu-icon" for="menu-button">
-        <i class="fas fa-bars"></i>
-    </label>
-    <section data-search-form class="phpdocumentor-search">
-    <label>
-        <span class="visually-hidden">Search for</span>
-        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
-            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
-        </svg>
-        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
-    </label>
-</section>
+<?php require('../layouts/header.html'); ?>
 
-    <nav class="phpdocumentor-topnav">
-    <ul class="phpdocumentor-topnav__menu">
-        </ul>
-</nav>
-</header>
-
-    <main class="phpdocumentor">
-        <div class="phpdocumentor-section">
-            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
-<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
-    Menu
-</label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/application.html"><abbr title="\Application">Application</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/application-controller.html"><abbr title="\Application\Controller">Controller</abbr></a></li>
-                                            <li><a href="namespaces/application-model.html"><abbr title="\Application\Model">Model</abbr></a></li>
-                                            <li><a href="namespaces/application-views.html"><abbr title="\Application\Views">Views</abbr></a></li>
-                                    </ul>
-                        </section>
-
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Default.html"><abbr title="\Default">Default</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/PasswordManager.html"><abbr title="\PasswordManager">PasswordManager</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/BoltCheck.html"><abbr title="\BoltCheck">BoltCheck</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/CDLogs.html"><abbr title="\CDLogs">CDLogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Dashboard.html"><abbr title="\Dashboard">Dashboard</abbr></a></h3>
-                        </section>
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
-                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
-    </section>
-
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
-    </section>
-</aside>
-
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+    <ul class="phpdocumentor-breadcrumbs">
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    UserController
+            UserController
 
-        <span class="phpdocumentor-element__extends">
-        extends <abbr title="\SupportClass">SupportClass</abbr>
-    </span>
-    
+            <span class="phpdocumentor-element__extends">
+                extends <abbr title="\SupportClass">SupportClass</abbr>
+            </span>
+
             <div class="phpdocumentor-element__package">
-            in package
-            <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Default.html">Default</a></li>
-                            </ul>
-        </div>
-    
-    
-    </h2>
+                in package
+                <ul class="phpdocumentor-breadcrumbs">
+                    <li class="phpdocumentor-breadcrumb"><a href="packages/Default.html">Default</a></li>
+                </ul>
+            </div>
+
+
+        </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">13</span>
-</aside>
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a
+                    href="files/application-controller-usercontroller.html"><abbr
+                        title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">13</span>
+        </aside>
 
-            <p class="phpdocumentor-summary">User&#039;s class</p>
+        <p class="phpdocumentor-summary">User&#039;s class</p>
 
-    <section class="phpdocumentor-description"></section>
-
-
-
-
+        <section class="phpdocumentor-description"></section>
 
 
 
 
-<h3 id="toc">
-    Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
 
-<dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method___construct">__construct()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+
+
+
+        <h3 id="toc">
+            Table of Contents
+            <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+
+        <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+                <a href="classes/UserController.html#method___construct">__construct()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_ajaxCheckCodeStatus">ajaxCheckCodeStatus()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/UserController.html#method_ajaxCheckCodeStatus">ajaxCheckCodeStatus()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_ajaxHideCode">ajaxHideCode()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/UserController.html#method_ajaxHideCode">ajaxHideCode()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_ajaxNotificationList">ajaxNotificationList()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/UserController.html#method_ajaxNotificationList">ajaxNotificationList()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_ajaxOnlineUsers">ajaxOnlineUsers()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/UserController.html#method_ajaxOnlineUsers">ajaxOnlineUsers()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_ajaxRecentActivity">ajaxRecentActivity()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/UserController.html#method_ajaxRecentActivity">ajaxRecentActivity()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_ajaxSaveHealthCareTEMPORARY">ajaxSaveHealthCareTEMPORARY()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/UserController.html#method_ajaxSaveHealthCareTEMPORARY">ajaxSaveHealthCareTEMPORARY()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_checkForHealthDeclare">checkForHealthDeclare()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/UserController.html#method_checkForHealthDeclare">checkForHealthDeclare()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_checkForHealthDeclareRev1">checkForHealthDeclareRev1()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/UserController.html#method_checkForHealthDeclareRev1">checkForHealthDeclareRev1()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_checkJobCurrentUser">checkJobCurrentUser()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Check if Job is current in Use</dd>
+                <a href="classes/UserController.html#method_checkJobCurrentUser">checkJobCurrentUser()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Check if Job is current in Use</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_checkModuleIfInUse">checkModuleIfInUse()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Check if Module is already in use</dd>
+                <a href="classes/UserController.html#method_checkModuleIfInUse">checkModuleIfInUse()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Check if Module is already in use</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_checkSession">checkSession()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/UserController.html#method_checkSession">checkSession()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_checkUserLogin">checkUserLogin()</a>
-    <span>
-                        &nbsp;: int    </span>
-</dt>
-<dd>check user if already login</dd>
+                <a href="classes/UserController.html#method_checkUserLogin">checkUserLogin()</a>
+                <span>
+                    &nbsp;: int </span>
+            </dt>
+            <dd>check user if already login</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_checkUserLoginAjax">checkUserLoginAjax()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/UserController.html#method_checkUserLoginAjax">checkUserLoginAjax()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_employeeAccountDataTable">employeeAccountDataTable()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Employe List DataTable</dd>
+                <a href="classes/UserController.html#method_employeeAccountDataTable">employeeAccountDataTable()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Employe List DataTable</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_employeeAccountList">employeeAccountList()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Employee List Account</dd>
+                <a href="classes/UserController.html#method_employeeAccountList">employeeAccountList()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Employee List Account</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_loadFavoriteShortcuts">loadFavoriteShortcuts()</a>
-    <span>
-                        &nbsp;: <abbr title="\json">json</abbr>    </span>
-</dt>
-<dd>Load Favorite Shortcuts</dd>
+                <a href="classes/UserController.html#method_loadFavoriteShortcuts">loadFavoriteShortcuts()</a>
+                <span>
+                    &nbsp;: <abbr title="\json">json</abbr> </span>
+            </dt>
+            <dd>Load Favorite Shortcuts</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_loadFavoriteShortcutsFull">loadFavoriteShortcutsFull()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/UserController.html#method_loadFavoriteShortcutsFull">loadFavoriteShortcutsFull()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_loadFavoriteShortcutsOLD">loadFavoriteShortcutsOLD()</a>
-    <span>
-                        &nbsp;: <abbr title="\json">json</abbr>    </span>
-</dt>
-<dd>Load Favorite Shortcuts</dd>
+                <a href="classes/UserController.html#method_loadFavoriteShortcutsOLD">loadFavoriteShortcutsOLD()</a>
+                <span>
+                    &nbsp;: <abbr title="\json">json</abbr> </span>
+            </dt>
+            <dd>Load Favorite Shortcuts</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_loadRecentActivity">loadRecentActivity()</a>
-    <span>
-                        &nbsp;: <abbr title="\json">json</abbr>    </span>
-</dt>
-<dd>Load user&#039;s recent activities</dd>
+                <a href="classes/UserController.html#method_loadRecentActivity">loadRecentActivity()</a>
+                <span>
+                    &nbsp;: <abbr title="\json">json</abbr> </span>
+            </dt>
+            <dd>Load user&#039;s recent activities</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_myAccount">myAccount()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/UserController.html#method_myAccount">myAccount()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_notifications">notifications()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/UserController.html#method_notifications">notifications()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_recentActivityList">recentActivityList()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/UserController.html#method_recentActivityList">recentActivityList()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_recordAcitivity">recordAcitivity()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>record user activities</dd>
+                <a href="classes/UserController.html#method_recordAcitivity">recordAcitivity()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>record user activities</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_recordFavorite">recordFavorite()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>record selected favorite quick shortcuts</dd>
+                <a href="classes/UserController.html#method_recordFavorite">recordFavorite()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>record selected favorite quick shortcuts</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_recordLastUser">recordLastUser()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Job Current User</dd>
+                <a href="classes/UserController.html#method_recordLastUser">recordLastUser()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Job Current User</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_remoteAccountDataTable">remoteAccountDataTable()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Remote Office List DataTable</dd>
+                <a href="classes/UserController.html#method_remoteAccountDataTable">remoteAccountDataTable()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Remote Office List DataTable</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_remoteAccountList">remoteAccountList()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Remote Office List Account</dd>
+                <a href="classes/UserController.html#method_remoteAccountList">remoteAccountList()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Remote Office List Account</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_unlockAccount">unlockAccount()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/UserController.html#method_unlockAccount">unlockAccount()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_urlAccessRights">urlAccessRights()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/UserController.html#method_urlAccessRights">urlAccessRights()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_urlAccessRightsV2">urlAccessRightsV2()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/UserController.html#method_urlAccessRightsV2">urlAccessRightsV2()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UserController.html#method_userLogout">userLogout()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>logout user</dd>
+                <a href="classes/UserController.html#method_userLogout">userLogout()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>logout user</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/UserController.html#method_checkUserLoginWithSecurity">checkUserLoginWithSecurity()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>check login user with security code, the user has failed to login more than 3 times</dd>
+                <a href="classes/UserController.html#method_checkUserLoginWithSecurity">checkUserLoginWithSecurity()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>check login user with security code, the user has failed to login more than 3 times</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/UserController.html#method_checkUserLoginWOSecurity">checkUserLoginWOSecurity()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>check login user without security code</dd>
+                <a href="classes/UserController.html#method_checkUserLoginWOSecurity">checkUserLoginWOSecurity()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>check login user without security code</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/UserController.html#method_countLoginAttemp">countLoginAttemp()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/UserController.html#method_countLoginAttemp">countLoginAttemp()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/UserController.html#method_forceLoginUser">forceLoginUser()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/UserController.html#method_forceLoginUser">forceLoginUser()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/UserController.html#method_forceLoginUserRo">forceLoginUserRo()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/UserController.html#method_forceLoginUserRo">forceLoginUserRo()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/UserController.html#method_recordLoginStatus">recordLoginStatus()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a href="classes/UserController.html#method_recordLoginStatus">recordLoginStatus()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
         </dl>
 
 
 
-        
 
-        
 
-            <section class="phpdocumentor-methods">
-        <h3 class="phpdocumentor-elements__header" id="methods">
-            Methods
-            <a href="classes/UserController.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
-        </h3>
-                    <article
-        class="phpdocumentor-element
+
+
+        <section class="phpdocumentor-methods">
+            <h3 class="phpdocumentor-elements__header" id="methods">
+                Methods
+                <a href="classes/UserController.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/UserController.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">16</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method___construct">
+                    __construct()
+                    <a href="classes/UserController.html#method___construct" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">16</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_ajaxCheckCodeStatus">
-        ajaxCheckCodeStatus()
-        <a href="classes/UserController.html#method_ajaxCheckCodeStatus" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1178</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_ajaxCheckCodeStatus">
+                    ajaxCheckCodeStatus()
+                    <a href="classes/UserController.html#method_ajaxCheckCodeStatus" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1178</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">ajaxCheckCodeStatus</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_ajaxHideCode">
-        ajaxHideCode()
-        <a href="classes/UserController.html#method_ajaxHideCode" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1145</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_ajaxHideCode">
+                    ajaxHideCode()
+                    <a href="classes/UserController.html#method_ajaxHideCode" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1145</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">ajaxHideCode</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_ajaxNotificationList">
-        ajaxNotificationList()
-        <a href="classes/UserController.html#method_ajaxNotificationList" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">503</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_ajaxNotificationList">
+                    ajaxNotificationList()
+                    <a href="classes/UserController.html#method_ajaxNotificationList" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">503</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">ajaxNotificationList</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_ajaxOnlineUsers">
-        ajaxOnlineUsers()
-        <a href="classes/UserController.html#method_ajaxOnlineUsers" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">458</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_ajaxOnlineUsers">
+                    ajaxOnlineUsers()
+                    <a href="classes/UserController.html#method_ajaxOnlineUsers" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">458</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">ajaxOnlineUsers</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_ajaxRecentActivity">
-        ajaxRecentActivity()
-        <a href="classes/UserController.html#method_ajaxRecentActivity" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">465</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_ajaxRecentActivity">
+                    ajaxRecentActivity()
+                    <a href="classes/UserController.html#method_ajaxRecentActivity" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">465</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">ajaxRecentActivity</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_ajaxSaveHealthCareTEMPORARY">
-        ajaxSaveHealthCareTEMPORARY()
-        <a href="classes/UserController.html#method_ajaxSaveHealthCareTEMPORARY" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">25</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_ajaxSaveHealthCareTEMPORARY">
+                    ajaxSaveHealthCareTEMPORARY()
+                    <a href="classes/UserController.html#method_ajaxSaveHealthCareTEMPORARY" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">25</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">ajaxSaveHealthCareTEMPORARY</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkForHealthDeclare">
-        checkForHealthDeclare()
-        <a href="classes/UserController.html#method_checkForHealthDeclare" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">288</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkForHealthDeclare">
+                    checkForHealthDeclare()
+                    <a href="classes/UserController.html#method_checkForHealthDeclare" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">288</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">checkForHealthDeclare</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkForHealthDeclareRev1">
-        checkForHealthDeclareRev1()
-        <a href="classes/UserController.html#method_checkForHealthDeclareRev1" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">350</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkForHealthDeclareRev1">
+                    checkForHealthDeclareRev1()
+                    <a href="classes/UserController.html#method_checkForHealthDeclareRev1" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">350</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">checkForHealthDeclareRev1</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkJobCurrentUser">
-        checkJobCurrentUser()
-        <a href="classes/UserController.html#method_checkJobCurrentUser" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">981</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkJobCurrentUser">
+                    checkJobCurrentUser()
+                    <a href="classes/UserController.html#method_checkJobCurrentUser" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">981</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Check if Job is current in Use</p>
+                <p class="phpdocumentor-summary">Check if Job is current in Use</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">checkJobCurrentUser</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>function : Check if Job is current in Use
-parameter: none
-type     : auto run
-script   : footer.php
-return   : none</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>function : Check if Job is current in Use
+                        parameter: none
+                        type : auto run
+                        script : footer.php
+                        return : none</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkModuleIfInUse">
-        checkModuleIfInUse()
-        <a href="classes/UserController.html#method_checkModuleIfInUse" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1041</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkModuleIfInUse">
+                    checkModuleIfInUse()
+                    <a href="classes/UserController.html#method_checkModuleIfInUse" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1041</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Check if Module is already in use</p>
+                <p class="phpdocumentor-summary">Check if Module is already in use</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">checkModuleIfInUse</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>function : Check if Module is already in use
-parameter: none
-type     : auto run
-script   : footer.php
-return   : none</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>function : Check if Module is already in use
+                        parameter: none
+                        type : auto run
+                        script : footer.php
+                        return : none</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkSession">
-        checkSession()
-        <a href="classes/UserController.html#method_checkSession" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">514</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkSession">
+                    checkSession()
+                    <a href="classes/UserController.html#method_checkSession" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">514</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">checkSession</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkUserLogin">
-        checkUserLogin()
-        <a href="classes/UserController.html#method_checkUserLogin" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">150</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkUserLogin">
+                    checkUserLogin()
+                    <a href="classes/UserController.html#method_checkUserLogin" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">150</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">check user if already login</p>
+                <p class="phpdocumentor-summary">check user if already login</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">checkUserLogin</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">int</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkUserLoginAjax">
-        checkUserLoginAjax()
-        <a href="classes/UserController.html#method_checkUserLoginAjax" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">48</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkUserLoginAjax">
+                    checkUserLoginAjax()
+                    <a href="classes/UserController.html#method_checkUserLoginAjax" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">48</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">checkUserLoginAjax</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_employeeAccountDataTable">
-        employeeAccountDataTable()
-        <a href="classes/UserController.html#method_employeeAccountDataTable" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1217</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_employeeAccountDataTable">
+                    employeeAccountDataTable()
+                    <a href="classes/UserController.html#method_employeeAccountDataTable" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1217</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Employe List DataTable</p>
+                <p class="phpdocumentor-summary">Employe List DataTable</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">employeeAccountDataTable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_employeeAccountList">
-        employeeAccountList()
-        <a href="classes/UserController.html#method_employeeAccountList" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1200</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_employeeAccountList">
+                    employeeAccountList()
+                    <a href="classes/UserController.html#method_employeeAccountList" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1200</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Employee List Account</p>
+                <p class="phpdocumentor-summary">Employee List Account</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">employeeAccountList</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_loadFavoriteShortcuts">
-        loadFavoriteShortcuts()
-        <a href="classes/UserController.html#method_loadFavoriteShortcuts" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">561</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_loadFavoriteShortcuts">
+                    loadFavoriteShortcuts()
+                    <a href="classes/UserController.html#method_loadFavoriteShortcuts" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">561</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Load Favorite Shortcuts</p>
+                <p class="phpdocumentor-summary">Load Favorite Shortcuts</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">loadFavoriteShortcuts</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\json">json</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\json">json</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type"><abbr title="\json">json</abbr></span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_loadFavoriteShortcutsFull">
-        loadFavoriteShortcutsFull()
-        <a href="classes/UserController.html#method_loadFavoriteShortcutsFull" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">624</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_loadFavoriteShortcutsFull">
+                    loadFavoriteShortcutsFull()
+                    <a href="classes/UserController.html#method_loadFavoriteShortcutsFull" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">624</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">loadFavoriteShortcutsFull</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_loadFavoriteShortcutsOLD">
-        loadFavoriteShortcutsOLD()
-        <a href="classes/UserController.html#method_loadFavoriteShortcutsOLD" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">695</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_loadFavoriteShortcutsOLD">
+                    loadFavoriteShortcutsOLD()
+                    <a href="classes/UserController.html#method_loadFavoriteShortcutsOLD" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">695</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Load Favorite Shortcuts</p>
+                <p class="phpdocumentor-summary">Load Favorite Shortcuts</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">loadFavoriteShortcutsOLD</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\json">json</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\json">json</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type"><abbr title="\json">json</abbr></span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_loadRecentActivity">
-        loadRecentActivity()
-        <a href="classes/UserController.html#method_loadRecentActivity" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">752</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_loadRecentActivity">
+                    loadRecentActivity()
+                    <a href="classes/UserController.html#method_loadRecentActivity" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">752</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Load user&#039;s recent activities</p>
+                <p class="phpdocumentor-summary">Load user&#039;s recent activities</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">loadRecentActivity</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\json">json</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\json">json</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type"><abbr title="\json">json</abbr></span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_myAccount">
-        myAccount()
-        <a href="classes/UserController.html#method_myAccount" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">421</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_myAccount">
+                    myAccount()
+                    <a href="classes/UserController.html#method_myAccount" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">421</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">myAccount</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_notifications">
-        notifications()
-        <a href="classes/UserController.html#method_notifications" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">482</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_notifications">
+                    notifications()
+                    <a href="classes/UserController.html#method_notifications" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">482</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">notifications</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_recentActivityList">
-        recentActivityList()
-        <a href="classes/UserController.html#method_recentActivityList" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">476</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_recentActivityList">
+                    recentActivityList()
+                    <a href="classes/UserController.html#method_recentActivityList" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">476</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">recentActivityList</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_recordAcitivity">
-        recordAcitivity()
-        <a href="classes/UserController.html#method_recordAcitivity" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">532</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_recordAcitivity">
+                    recordAcitivity()
+                    <a href="classes/UserController.html#method_recordAcitivity" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">532</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">record user activities</p>
+                <p class="phpdocumentor-summary">record user activities</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">recordAcitivity</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\type">type</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\type">type</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$empid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$refno</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\type">type</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type"><abbr
+                                title="\type">type</abbr></span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description"></section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$empid</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\type">type</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                        <span class="phpdocumentor-signature__argument__name">$empid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type"><abbr
+                                title="\type">type</abbr></span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description"></section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$refno</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$refno</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_recordFavorite">
-        recordFavorite()
-        <a href="classes/UserController.html#method_recordFavorite" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">545</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_recordFavorite">
+                    recordFavorite()
+                    <a href="classes/UserController.html#method_recordFavorite" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">545</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">record selected favorite quick shortcuts</p>
+                <p class="phpdocumentor-summary">record selected favorite quick shortcuts</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">recordFavorite</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\type">type</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\type">type</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$empid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\type">type</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\type">type</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type"><abbr
+                                title="\type">type</abbr></span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description"></section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$empid</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\type">type</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                        <span class="phpdocumentor-signature__argument__name">$empid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type"><abbr
+                                title="\type">type</abbr></span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description"></section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\type">type</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                        <span class="phpdocumentor-signature__argument__name">$type</span>
+                        : <span class="phpdocumentor-signature__argument__return-type"><abbr
+                                title="\type">type</abbr></span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description"></section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_recordLastUser">
-        recordLastUser()
-        <a href="classes/UserController.html#method_recordLastUser" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">925</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_recordLastUser">
+                    recordLastUser()
+                    <a href="classes/UserController.html#method_recordLastUser" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">925</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Job Current User</p>
+                <p class="phpdocumentor-summary">Job Current User</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">recordLastUser</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>function : Record Job current user. Run this function from footer.php every 5 minutes
-parameter: none
-type     : auto run
-script   : footer.php
-return   : none</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>function : Record Job current user. Run this function from footer.php every 5 minutes
+                        parameter: none
+                        type : auto run
+                        script : footer.php
+                        return : none</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_remoteAccountDataTable">
-        remoteAccountDataTable()
-        <a href="classes/UserController.html#method_remoteAccountDataTable" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1381</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_remoteAccountDataTable">
+                    remoteAccountDataTable()
+                    <a href="classes/UserController.html#method_remoteAccountDataTable" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1381</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Remote Office List DataTable</p>
+                <p class="phpdocumentor-summary">Remote Office List DataTable</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">remoteAccountDataTable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_remoteAccountList">
-        remoteAccountList()
-        <a href="classes/UserController.html#method_remoteAccountList" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1364</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_remoteAccountList">
+                    remoteAccountList()
+                    <a href="classes/UserController.html#method_remoteAccountList" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1364</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Remote Office List Account</p>
+                <p class="phpdocumentor-summary">Remote Office List Account</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">remoteAccountList</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_unlockAccount">
-        unlockAccount()
-        <a href="classes/UserController.html#method_unlockAccount" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">128</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_unlockAccount">
+                    unlockAccount()
+                    <a href="classes/UserController.html#method_unlockAccount" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">128</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">unlockAccount</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_urlAccessRights">
-        urlAccessRights()
-        <a href="classes/UserController.html#method_urlAccessRights" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">860</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_urlAccessRights">
+                    urlAccessRights()
+                    <a href="classes/UserController.html#method_urlAccessRights" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">860</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">urlAccessRights</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menu_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$menu_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$menu_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_urlAccessRightsV2">
-        urlAccessRightsV2()
-        <a href="classes/UserController.html#method_urlAccessRightsV2" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">878</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_urlAccessRightsV2">
+                    urlAccessRightsV2()
+                    <a href="classes/UserController.html#method_urlAccessRightsV2" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">878</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">urlAccessRightsV2</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menu_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$menu_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
+                        <span class="phpdocumentor-signature__argument__name">$menu_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$type</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_userLogout">
-        userLogout()
-        <a href="classes/UserController.html#method_userLogout" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">403</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_userLogout">
+                    userLogout()
+                    <a href="classes/UserController.html#method_userLogout" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">403</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">logout user</p>
+                <p class="phpdocumentor-summary">logout user</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">userLogout</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkUserLoginWithSecurity">
-        checkUserLoginWithSecurity()
-        <a href="classes/UserController.html#method_checkUserLoginWithSecurity" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">249</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkUserLoginWithSecurity">
+                    checkUserLoginWithSecurity()
+                    <a href="classes/UserController.html#method_checkUserLoginWithSecurity" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">249</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">check login user with security code, the user has failed to login more than 3 times</p>
+                <p class="phpdocumentor-summary">check login user with security code, the user has failed to login more
+                    than 3 times</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">checkUserLoginWithSecurity</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkUserLoginWOSecurity">
-        checkUserLoginWOSecurity()
-        <a href="classes/UserController.html#method_checkUserLoginWOSecurity" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">186</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkUserLoginWOSecurity">
+                    checkUserLoginWOSecurity()
+                    <a href="classes/UserController.html#method_checkUserLoginWOSecurity" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">186</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">check login user without security code</p>
+                <p class="phpdocumentor-summary">check login user without security code</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">checkUserLoginWOSecurity</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_countLoginAttemp">
-        countLoginAttemp()
-        <a href="classes/UserController.html#method_countLoginAttemp" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">118</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_countLoginAttemp">
+                    countLoginAttemp()
+                    <a href="classes/UserController.html#method_countLoginAttemp" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">118</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">countLoginAttemp</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$par_user_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$par_user_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$par_user_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_forceLoginUser">
-        forceLoginUser()
-        <a href="classes/UserController.html#method_forceLoginUser" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1344</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_forceLoginUser">
+                    forceLoginUser()
+                    <a href="classes/UserController.html#method_forceLoginUser" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1344</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">forceLoginUser</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$user_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$user_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_forceLoginUserRo">
-        forceLoginUserRo()
-        <a href="classes/UserController.html#method_forceLoginUserRo" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1479</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_forceLoginUserRo">
+                    forceLoginUserRo()
+                    <a href="classes/UserController.html#method_forceLoginUserRo" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1479</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">forceLoginUserRo</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$user_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$user_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_recordLoginStatus">
-        recordLoginStatus()
-        <a href="classes/UserController.html#method_recordLoginStatus" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/UserController.php"><a href="files/application-controller-usercontroller.html"><abbr title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">100</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_recordLoginStatus">
+                    recordLoginStatus()
+                    <a href="classes/UserController.html#method_recordLoginStatus" class="headerlink"><i
+                            class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/UserController.php"><a
+                            href="files/application-controller-usercontroller.html"><abbr
+                                title="application/controller/UserController.php">UserController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">100</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">recordLoginStatus</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$par_user_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$par_result_bol</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$par_user_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
+                        <span class="phpdocumentor-signature__argument__name">$par_user_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$par_result_bol</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$par_result_bol</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-            </section>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+        </section>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
-    <section class="phpdocumentor-search-results__dialog">
-        <header class="phpdocumentor-search-results__header">
-            <h2 class="phpdocumentor-search-results__title">Search results</h2>
-            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
-        </header>
-        <section class="phpdocumentor-search-results__body">
-            <ul class="phpdocumentor-search-results__entries"></ul>
+    <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+        <section class="phpdocumentor-search-results__dialog">
+            <header class="phpdocumentor-search-results__header">
+                <h2 class="phpdocumentor-search-results__title">Search results</h2>
+                <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+            </header>
+            <section class="phpdocumentor-search-results__body">
+                <ul class="phpdocumentor-search-results__entries"></ul>
+            </section>
         </section>
     </section>
-</section>
-            </div>
-        </div>
-        <a href="classes/UserController.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+</div>
+</div>
+<a href="classes/UserController.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
-    </main>
-
-    <script>
-        cssVars({});
-    </script>
-</body>
-</html>
+<?php require('../layouts/footer.html'); ?>

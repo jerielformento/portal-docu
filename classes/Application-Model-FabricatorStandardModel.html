@@ -1,1670 +1,1700 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>IDSPORTAL DOCU</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="../">
-    <link rel="icon" href="images/favicon.ico"/>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/template.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
-                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
-        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
-        <script src="js/search.js"></script>
-        <script defer src="js/searchIndex.js"></script>
-    </head>
-<body id="top">
-    <header class="phpdocumentor-header phpdocumentor-section">
-    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">IDSPORTAL DOCU</a></h1>
-    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
-    <label class="phpdocumentor-header__menu-icon" for="menu-button">
-        <i class="fas fa-bars"></i>
-    </label>
-    <section data-search-form class="phpdocumentor-search">
-    <label>
-        <span class="visually-hidden">Search for</span>
-        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
-            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
-        </svg>
-        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
-    </label>
-</section>
+<?php require('../layouts/header.html'); ?>
 
-    <nav class="phpdocumentor-topnav">
-    <ul class="phpdocumentor-topnav__menu">
-        </ul>
-</nav>
-</header>
-
-    <main class="phpdocumentor">
-        <div class="phpdocumentor-section">
-            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
-<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
-    Menu
-</label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/application.html"><abbr title="\Application">Application</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/application-controller.html"><abbr title="\Application\Controller">Controller</abbr></a></li>
-                                            <li><a href="namespaces/application-model.html"><abbr title="\Application\Model">Model</abbr></a></li>
-                                            <li><a href="namespaces/application-views.html"><abbr title="\Application\Views">Views</abbr></a></li>
-                                    </ul>
-                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/connect.html"><abbr title="\Connect">Connect</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                    </ul>
-                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/core.html"><abbr title="\Core">Core</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/core-init.html"><abbr title="\Core\init">init</abbr></a></li>
-                                    </ul>
-                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/library.html"><abbr title="\Library">Library</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                    </ul>
-                        </section>
-
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Default.html"><abbr title="\Default">Default</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/AccountsManager.html"><abbr title="\AccountsManager">AccountsManager</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/BoltCheck.html"><abbr title="\BoltCheck">BoltCheck</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/CDLogs.html"><abbr title="\CDLogs">CDLogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Dashboard.html"><abbr title="\Dashboard">Dashboard</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/DesignDrawingLog.html"><abbr title="\DesignDrawingLog">DesignDrawingLog</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/DetailedIn.html"><abbr title="\DetailedIn">DetailedIn</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/ENGQRDrawingMonitoring.html"><abbr title="\ENGQRDrawingMonitoring">ENGQRDrawingMonitoring</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Employee201File.html"><abbr title="\Employee201File">Employee201File</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/EPRP.html"><abbr title="\EPRP">EPRP</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/FabricatorStandard.html"><abbr title="\FabricatorStandard">FabricatorStandard</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/GizaDepartment.html"><abbr title="\GizaDepartment">GizaDepartment</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/HRMSMemoContactInfo.html"><abbr title="\HRMSMemoContactInfo">HRMSMemoContactInfo</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/InhouseHourMonitoring.html"><abbr title="\InhouseHourMonitoring">InhouseHourMonitoring</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Ipap.html"><abbr title="\Ipap">Ipap</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/CanamJob.html"><abbr title="\CanamJob">CanamJob</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Job.html"><abbr title="\Job">Job</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Late.html"><abbr title="\Late">Late</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Leave.html"><abbr title="\Leave">Leave</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/JobLogs.html"><abbr title="\JobLogs">JobLogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Manpower.html"><abbr title="\Manpower">Manpower</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Memorandum.html"><abbr title="\Memorandum">Memorandum</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Menu.html"><abbr title="\Menu">Menu</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/OpenJobs.html"><abbr title="\OpenJobs">OpenJobs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Reports.html"><abbr title="\Reports">Reports</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/RFILogs.html"><abbr title="\RFILogs">RFILogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/RFQ.html"><abbr title="\RFQ">RFQ</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/ROM.html"><abbr title="\ROM">ROM</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/RootCause.html"><abbr title="\RootCause">RootCause</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/RORating.html"><abbr title="\RORating">RORating</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/DrawingLog.html"><abbr title="\DrawingLog">DrawingLog</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/SOV.html"><abbr title="\SOV">SOV</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/StatusReport.html"><abbr title="\StatusReport">StatusReport</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/TimeSheet.html"><abbr title="\TimeSheet">TimeSheet</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/TransmittalLogs.html"><abbr title="\TransmittalLogs">TransmittalLogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Reimbursement.html"><abbr title="\Reimbursement">Reimbursement</abbr></a></h3>
-                        </section>
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
-                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
-    </section>
-
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
-    </section>
-</aside>
-
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/application.html">Application</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/application-model.html">Model</a></li>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+    <ul class="phpdocumentor-breadcrumbs">
+        <li class="phpdocumentor-breadcrumb"><a href="namespaces/application.html">Application</a></li>
+        <li class="phpdocumentor-breadcrumb"><a href="namespaces/application-model.html">Model</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    FabricatorStandardModel
+            FabricatorStandardModel
 
-        <span class="phpdocumentor-element__extends">
-        extends <abbr title="\Application\Model\SupportClass">SupportClass</abbr>
-    </span>
-    
+            <span class="phpdocumentor-element__extends">
+                extends <abbr title="\Application\Model\SupportClass">SupportClass</abbr>
+            </span>
+
             <div class="phpdocumentor-element__package">
-            in package
-            <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/FabricatorStandard.html">FabricatorStandard</a></li>
-                            </ul>
-        </div>
-    
-    
-    </h2>
+                in package
+                <ul class="phpdocumentor-breadcrumbs">
+                    <li class="phpdocumentor-breadcrumb"><a
+                            href="packages/FabricatorStandard.html">FabricatorStandard</a></li>
+                </ul>
+            </div>
+
+
+        </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">26</span>
-</aside>
+            <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a
+                    href="files/application-model-fabricatorstandardmodel.html"><abbr
+                        title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">26</span>
+        </aside>
 
-            <p class="phpdocumentor-summary">Fabricator Standard Model</p>
+        <p class="phpdocumentor-summary">Fabricator Standard Model</p>
 
-    <section class="phpdocumentor-description"><p>This object is for Fabricator Standard. Each fabricator has file attachments that are uploaded to Dropbox, using Dropbox API.
-It's intended for all database activities of Employee 201 File such as SELECT, UPDATE, DELETE and INSERT.</p>
-<p>Datatabase Connected: idsporta_1dsP0rt4l</p>
-</section>
-
-
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">example</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"></section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">filesource</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>/home/jojo/WebServer/portal_docu_files/application/model/FabricatorStandardModel.php</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-FabricatorStandardModel.html"><abbr title="\Application\Model\FabricatorStandardModel">FabricatorStandardModel</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">source</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"></section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">link</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        <a class="phpdocumentor-tag-link" href="https://www.idsincportal.com/index.php?act=fabricator-standard&amp;menu_uid=118"> https://www.idsincportal.com/index.php?act=fabricator-standard&amp;menu_uid=118 </a>
-                    
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">since</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>January 2018</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">author</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Jojo De Jesus <a href="mailto:jojo.webdeveloper@gmail.com">jojo.webdeveloper@gmail.com</a></p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">copyright</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Copyright (c) 2015 - 2021, Isometric Diagonal Scheme, Inc.</p>
-</section>
-
-                                    </dd>
-                        </dl>
+        <section class="phpdocumentor-description">
+            <p>This object is for Fabricator Standard. Each fabricator has file attachments that are uploaded to
+                Dropbox, using Dropbox API.
+                It's intended for all database activities of Employee 201 File such as SELECT, UPDATE, DELETE and
+                INSERT.</p>
+            <p>Datatabase Connected: idsporta_1dsP0rt4l</p>
+        </section>
 
 
+        <h5 class="phpdocumentor-tag-list__heading" id="tags">
+            Tags
+            <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        </h5>
+        <dl class="phpdocumentor-tag-list">
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">example</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description"></section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">filesource</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>/home/jojo/WebServer/portal_docu_files/application/model/FabricatorStandardModel.php</p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">see</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+                <span class="phpdocumentor-tag-link"><a
+                        href="classes/Application-Model-FabricatorStandardModel.html"><abbr
+                            title="\Application\Model\FabricatorStandardModel">FabricatorStandardModel</abbr></a></span>
+
+                <section class="phpdocumentor-description"></section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">source</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description"></section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">link</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+                <a class="phpdocumentor-tag-link"
+                    href="https://www.idsincportal.com/index.php?act=fabricator-standard&amp;menu_uid=118">
+                    https://www.idsincportal.com/index.php?act=fabricator-standard&amp;menu_uid=118 </a>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">since</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>January 2018</p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">author</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>Jojo De Jesus <a href="mailto:jojo.webdeveloper@gmail.com">jojo.webdeveloper@gmail.com</a></p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">copyright</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>Copyright (c) 2015 - 2021, Isometric Diagonal Scheme, Inc.</p>
+                </section>
+
+            </dd>
+        </dl>
 
 
 
 
-<h3 id="toc">
-    Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
 
-<dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_deleteContact">deleteContact()</a>
-    <span>
-                        &nbsp;: void    </span>
-</dt>
-<dd>Delete Fabricator Standard Contact Personnel Or Remote Offices Personnel Information</dd>
+
+        <h3 id="toc">
+            Table of Contents
+            <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+
+        <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+                <a
+                    href="classes/Application-Model-FabricatorStandardModel.html#method_deleteContact">deleteContact()</a>
+                <span>
+                    &nbsp;: void </span>
+            </dt>
+            <dd>Delete Fabricator Standard Contact Personnel Or Remote Offices Personnel Information</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_deleteFabProcess">deleteFabProcess()</a>
-    <span>
-                        &nbsp;: void    </span>
-</dt>
-<dd>Delete Fabricator Standard Information</dd>
+                <a
+                    href="classes/Application-Model-FabricatorStandardModel.html#method_deleteFabProcess">deleteFabProcess()</a>
+                <span>
+                    &nbsp;: void </span>
+            </dt>
+            <dd>Delete Fabricator Standard Information</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_deleteFileRow">deleteFileRow()</a>
-    <span>
-                        &nbsp;: void    </span>
-</dt>
-<dd>Delete file information of uploaded file in dropbox.</dd>
+                <a
+                    href="classes/Application-Model-FabricatorStandardModel.html#method_deleteFileRow">deleteFileRow()</a>
+                <span>
+                    &nbsp;: void </span>
+            </dt>
+            <dd>Delete file information of uploaded file in dropbox.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_deleteRow">deleteRow()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Mark as a deleted row of Fabricator Standard</dd>
+                <a href="classes/Application-Model-FabricatorStandardModel.html#method_deleteRow">deleteRow()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Mark as a deleted row of Fabricator Standard</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_getFabricatorContactList">getFabricatorContactList()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>List of Fabricator Standard Contact Personnel from the database</dd>
+                <a
+                    href="classes/Application-Model-FabricatorStandardModel.html#method_getFabricatorContactList">getFabricatorContactList()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>List of Fabricator Standard Contact Personnel from the database</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_getFabricatorDownloadLogsList">getFabricatorDownloadLogsList()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Load download file logs activity as Datatable, for version 2 downloadLogQueryV2() method</dd>
+                <a
+                    href="classes/Application-Model-FabricatorStandardModel.html#method_getFabricatorDownloadLogsList">getFabricatorDownloadLogsList()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Load download file logs activity as Datatable, for version 2 downloadLogQueryV2() method</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_getFabricatorStandardList">getFabricatorStandardList()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>List of Fabricator Standard from the database</dd>
+                <a
+                    href="classes/Application-Model-FabricatorStandardModel.html#method_getFabricatorStandardList">getFabricatorStandardList()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>List of Fabricator Standard from the database</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_getFabricatorStandardListRestricted">getFabricatorStandardListRestricted()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>List of Fabricator Standard from the database, version 2</dd>
+                <a
+                    href="classes/Application-Model-FabricatorStandardModel.html#method_getFabricatorStandardListRestricted">getFabricatorStandardListRestricted()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>List of Fabricator Standard from the database, version 2</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_inserDownloadLog">inserDownloadLog()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Insert File Downloaded Logs</dd>
+                <a
+                    href="classes/Application-Model-FabricatorStandardModel.html#method_inserDownloadLog">inserDownloadLog()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Insert File Downloaded Logs</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_insertUpdate">insertUpdate()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Handsontable plugins insert or update row command</dd>
+                <a href="classes/Application-Model-FabricatorStandardModel.html#method_insertUpdate">insertUpdate()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Handsontable plugins insert or update row command</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_loadFabStandardSummary">loadFabStandardSummary()</a>
-    <span>
-                        &nbsp;: void    </span>
-</dt>
-<dd>Load Fabricator Summary Log Details</dd>
+                <a
+                    href="classes/Application-Model-FabricatorStandardModel.html#method_loadFabStandardSummary">loadFabStandardSummary()</a>
+                <span>
+                    &nbsp;: void </span>
+            </dt>
+            <dd>Load Fabricator Summary Log Details</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_loadFabUpdateLog">loadFabUpdateLog()</a>
-    <span>
-                        &nbsp;: void    </span>
-</dt>
-<dd>Load Fabricator Logs</dd>
+                <a
+                    href="classes/Application-Model-FabricatorStandardModel.html#method_loadFabUpdateLog">loadFabUpdateLog()</a>
+                <span>
+                    &nbsp;: void </span>
+            </dt>
+            <dd>Load Fabricator Logs</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_removeRow">removeRow()</a>
-    <span>
-                        &nbsp;: void    </span>
-</dt>
-<dd>Handsontable plugins remove row command</dd>
+                <a href="classes/Application-Model-FabricatorStandardModel.html#method_removeRow">removeRow()</a>
+                <span>
+                    &nbsp;: void </span>
+            </dt>
+            <dd>Handsontable plugins remove row command</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveCompanyFolder">saveCompanyFolder()</a>
-    <span>
-                        &nbsp;: void    </span>
-</dt>
-<dd>Save created a directory information</dd>
+                <a
+                    href="classes/Application-Model-FabricatorStandardModel.html#method_saveCompanyFolder">saveCompanyFolder()</a>
+                <span>
+                    &nbsp;: void </span>
+            </dt>
+            <dd>Save created a directory information</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveContactRequest">saveContactRequest()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Save or Update Fabricator Standard Contact Personnel Information</dd>
+                <a
+                    href="classes/Application-Model-FabricatorStandardModel.html#method_saveContactRequest">saveContactRequest()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Save or Update Fabricator Standard Contact Personnel Information</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveContactRORequest">saveContactRORequest()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Save or Update Fabricator Standard Remote Offices</dd>
+                <a
+                    href="classes/Application-Model-FabricatorStandardModel.html#method_saveContactRORequest">saveContactRORequest()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Save or Update Fabricator Standard Remote Offices</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveCreatedFolder">saveCreatedFolder()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Save Created a directory information inside the fabricator standard.</dd>
+                <a
+                    href="classes/Application-Model-FabricatorStandardModel.html#method_saveCreatedFolder">saveCreatedFolder()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Save Created a directory information inside the fabricator standard.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveFabLogs">saveFabLogs()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Load, Save, and Update Fabricator Summary Log Details</dd>
+                <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveFabLogs">saveFabLogs()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Load, Save, and Update Fabricator Summary Log Details</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveFile">saveFile()</a>
-    <span>
-                        &nbsp;: void    </span>
-</dt>
-<dd>Save/Update file information of uploaded file in dropbox.</dd>
+                <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveFile">saveFile()</a>
+                <span>
+                    &nbsp;: void </span>
+            </dt>
+            <dd>Save/Update file information of uploaded file in dropbox.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveRequest">saveRequest()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Save or Update Fabricator Standard Information</dd>
+                <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveRequest">saveRequest()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Save or Update Fabricator Standard Information</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveUpdateLogs">saveUpdateLogs()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Load Fabricator Logs</dd>
+                <a
+                    href="classes/Application-Model-FabricatorStandardModel.html#method_saveUpdateLogs">saveUpdateLogs()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Load Fabricator Logs</dd>
 
         </dl>
 
 
 
-        
 
-        
 
-            <section class="phpdocumentor-methods">
-        <h3 class="phpdocumentor-elements__header" id="methods">
-            Methods
-            <a href="classes/Application-Model-FabricatorStandardModel.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
-        </h3>
-                    <article
-        class="phpdocumentor-element
+
+
+        <section class="phpdocumentor-methods">
+            <h3 class="phpdocumentor-elements__header" id="methods">
+                Methods
+                <a href="classes/Application-Model-FabricatorStandardModel.html#methods" class="headerlink"><i
+                        class="fas fa-link"></i></a>
+            </h3>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_deleteContact">
-        deleteContact()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_deleteContact" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1549</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_deleteContact">
+                    deleteContact()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_deleteContact"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1549</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Delete Fabricator Standard Contact Personnel Or Remote Offices Personnel Information</p>
+                <p class="phpdocumentor-summary">Delete Fabricator Standard Contact Personnel Or Remote Offices
+                    Personnel Information</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">deleteContact</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: TBL_REMOTE_EMPLOYEES, TBL_FAB_PM</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: TBL_REMOTE_EMPLOYEES, TBL_FAB_PM</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Fabricator Standad ID row</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Fabricator Standad ID row</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>ro = Remote Office, fab = Fabricator's COntact Personnel</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$type</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>ro = Remote Office, fab = Fabricator's COntact Personnel</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">void</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_deleteFabProcess">
-        deleteFabProcess()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_deleteFabProcess" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1526</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_deleteFabProcess">
+                    deleteFabProcess()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_deleteFabProcess"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1526</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Delete Fabricator Standard Information</p>
+                <p class="phpdocumentor-summary">Delete Fabricator Standard Information</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">deleteFabProcess</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: TBL_FAB_STANDARD</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: TBL_FAB_STANDARD</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Fabricator Standad ID row</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Fabricator Standad ID row</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">void</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_deleteFileRow">
-        deleteFileRow()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_deleteFileRow" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">429</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_deleteFileRow">
+                    deleteFileRow()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_deleteFileRow"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">429</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Delete file information of uploaded file in dropbox.</p>
+                <p class="phpdocumentor-summary">Delete file information of uploaded file in dropbox.</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">deleteFileRow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: TBL_FAB_DETAILS</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: TBL_FAB_DETAILS</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>File Parent ID</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>File Parent ID</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">void</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_deleteRow">
-        deleteRow()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_deleteRow" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1223</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_deleteRow">
+                    deleteRow()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_deleteRow"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1223</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Mark as a deleted row of Fabricator Standard</p>
+                <p class="phpdocumentor-summary">Mark as a deleted row of Fabricator Standard</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">deleteRow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: TBL_FAB_STANDARD</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: TBL_FAB_STANDARD</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Fabricator Standard row ID</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Fabricator Standard row ID</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>row id as json encode format</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>row id as json encode format</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getFabricatorContactList">
-        getFabricatorContactList()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_getFabricatorContactList" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">127</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getFabricatorContactList">
+                    getFabricatorContactList()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_getFabricatorContactList"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">127</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">List of Fabricator Standard Contact Personnel from the database</p>
+                <p class="phpdocumentor-summary">List of Fabricator Standard Contact Personnel from the database</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getFabricatorContactList</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sql_where</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sql_where2</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order_by</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Show Fabricator Standard Contact Personnel from id_fab_pm table.</p>
-<p>Table Connected: id_fab_standard</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Show Fabricator Standard Contact Personnel from id_fab_pm table.</p>
+                    <p>Table Connected: id_fab_standard</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$sql_where</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Query where statement value</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$sql_where</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Query where statement value</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$sql_where2</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Query extension where statement value</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$sql_where2</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Query extension where statement value</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$order_by</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Query order by statement value</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$order_by</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                        = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Query order by statement value</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>multiple recordset</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>multiple recordset</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getFabricatorDownloadLogsList">
-        getFabricatorDownloadLogsList()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_getFabricatorDownloadLogsList" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1298</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getFabricatorDownloadLogsList">
+                    getFabricatorDownloadLogsList()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_getFabricatorDownloadLogsList"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1298</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Load download file logs activity as Datatable, for version 2 downloadLogQueryV2() method</p>
+                <p class="phpdocumentor-summary">Load download file logs activity as Datatable, for version 2
+                    downloadLogQueryV2() method</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getFabricatorDownloadLogsList</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sql_where</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$count</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fab_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Load the data table of download logs summary for version 2 downloadLogQueryV2() method</p>
-<p>Table Connected: uty_user_logs, im_employees, id_fab_standard</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Load the data table of download logs summary for version 2 downloadLogQueryV2() method</p>
+                    <p>Table Connected: uty_user_logs, im_employees, id_fab_standard</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$sql_where</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Query where statement value</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$sql_where</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Query where statement value</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$count</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>If Count = return only the number of rows else Recordset</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$count</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>If Count = return only the number of rows else Recordset</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$fab_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Parent or Child relation to table structure</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$fab_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Parent or Child relation to table structure</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">todo</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>need to refactor query for optimization</p>
-</section>
 
-                                    </dd>
-                        </dl>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">todo</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>multiple recordset</p>
-</section>
+                        <section class="phpdocumentor-description">
+                            <p>need to refactor query for optimization</p>
+                        </section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>multiple recordset</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getFabricatorStandardList">
-        getFabricatorStandardList()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_getFabricatorStandardList" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">41</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getFabricatorStandardList">
+                    getFabricatorStandardList()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_getFabricatorStandardList"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">41</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">List of Fabricator Standard from the database</p>
+                <p class="phpdocumentor-summary">List of Fabricator Standard from the database</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getFabricatorStandardList</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sql_where</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order_by</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Show Fabricator Standard List from id_fab_standarnd table. Or show the just total Fabricator Standard List available in the table.</p>
-<p>Table Connected: id_fab_standard</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Show Fabricator Standard List from id_fab_standarnd table. Or show the just total Fabricator
+                        Standard List available in the table.</p>
+                    <p>Table Connected: id_fab_standard</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$sql_where</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Query where statement value</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$sql_where</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Query where statement value</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$order_by</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Query order by statement value</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$order_by</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                        = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Query order by statement value</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>multiple recordset</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>multiple recordset</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getFabricatorStandardListRestricted">
-        getFabricatorStandardListRestricted()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_getFabricatorStandardListRestricted" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">213</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getFabricatorStandardListRestricted">
+                    getFabricatorStandardListRestricted()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_getFabricatorStandardListRestricted"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">213</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">List of Fabricator Standard from the database, version 2</p>
+                <p class="phpdocumentor-summary">List of Fabricator Standard from the database, version 2</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getFabricatorStandardListRestricted</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sql_where</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$count</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Show Fabricator Standard List from id_fab_standarnd table. Or show the just total Fabricator Standard List available in the table.</p>
-<p>Table Connected: id_fab_standard</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Show Fabricator Standard List from id_fab_standarnd table. Or show the just total Fabricator
+                        Standard List available in the table.</p>
+                    <p>Table Connected: id_fab_standard</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$sql_where</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Query where statement value</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$sql_where</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Query where statement value</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$count</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$count</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>multiple recordset</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>multiple recordset</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_inserDownloadLog">
-        inserDownloadLog()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_inserDownloadLog" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1248</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_inserDownloadLog">
+                    inserDownloadLog()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_inserDownloadLog"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1248</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Insert File Downloaded Logs</p>
+                <p class="phpdocumentor-summary">Insert File Downloaded Logs</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">inserDownloadLog</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fab_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: TBL_FAB_STANDARD</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: TBL_FAB_STANDARD</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$fab_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Fabricator Standard Row ID</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$fab_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Fabricator Standard Row ID</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Fabricator Standard Detail Row ID</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Fabricator Standard Detail Row ID</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Parent or Child relation to table structure</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$type</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Parent or Child relation to table structure</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>row id as json encode format</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>row id as json encode format</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_insertUpdate">
-        insertUpdate()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_insertUpdate" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">889</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_insertUpdate">
+                    insertUpdate()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_insertUpdate"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">889</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Handsontable plugins insert or update row command</p>
+                <p class="phpdocumentor-summary">Handsontable plugins insert or update row command</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">insertUpdate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$last_sequence</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$new_sequence</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>This method will send the insert or update command from Handsontable plugins</p>
-<p>Table Connected: TBL_FAB_SUMMARY</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>This method will send the insert or update command from Handsontable plugins</p>
+                    <p>Table Connected: TBL_FAB_SUMMARY</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$last_sequence</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>original sequence number before inserted row</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$last_sequence</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>original sequence number before inserted row</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$new_sequence</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>adjusted sequence number based from last inserted row</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$new_sequence</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>adjusted sequence number based from last inserted row</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Job ID</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Job ID</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>insert or update</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$type</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>insert or update</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>json encode format</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>json encode format</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_loadFabStandardSummary">
-        loadFabStandardSummary()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_loadFabStandardSummary" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">456</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_loadFabStandardSummary">
+                    loadFabStandardSummary()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_loadFabStandardSummary"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">456</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Load Fabricator Summary Log Details</p>
+                <p class="phpdocumentor-summary">Load Fabricator Summary Log Details</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">loadFabStandardSummary</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: TBL_FAB_SUMMARY</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: TBL_FAB_SUMMARY</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Fabricator Standard ID parameter</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Fabricator Standard ID parameter</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">void</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_loadFabUpdateLog">
-        loadFabUpdateLog()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_loadFabUpdateLog" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">494</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_loadFabUpdateLog">
+                    loadFabUpdateLog()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_loadFabUpdateLog"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">494</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Load Fabricator Logs</p>
+                <p class="phpdocumentor-summary">Load Fabricator Logs</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">loadFabUpdateLog</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: TBL_FAB_UPDATE_LOGS</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: TBL_FAB_UPDATE_LOGS</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Fabricator Standard ID parameter</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Fabricator Standard ID parameter</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">void</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_removeRow">
-        removeRow()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_removeRow" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">940</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_removeRow">
+                    removeRow()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_removeRow"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">940</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Handsontable plugins remove row command</p>
+                <p class="phpdocumentor-summary">Handsontable plugins remove row command</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">removeRow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: TBL_FAB_SUMMARY</p>
-<p>This method will send the remove command from Handsontable plugins</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: TBL_FAB_SUMMARY</p>
+                    <p>This method will send the remove command from Handsontable plugins</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$rowId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Sequence No.</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$rowId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Sequence No.</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Fabricator Standard Row ID</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Fabricator Standard Row ID</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">void</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_saveCompanyFolder">
-        saveCompanyFolder()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveCompanyFolder" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">341</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_saveCompanyFolder">
+                    saveCompanyFolder()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveCompanyFolder"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">341</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Save created a directory information</p>
+                <p class="phpdocumentor-summary">Save created a directory information</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">saveCompanyFolder</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fabId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$folderName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: TBL_FAB_STANDARD</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: TBL_FAB_STANDARD</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$fabId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>POST http method</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$fabId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>POST http method</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$folderName</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Dropbox URL generated by Dropbox API</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$folderName</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Dropbox URL generated by Dropbox API</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">void</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_saveContactRequest">
-        saveContactRequest()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveContactRequest" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1056</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_saveContactRequest">
+                    saveContactRequest()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveContactRequest"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1056</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Save or Update Fabricator Standard Contact Personnel Information</p>
+                <p class="phpdocumentor-summary">Save or Update Fabricator Standard Contact Personnel Information</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">saveContactRequest</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arrayPost</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: TBL_FAB_PM</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: TBL_FAB_PM</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$arrayPost</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>POST http method</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$arrayPost</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>POST http method</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>row id as json encode format</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>row id as json encode format</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_saveContactRORequest">
-        saveContactRORequest()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveContactRORequest" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1138</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_saveContactRORequest">
+                    saveContactRORequest()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveContactRORequest"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1138</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Save or Update Fabricator Standard Remote Offices</p>
+                <p class="phpdocumentor-summary">Save or Update Fabricator Standard Remote Offices</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">saveContactRORequest</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arrayPost</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: TBL_REMOTE_EMPLOYEES</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: TBL_REMOTE_EMPLOYEES</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$arrayPost</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>POST http method</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$arrayPost</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>POST http method</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>row id as json encode format</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>row id as json encode format</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_saveCreatedFolder">
-        saveCreatedFolder()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveCreatedFolder" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">277</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_saveCreatedFolder">
+                    saveCreatedFolder()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveCreatedFolder"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">277</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Save Created a directory information inside the fabricator standard.</p>
+                <p class="phpdocumentor-summary">Save Created a directory information inside the fabricator standard.
+                </p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">saveCreatedFolder</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arrayPost</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mainId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Save Created a directory  information inside the fabricator standard structure.</p>
-<p>Table Connected: TBL_FAB_DETAILS</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Save Created a directory information inside the fabricator standard structure.</p>
+                    <p>Table Connected: TBL_FAB_DETAILS</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$arrayPost</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>POST http method</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$arrayPost</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>POST http method</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$mainId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Fabricator ID</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$mainId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Fabricator ID</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$rowId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Directory ID</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$rowId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Directory ID</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$action</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Create or Update command</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$action</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Create or Update command</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>multiple recordset</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>multiple recordset</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_saveFabLogs">
-        saveFabLogs()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveFabLogs" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">733</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_saveFabLogs">
+                    saveFabLogs()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveFabLogs"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">733</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Load, Save, and Update Fabricator Summary Log Details</p>
+                <p class="phpdocumentor-summary">Load, Save, and Update Fabricator Summary Log Details</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">saveFabLogs</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arrayPost</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$jobId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: TBL_FAB_SUMMARY</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: TBL_FAB_SUMMARY</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$arrayPost</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>POST http method</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$arrayPost</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>POST http method</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$jobId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Job ID</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$jobId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Job ID</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>json encode format</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>json encode format</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_saveFile">
-        saveFile()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveFile" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">375</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_saveFile">
+                    saveFile()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveFile"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">375</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Save/Update file information of uploaded file in dropbox.</p>
+                <p class="phpdocumentor-summary">Save/Update file information of uploaded file in dropbox.</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">saveFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$orig_file_name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$new_filename</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$size</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: TBL_FAB_DETAILS</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: TBL_FAB_DETAILS</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>File Parent ID</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>File Parent ID</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$orig_file_name</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>File Name</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$orig_file_name</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>File Name</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$new_filename</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Dropbox generated URL by API</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$new_filename</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Dropbox generated URL by API</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Type of File (document or photo)</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$type</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Type of File (document or photo)</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$size</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Size of file</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$size</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Size of file</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">void</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_saveRequest">
-        saveRequest()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveRequest" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">968</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_saveRequest">
+                    saveRequest()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveRequest"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">968</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Save or Update Fabricator Standard Information</p>
+                <p class="phpdocumentor-summary">Save or Update Fabricator Standard Information</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">saveRequest</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arrayPost</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: TBL_FAB_STANDARD</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: TBL_FAB_STANDARD</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$arrayPost</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>POST http method</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$arrayPost</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>POST http method</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>row id as json encode format</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>row id as json encode format</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_saveUpdateLogs">
-        saveUpdateLogs()
-        <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveUpdateLogs" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/model/FabricatorStandardModel.php"><a href="files/application-model-fabricatorstandardmodel.html"><abbr title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">534</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_saveUpdateLogs">
+                    saveUpdateLogs()
+                    <a href="classes/Application-Model-FabricatorStandardModel.html#method_saveUpdateLogs"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/model/FabricatorStandardModel.php"><a
+                            href="files/application-model-fabricatorstandardmodel.html"><abbr
+                                title="application/model/FabricatorStandardModel.php">FabricatorStandardModel.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">534</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Load Fabricator Logs</p>
+                <p class="phpdocumentor-summary">Load Fabricator Logs</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">saveUpdateLogs</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arrayPost</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$jobId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dept</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: TBL_FAB_UPDATE_LOGS</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: TBL_FAB_UPDATE_LOGS</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$arrayPost</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>POST http method</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$arrayPost</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>POST http method</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$jobId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Job ID</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$jobId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Job ID</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$dept</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>QA or Checker</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$dept</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>QA or Checker</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>json encode format</p>
-</section>
 
-    
-</article>
-            </section>
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>json encode format</p>
+                </section>
+
+
+            </article>
+        </section>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
-    <section class="phpdocumentor-search-results__dialog">
-        <header class="phpdocumentor-search-results__header">
-            <h2 class="phpdocumentor-search-results__title">Search results</h2>
-            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
-        </header>
-        <section class="phpdocumentor-search-results__body">
-            <ul class="phpdocumentor-search-results__entries"></ul>
+    <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+        <section class="phpdocumentor-search-results__dialog">
+            <header class="phpdocumentor-search-results__header">
+                <h2 class="phpdocumentor-search-results__title">Search results</h2>
+                <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+            </header>
+            <section class="phpdocumentor-search-results__body">
+                <ul class="phpdocumentor-search-results__entries"></ul>
+            </section>
         </section>
     </section>
-</section>
-            </div>
-        </div>
-        <a href="classes/Application-Model-FabricatorStandardModel.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+</div>
+</div>
+<a href="classes/Application-Model-FabricatorStandardModel.html#top" class="phpdocumentor-back-to-top"><i
+        class="fas fa-chevron-circle-up"></i></a>
 
-    </main>
-
-    <script>
-        cssVars({});
-    </script>
-</body>
-</html>
+<?php require('../layouts/footer.html'); ?>

@@ -1,1367 +1,1381 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>IDSPORTAL DOCU</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="../">
-    <link rel="icon" href="images/favicon.ico"/>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/template.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
-                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
-        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
-        <script src="js/search.js"></script>
-        <script defer src="js/searchIndex.js"></script>
-    </head>
-<body id="top">
-    <header class="phpdocumentor-header phpdocumentor-section">
-    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">IDSPORTAL DOCU</a></h1>
-    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
-    <label class="phpdocumentor-header__menu-icon" for="menu-button">
-        <i class="fas fa-bars"></i>
-    </label>
-    <section data-search-form class="phpdocumentor-search">
-    <label>
-        <span class="visually-hidden">Search for</span>
-        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
-            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
-        </svg>
-        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
-    </label>
-</section>
+<?php require('../layouts/header.html'); ?>
 
-    <nav class="phpdocumentor-topnav">
-    <ul class="phpdocumentor-topnav__menu">
-        </ul>
-</nav>
-</header>
-
-    <main class="phpdocumentor">
-        <div class="phpdocumentor-section">
-            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
-<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
-    Menu
-</label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/application.html"><abbr title="\Application">Application</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/application-controller.html"><abbr title="\Application\Controller">Controller</abbr></a></li>
-                                            <li><a href="namespaces/application-model.html"><abbr title="\Application\Model">Model</abbr></a></li>
-                                            <li><a href="namespaces/application-views.html"><abbr title="\Application\Views">Views</abbr></a></li>
-                                    </ul>
-                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/connect.html"><abbr title="\Connect">Connect</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                    </ul>
-                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/core.html"><abbr title="\Core">Core</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/core-init.html"><abbr title="\Core\init">init</abbr></a></li>
-                                    </ul>
-                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/library.html"><abbr title="\Library">Library</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                    </ul>
-                        </section>
-
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Default.html"><abbr title="\Default">Default</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/AccountsManager.html"><abbr title="\AccountsManager">AccountsManager</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/BoltCheck.html"><abbr title="\BoltCheck">BoltCheck</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/CDLogs.html"><abbr title="\CDLogs">CDLogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Dashboard.html"><abbr title="\Dashboard">Dashboard</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/DesignDrawingLog.html"><abbr title="\DesignDrawingLog">DesignDrawingLog</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/DetailedIn.html"><abbr title="\DetailedIn">DetailedIn</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/ENGQRDrawingMonitoring.html"><abbr title="\ENGQRDrawingMonitoring">ENGQRDrawingMonitoring</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Employee201File.html"><abbr title="\Employee201File">Employee201File</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/EPRP.html"><abbr title="\EPRP">EPRP</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/FabricatorStandard.html"><abbr title="\FabricatorStandard">FabricatorStandard</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/GizaDepartment.html"><abbr title="\GizaDepartment">GizaDepartment</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/HRMSMemoContactInfo.html"><abbr title="\HRMSMemoContactInfo">HRMSMemoContactInfo</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/InhouseHourMonitoring.html"><abbr title="\InhouseHourMonitoring">InhouseHourMonitoring</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Ipap.html"><abbr title="\Ipap">Ipap</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/CanamJob.html"><abbr title="\CanamJob">CanamJob</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Job.html"><abbr title="\Job">Job</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Late.html"><abbr title="\Late">Late</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Leave.html"><abbr title="\Leave">Leave</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/JobLogs.html"><abbr title="\JobLogs">JobLogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Manpower.html"><abbr title="\Manpower">Manpower</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Memorandum.html"><abbr title="\Memorandum">Memorandum</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Menu.html"><abbr title="\Menu">Menu</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/OpenJobs.html"><abbr title="\OpenJobs">OpenJobs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Reports.html"><abbr title="\Reports">Reports</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/RFILogs.html"><abbr title="\RFILogs">RFILogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/RFQ.html"><abbr title="\RFQ">RFQ</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/ROM.html"><abbr title="\ROM">ROM</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/RootCause.html"><abbr title="\RootCause">RootCause</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/RORating.html"><abbr title="\RORating">RORating</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/DrawingLog.html"><abbr title="\DrawingLog">DrawingLog</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/SOV.html"><abbr title="\SOV">SOV</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/StatusReport.html"><abbr title="\StatusReport">StatusReport</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/TimeSheet.html"><abbr title="\TimeSheet">TimeSheet</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/TransmittalLogs.html"><abbr title="\TransmittalLogs">TransmittalLogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Reimbursement.html"><abbr title="\Reimbursement">Reimbursement</abbr></a></h3>
-                        </section>
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
-                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
-    </section>
-
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
-    </section>
-</aside>
-
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/application.html">Application</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/application-controller.html">Controller</a></li>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+    <ul class="phpdocumentor-breadcrumbs">
+        <li class="phpdocumentor-breadcrumb"><a href="namespaces/application.html">Application</a></li>
+        <li class="phpdocumentor-breadcrumb"><a href="namespaces/application-controller.html">Controller</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    DesignDrawingController
+            DesignDrawingController
 
-        <span class="phpdocumentor-element__extends">
-        extends <abbr title="\Application\Controller\SupportClass">SupportClass</abbr>
-    </span>
-    
+            <span class="phpdocumentor-element__extends">
+                extends <abbr title="\Application\Controller\SupportClass">SupportClass</abbr>
+            </span>
+
             <div class="phpdocumentor-element__package">
-            in package
-            <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/DesignDrawingLog.html">DesignDrawingLog</a></li>
-                            </ul>
-        </div>
-    
-    
-    </h2>
+                in package
+                <ul class="phpdocumentor-breadcrumbs">
+                    <li class="phpdocumentor-breadcrumb"><a href="packages/DesignDrawingLog.html">DesignDrawingLog</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DesignDrawingController.php"><a href="files/application-controller-designdrawingcontroller.html"><abbr title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">23</span>
-</aside>
+            <abbr class="phpdocumentor-element-found-in__file"
+                title="application/controller/DesignDrawingController.php"><a
+                    href="files/application-controller-designdrawingcontroller.html"><abbr
+                        title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">23</span>
+        </aside>
 
-            <p class="phpdocumentor-summary">Design Drawing Log Controller</p>
+        <p class="phpdocumentor-summary">Design Drawing Log Controller</p>
 
-    <section class="phpdocumentor-description"><p>This object controller is limited for all activities in Design Drawing Logs</p>
-<p>Datatabase Connected: idsporta_1dsP0rt4l</p>
-</section>
-
-
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">example</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"></section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">filesource</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>/home/jojo/WebServer/portal_docu_files/application/controller/DesignDrawingController.php</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-DesignDrawingModel.html"><abbr title="\Application\Model\DesignDrawingModel">DesignDrawingModel</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">source</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"></section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">link</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        <a class="phpdocumentor-tag-link" href="https://www.idsincportal.com/index.php?act=design-drawing&amp;mode=0&amp;menu_uid=77&amp;uid=1434&amp;cmd=view&amp;jobno=211648"> https://www.idsincportal.com/index.php?act=design-drawing&amp;mode=0&amp;menu_uid=77&amp;uid=1434&amp;cmd=view&amp;jobno=211648 </a>
-                    
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">author</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Jojo De Jesus <a href="mailto:jojo.webdeveloper@gmail.com">jojo.webdeveloper@gmail.com</a></p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">copyright</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Copyright (c) 2015 - 2021, Isometric Diagonal Scheme, Inc.</p>
-</section>
-
-                                    </dd>
-                        </dl>
+        <section class="phpdocumentor-description">
+            <p>This object controller is limited for all activities in Design Drawing Logs</p>
+            <p>Datatabase Connected: idsporta_1dsP0rt4l</p>
+        </section>
 
 
+        <h5 class="phpdocumentor-tag-list__heading" id="tags">
+            Tags
+            <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        </h5>
+        <dl class="phpdocumentor-tag-list">
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">example</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description"></section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">filesource</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>/home/jojo/WebServer/portal_docu_files/application/controller/DesignDrawingController.php</p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">see</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+                <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-DesignDrawingModel.html"><abbr
+                            title="\Application\Model\DesignDrawingModel">DesignDrawingModel</abbr></a></span>
+
+                <section class="phpdocumentor-description"></section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">source</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description"></section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">link</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+                <a class="phpdocumentor-tag-link"
+                    href="https://www.idsincportal.com/index.php?act=design-drawing&amp;mode=0&amp;menu_uid=77&amp;uid=1434&amp;cmd=view&amp;jobno=211648">
+                    https://www.idsincportal.com/index.php?act=design-drawing&amp;mode=0&amp;menu_uid=77&amp;uid=1434&amp;cmd=view&amp;jobno=211648
+                </a>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">author</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>Jojo De Jesus <a href="mailto:jojo.webdeveloper@gmail.com">jojo.webdeveloper@gmail.com</a></p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">copyright</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>Copyright (c) 2015 - 2021, Isometric Diagonal Scheme, Inc.</p>
+                </section>
+
+            </dd>
+        </dl>
 
 
 
 
-<h3 id="toc">
-    Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
 
-<dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-DesignDrawingController.html#method___construct">__construct()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Constructor</dd>
+
+        <h3 id="toc">
+            Table of Contents
+            <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+
+        <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+                <a
+                    href="classes/Application-Controller-DesignDrawingController.html#method___construct">__construct()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Constructor</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-DesignDrawingController.html#method_ajaxLoadStructuralTable">ajaxLoadStructuralTable()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Load Drawing Log entry in JSON format</dd>
+                <a
+                    href="classes/Application-Controller-DesignDrawingController.html#method_ajaxLoadStructuralTable">ajaxLoadStructuralTable()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Load Drawing Log entry in JSON format</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-DesignDrawingController.html#method_ajaxSaveDesignDrawing">ajaxSaveDesignDrawing()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Save Design Drawing Log entry</dd>
+                <a
+                    href="classes/Application-Controller-DesignDrawingController.html#method_ajaxSaveDesignDrawing">ajaxSaveDesignDrawing()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Save Design Drawing Log entry</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-DesignDrawingController.html#method_commandControl">commandControl()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Spreadsheet command control either insert a new row or remove a row.</dd>
+                <a
+                    href="classes/Application-Controller-DesignDrawingController.html#method_commandControl">commandControl()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Spreadsheet command control either insert a new row or remove a row.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-DesignDrawingController.html#method_designDrawing">designDrawing()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Design Drawing Log HTML</dd>
+                <a
+                    href="classes/Application-Controller-DesignDrawingController.html#method_designDrawing">designDrawing()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Design Drawing Log HTML</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-DesignDrawingController.html#method_loadDesignDrawingSheet">loadDesignDrawingSheet()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Load Drawing Log entry to main form spreadsheet</dd>
+                <a
+                    href="classes/Application-Controller-DesignDrawingController.html#method_loadDesignDrawingSheet">loadDesignDrawingSheet()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Load Drawing Log entry to main form spreadsheet</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-DesignDrawingController.html#method_loadStatusHold">loadStatusHold()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Load Hold Status Report in HTML format</dd>
+                <a
+                    href="classes/Application-Controller-DesignDrawingController.html#method_loadStatusHold">loadStatusHold()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Load Hold Status Report in HTML format</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-DesignDrawingController.html#method_loadStatusMonitoring">loadStatusMonitoring()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Load Hold Status Report Monitoring in HTML format</dd>
+                <a
+                    href="classes/Application-Controller-DesignDrawingController.html#method_loadStatusMonitoring">loadStatusMonitoring()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Load Hold Status Report Monitoring in HTML format</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-DesignDrawingController.html#method_saveLogColors">saveLogColors()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Save color of spreadsheet logs</dd>
+                <a
+                    href="classes/Application-Controller-DesignDrawingController.html#method_saveLogColors">saveLogColors()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Save color of spreadsheet logs</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Controller-DesignDrawingController.html#method_createNewRow">createNewRow()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Spreadsheet command control insert a new row</dd>
+                <a
+                    href="classes/Application-Controller-DesignDrawingController.html#method_createNewRow">createNewRow()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Spreadsheet command control insert a new row</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Controller-DesignDrawingController.html#method_getLastSequence">getLastSequence()</a>
-    <span>
-                        &nbsp;: int    </span>
-</dt>
-<dd>Get last sequence number of spreadsheet</dd>
+                <a
+                    href="classes/Application-Controller-DesignDrawingController.html#method_getLastSequence">getLastSequence()</a>
+                <span>
+                    &nbsp;: int </span>
+            </dt>
+            <dd>Get last sequence number of spreadsheet</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Controller-DesignDrawingController.html#method_getRowColor">getRowColor()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Get cell color of spreadsheet version 1</dd>
+                <a
+                    href="classes/Application-Controller-DesignDrawingController.html#method_getRowColor">getRowColor()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Get cell color of spreadsheet version 1</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Controller-DesignDrawingController.html#method_getRowColorRev2">getRowColorRev2()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Get cell color of spreadsheet version 2</dd>
+                <a
+                    href="classes/Application-Controller-DesignDrawingController.html#method_getRowColorRev2">getRowColorRev2()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Get cell color of spreadsheet version 2</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Controller-DesignDrawingController.html#method_removeRow">removeRow()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Spreadsheet command control remove a row</dd>
+                <a href="classes/Application-Controller-DesignDrawingController.html#method_removeRow">removeRow()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Spreadsheet command control remove a row</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Controller-DesignDrawingController.html#method_updateColor">updateColor()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Update color of spreadsheet logs</dd>
+                <a
+                    href="classes/Application-Controller-DesignDrawingController.html#method_updateColor">updateColor()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Update color of spreadsheet logs</dd>
 
         </dl>
 
 
 
-        
 
-        
 
-            <section class="phpdocumentor-methods">
-        <h3 class="phpdocumentor-elements__header" id="methods">
-            Methods
-            <a href="classes/Application-Controller-DesignDrawingController.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
-        </h3>
-                    <article
-        class="phpdocumentor-element
+
+
+        <section class="phpdocumentor-methods">
+            <h3 class="phpdocumentor-elements__header" id="methods">
+                Methods
+                <a href="classes/Application-Controller-DesignDrawingController.html#methods" class="headerlink"><i
+                        class="fas fa-link"></i></a>
+            </h3>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/Application-Controller-DesignDrawingController.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DesignDrawingController.php"><a href="files/application-controller-designdrawingcontroller.html"><abbr title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">37</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method___construct">
+                    __construct()
+                    <a href="classes/Application-Controller-DesignDrawingController.html#method___construct"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DesignDrawingController.php"><a
+                            href="files/application-controller-designdrawingcontroller.html"><abbr
+                                title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">37</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Constructor</p>
+                <p class="phpdocumentor-summary">Constructor</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Assign the other objects to global properties</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Assign the other objects to global properties</p>
+                </section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Controller-UserController.html"><abbr title="\Application\Controller\UserController">UserController</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-UserModel.html"><abbr title="\Application\Model\UserModel">UserModel</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-Common-CommonModel.html"><abbr title="\Application\Model\Common\CommonModel">CommonModel</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="classes/Application-Controller-UserController.html"><abbr
+                                    title="\Application\Controller\UserController">UserController</abbr></a></span>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-JobModel.html"><abbr title="\Application\Model\JobModel">JobModel</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
+                        <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-DesignDrawingModel.html"><abbr title="\Application\Model\DesignDrawingModel">DesignDrawingModel</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-UserModel.html"><abbr
+                                    title="\Application\Model\UserModel">UserModel</abbr></a></span>
 
-                                    </dd>
-                        </dl>
+                        <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="classes/Application-Model-Common-CommonModel.html"><abbr
+                                    title="\Application\Model\Common\CommonModel">CommonModel</abbr></a></span>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-JobModel.html"><abbr
+                                    title="\Application\Model\JobModel">JobModel</abbr></a></span>
+
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="classes/Application-Model-DesignDrawingModel.html"><abbr
+                                    title="\Application\Model\DesignDrawingModel">DesignDrawingModel</abbr></a></span>
+
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_ajaxLoadStructuralTable">
-        ajaxLoadStructuralTable()
-        <a href="classes/Application-Controller-DesignDrawingController.html#method_ajaxLoadStructuralTable" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DesignDrawingController.php"><a href="files/application-controller-designdrawingcontroller.html"><abbr title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">228</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_ajaxLoadStructuralTable">
+                    ajaxLoadStructuralTable()
+                    <a href="classes/Application-Controller-DesignDrawingController.html#method_ajaxLoadStructuralTable"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DesignDrawingController.php"><a
+                            href="files/application-controller-designdrawingcontroller.html"><abbr
+                                title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">228</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Load Drawing Log entry in JSON format</p>
+                <p class="phpdocumentor-summary">Load Drawing Log entry in JSON format</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">ajaxLoadStructuralTable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>This method will load the Design Drawing Logs based on the Job ID parameter from GET.</p>
-<p>Tables Connected: TBL_DESIGN_DRAWING_STRUCTURAL</p>
-<p>Internal parameters from $_GET http method</p>
-<ul>
-<li>$_GET['uid'] = Design Drawing Row ID</li>
-<li>$_GET['type'] = Command type ( 1 = Structural, 2 = Architectural, 3 = Civil, 4 = Others)</li>
-</ul>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>This method will load the Design Drawing Logs based on the Job ID parameter from GET.</p>
+                    <p>Tables Connected: TBL_DESIGN_DRAWING_STRUCTURAL</p>
+                    <p>Internal parameters from $_GET http method</p>
+                    <ul>
+                        <li>$_GET['uid'] = Design Drawing Row ID</li>
+                        <li>$_GET['type'] = Command type ( 1 = Structural, 2 = Architectural, 3 = Civil, 4 = Others)
+                        </li>
+                    </ul>
+                </section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-DesignDrawingModel.html#method_loadStructuralDetails"><abbr title="\Application\Model\DesignDrawingModel::loadStructuralDetails()">DesignDrawingModel::loadStructuralDetails()</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                        </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>json</p>
-</section>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="classes/Application-Model-DesignDrawingModel.html#method_loadStructuralDetails"><abbr
+                                    title="\Application\Model\DesignDrawingModel::loadStructuralDetails()">DesignDrawingModel::loadStructuralDetails()</abbr></a></span>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>json</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_ajaxSaveDesignDrawing">
-        ajaxSaveDesignDrawing()
-        <a href="classes/Application-Controller-DesignDrawingController.html#method_ajaxSaveDesignDrawing" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DesignDrawingController.php"><a href="files/application-controller-designdrawingcontroller.html"><abbr title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">155</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_ajaxSaveDesignDrawing">
+                    ajaxSaveDesignDrawing()
+                    <a href="classes/Application-Controller-DesignDrawingController.html#method_ajaxSaveDesignDrawing"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DesignDrawingController.php"><a
+                            href="files/application-controller-designdrawingcontroller.html"><abbr
+                                title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">155</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Save Design Drawing Log entry</p>
+                <p class="phpdocumentor-summary">Save Design Drawing Log entry</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">ajaxSaveDesignDrawing</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>This method will save and update the entries from Design Drawing Log spreadsheet.</p>
-<p>Tables Connected: TBL_DESIGN_DRAWING_PAGE, TBL_DESIGN_DRAWING_STRUCTURAL,</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>This method will save and update the entries from Design Drawing Log spreadsheet.</p>
+                    <p>Tables Connected: TBL_DESIGN_DRAWING_PAGE, TBL_DESIGN_DRAWING_STRUCTURAL,</p>
+                </section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-DesignDrawingModel.html#method_saveDesignDrawing"><abbr title="\Application\Model\DesignDrawingModel::saveDesignDrawing()">DesignDrawingModel::saveDesignDrawing()</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-DesignDrawingModel.html#method_saveDesignDrawing_rev2"><abbr title="\Application\Model\DesignDrawingModel::saveDesignDrawing_rev2()">DesignDrawingModel::saveDesignDrawing_rev2()</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                        </dl>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="classes/Application-Model-DesignDrawingModel.html#method_saveDesignDrawing"><abbr
+                                    title="\Application\Model\DesignDrawingModel::saveDesignDrawing()">DesignDrawingModel::saveDesignDrawing()</abbr></a></span>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>json format</p>
-</section>
+                        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="classes/Application-Model-DesignDrawingModel.html#method_saveDesignDrawing_rev2"><abbr
+                                    title="\Application\Model\DesignDrawingModel::saveDesignDrawing_rev2()">DesignDrawingModel::saveDesignDrawing_rev2()</abbr></a></span>
+
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>json format</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_commandControl">
-        commandControl()
-        <a href="classes/Application-Controller-DesignDrawingController.html#method_commandControl" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DesignDrawingController.php"><a href="files/application-controller-designdrawingcontroller.html"><abbr title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">418</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_commandControl">
+                    commandControl()
+                    <a href="classes/Application-Controller-DesignDrawingController.html#method_commandControl"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DesignDrawingController.php"><a
+                            href="files/application-controller-designdrawingcontroller.html"><abbr
+                                title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">418</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Spreadsheet command control either insert a new row or remove a row.</p>
+                <p class="phpdocumentor-summary">Spreadsheet command control either insert a new row or remove a row.
+                </p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">commandControl</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Internal parameters from $_GET http method</p>
-<ul>
-<li>$_GET['uid'] = Design Drawing Row ID</li>
-<li>$_POST['rowIndex'] = Cell coordinate</li>
-<li>$_GET['type'] = Command type either insert or remove the row.</li>
-</ul>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Internal parameters from $_GET http method</p>
+                    <ul>
+                        <li>$_GET['uid'] = Design Drawing Row ID</li>
+                        <li>$_POST['rowIndex'] = Cell coordinate</li>
+                        <li>$_GET['type'] = Command type either insert or remove the row.</li>
+                    </ul>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>json in recordset</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>json in recordset</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_designDrawing">
-        designDrawing()
-        <a href="classes/Application-Controller-DesignDrawingController.html#method_designDrawing" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DesignDrawingController.php"><a href="files/application-controller-designdrawingcontroller.html"><abbr title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">59</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_designDrawing">
+                    designDrawing()
+                    <a href="classes/Application-Controller-DesignDrawingController.html#method_designDrawing"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DesignDrawingController.php"><a
+                            href="files/application-controller-designdrawingcontroller.html"><abbr
+                                title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">59</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Design Drawing Log HTML</p>
+                <p class="phpdocumentor-summary">Design Drawing Log HTML</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">designDrawing</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>This method will show the HTML elements of the Design Drawing Log.</p>
-<p>Tables Connected: TBL_JOB, USER_LOGS</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>This method will show the HTML elements of the Design Drawing Log.</p>
+                    <p>Tables Connected: TBL_JOB, USER_LOGS</p>
+                </section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-JobModel.html#method_checkJob"><abbr title="\Application\Model\JobModel::checkJob()">JobModel::checkJob()</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-DesignDrawingModel.html#method_jobDetails"><abbr title="\Application\Model\DesignDrawingModel::jobDetails()">DesignDrawingModel::jobDetails()</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Controller-UserController.html#method_checkModuleIfInUse"><abbr title="\Application\Controller\UserController::checkModuleIfInUse()">UserController::checkModuleIfInUse()</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="classes/Application-Model-JobModel.html#method_checkJob"><abbr
+                                    title="\Application\Model\JobModel::checkJob()">JobModel::checkJob()</abbr></a></span>
 
-                                    </dd>
-                        </dl>
+                        <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>html file /application/views/DesignDrawing.php, DesignDrawingExcelFile.php</p>
-</section>
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="classes/Application-Model-DesignDrawingModel.html#method_jobDetails"><abbr
+                                    title="\Application\Model\DesignDrawingModel::jobDetails()">DesignDrawingModel::jobDetails()</abbr></a></span>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="classes/Application-Controller-UserController.html#method_checkModuleIfInUse"><abbr
+                                    title="\Application\Controller\UserController::checkModuleIfInUse()">UserController::checkModuleIfInUse()</abbr></a></span>
+
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>html file /application/views/DesignDrawing.php, DesignDrawingExcelFile.php</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_loadDesignDrawingSheet">
-        loadDesignDrawingSheet()
-        <a href="classes/Application-Controller-DesignDrawingController.html#method_loadDesignDrawingSheet" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DesignDrawingController.php"><a href="files/application-controller-designdrawingcontroller.html"><abbr title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">182</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_loadDesignDrawingSheet">
+                    loadDesignDrawingSheet()
+                    <a href="classes/Application-Controller-DesignDrawingController.html#method_loadDesignDrawingSheet"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DesignDrawingController.php"><a
+                            href="files/application-controller-designdrawingcontroller.html"><abbr
+                                title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">182</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Load Drawing Log entry to main form spreadsheet</p>
+                <p class="phpdocumentor-summary">Load Drawing Log entry to main form spreadsheet</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">loadDesignDrawingSheet</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>This method will load the Design Drawing Logs based on the Job ID parameter from GET.</p>
-<p>Tables Connected: TBL_DESIGN_DRAWING_PAGE, TBL_DESIGN_DRAWING_STRUCTURAL</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>This method will load the Design Drawing Logs based on the Job ID parameter from GET.</p>
+                    <p>Tables Connected: TBL_DESIGN_DRAWING_PAGE, TBL_DESIGN_DRAWING_STRUCTURAL</p>
+                </section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-DesignDrawingModel.html#method_saveDesignDrawing"><abbr title="\Application\Model\DesignDrawingModel::saveDesignDrawing()">DesignDrawingModel::saveDesignDrawing()</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-DesignDrawingModel.html#method_saveDesignDrawing_rev2"><abbr title="\Application\Model\DesignDrawingModel::saveDesignDrawing_rev2()">DesignDrawingModel::saveDesignDrawing_rev2()</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="namespaces/application-views-drawinglog.html#function_DesignDrawingStructuralDetailsHTML"><abbr title="\Application\Views\DrawingLog\DesignDrawingStructuralDetailsHTML()">DesignDrawingStructuralDetailsHTML()</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="classes/Application-Model-DesignDrawingModel.html#method_saveDesignDrawing"><abbr
+                                    title="\Application\Model\DesignDrawingModel::saveDesignDrawing()">DesignDrawingModel::saveDesignDrawing()</abbr></a></span>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="namespaces/application-views-drawinglog.html#function_DesignDrawingStructuralDetailsRev2HTML"><abbr title="\Application\Views\DrawingLog\DesignDrawingStructuralDetailsRev2HTML()">DesignDrawingStructuralDetailsRev2HTML()</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
+                        <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                        </dl>
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="classes/Application-Model-DesignDrawingModel.html#method_saveDesignDrawing_rev2"><abbr
+                                    title="\Application\Model\DesignDrawingModel::saveDesignDrawing_rev2()">DesignDrawingModel::saveDesignDrawing_rev2()</abbr></a></span>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>html \application\views\design_drawing\DesignDrawingStructuralDetails_rev2.php, DesignDrawingStructuralDetails_rev2.php</p>
-</section>
+                        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="namespaces/application-views-drawinglog.html#function_DesignDrawingStructuralDetailsHTML"><abbr
+                                    title="\Application\Views\DrawingLog\DesignDrawingStructuralDetailsHTML()">DesignDrawingStructuralDetailsHTML()</abbr></a></span>
+
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="namespaces/application-views-drawinglog.html#function_DesignDrawingStructuralDetailsRev2HTML"><abbr
+                                    title="\Application\Views\DrawingLog\DesignDrawingStructuralDetailsRev2HTML()">DesignDrawingStructuralDetailsRev2HTML()</abbr></a></span>
+
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>html \application\views\design_drawing\DesignDrawingStructuralDetails_rev2.php,
+                        DesignDrawingStructuralDetails_rev2.php</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_loadStatusHold">
-        loadStatusHold()
-        <a href="classes/Application-Controller-DesignDrawingController.html#method_loadStatusHold" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DesignDrawingController.php"><a href="files/application-controller-designdrawingcontroller.html"><abbr title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">248</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_loadStatusHold">
+                    loadStatusHold()
+                    <a href="classes/Application-Controller-DesignDrawingController.html#method_loadStatusHold"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DesignDrawingController.php"><a
+                            href="files/application-controller-designdrawingcontroller.html"><abbr
+                                title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">248</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Load Hold Status Report in HTML format</p>
+                <p class="phpdocumentor-summary">Load Hold Status Report in HTML format</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">loadStatusHold</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="namespaces/application-views-statusreport.html#function_StatusReportHold"><abbr title="\Application\Views\StatusReport\StatusReportHold()">StatusReportHold()</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                        </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>html \application\views\StatusReportHold.php</p>
-</section>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="namespaces/application-views-statusreport.html#function_StatusReportHold"><abbr
+                                    title="\Application\Views\StatusReport\StatusReportHold()">StatusReportHold()</abbr></a></span>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>html \application\views\StatusReportHold.php</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_loadStatusMonitoring">
-        loadStatusMonitoring()
-        <a href="classes/Application-Controller-DesignDrawingController.html#method_loadStatusMonitoring" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DesignDrawingController.php"><a href="files/application-controller-designdrawingcontroller.html"><abbr title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">261</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_loadStatusMonitoring">
+                    loadStatusMonitoring()
+                    <a href="classes/Application-Controller-DesignDrawingController.html#method_loadStatusMonitoring"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DesignDrawingController.php"><a
+                            href="files/application-controller-designdrawingcontroller.html"><abbr
+                                title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">261</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Load Hold Status Report Monitoring in HTML format</p>
+                <p class="phpdocumentor-summary">Load Hold Status Report Monitoring in HTML format</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">loadStatusMonitoring</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="namespaces/application-views-statusreport.html#function_StatusReportMonitoring"><abbr title="\Application\Views\StatusReport\StatusReportMonitoring()">StatusReportMonitoring()</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                        </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>html \application\views\StatusReportMonitoring.php</p>
-</section>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="namespaces/application-views-statusreport.html#function_StatusReportMonitoring"><abbr
+                                    title="\Application\Views\StatusReport\StatusReportMonitoring()">StatusReportMonitoring()</abbr></a></span>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>html \application\views\StatusReportMonitoring.php</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-            -deprecated                                            "
->
-    <h4 class="phpdocumentor-element__name" id="method_saveLogColors">
-        saveLogColors()
-        <a href="classes/Application-Controller-DesignDrawingController.html#method_saveLogColors" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DesignDrawingController.php"><a href="files/application-controller-designdrawingcontroller.html"><abbr title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">342</span>
-</aside>
+            -deprecated                                            ">
+                <h4 class="phpdocumentor-element__name" id="method_saveLogColors">
+                    saveLogColors()
+                    <a href="classes/Application-Controller-DesignDrawingController.html#method_saveLogColors"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DesignDrawingController.php"><a
+                            href="files/application-controller-designdrawingcontroller.html"><abbr
+                                title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">342</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Save color of spreadsheet logs</p>
+                <p class="phpdocumentor-summary">Save color of spreadsheet logs</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
+                <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">saveLogColors</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">deprecated</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>No longer use since each log has a conditional color scheme per row. It can remove for future updates.</p>
-</section>
 
-                                    </dd>
-                        </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>json in recordset</p>
-</section>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">deprecated</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                        <section class="phpdocumentor-description">
+                            <p>No longer use since each log has a conditional color scheme per row. It can remove for
+                                future updates.</p>
+                        </section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>json in recordset</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_createNewRow">
-        createNewRow()
-        <a href="classes/Application-Controller-DesignDrawingController.html#method_createNewRow" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DesignDrawingController.php"><a href="files/application-controller-designdrawingcontroller.html"><abbr title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">443</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_createNewRow">
+                    createNewRow()
+                    <a href="classes/Application-Controller-DesignDrawingController.html#method_createNewRow"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DesignDrawingController.php"><a
+                            href="files/application-controller-designdrawingcontroller.html"><abbr
+                                title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">443</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Spreadsheet command control insert a new row</p>
+                <p class="phpdocumentor-summary">Spreadsheet command control insert a new row</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">createNewRow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>assinged Parent ID/Row ID from id_job_list table</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr
+                                    title=""></abbr></a></span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>assinged Parent ID/Row ID from id_job_list table</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$rowId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
+                        <span class="phpdocumentor-signature__argument__name">$rowId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$type</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>json in recordset</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>json in recordset</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getLastSequence">
-        getLastSequence()
-        <a href="classes/Application-Controller-DesignDrawingController.html#method_getLastSequence" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DesignDrawingController.php"><a href="files/application-controller-designdrawingcontroller.html"><abbr title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">511</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getLastSequence">
+                    getLastSequence()
+                    <a href="classes/Application-Controller-DesignDrawingController.html#method_getLastSequence"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DesignDrawingController.php"><a
+                            href="files/application-controller-designdrawingcontroller.html"><abbr
+                                title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">511</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Get last sequence number of spreadsheet</p>
+                <p class="phpdocumentor-summary">Get last sequence number of spreadsheet</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">getLastSequence</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>assinged Parent ID/Row ID from id_job_list table</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr
+                                    title=""></abbr></a></span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>assinged Parent ID/Row ID from id_job_list table</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Command type either insert or update the row.</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$type</span>
+                        : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr
+                                    title=""></abbr></a></span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Command type either insert or update the row.</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>sequence number</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">int</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>sequence number</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getRowColor">
-        getRowColor()
-        <a href="classes/Application-Controller-DesignDrawingController.html#method_getRowColor" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DesignDrawingController.php"><a href="files/application-controller-designdrawingcontroller.html"><abbr title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">276</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getRowColor">
+                    getRowColor()
+                    <a href="classes/Application-Controller-DesignDrawingController.html#method_getRowColor"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DesignDrawingController.php"><a
+                            href="files/application-controller-designdrawingcontroller.html"><abbr
+                                title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">276</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Get cell color of spreadsheet version 1</p>
+                <p class="phpdocumentor-summary">Get cell color of spreadsheet version 1</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">getRowColor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$number</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Sequence No.</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$number</span>
+                        : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr
+                                    title=""></abbr></a></span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Sequence No.</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Parent ID/ Job ID</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr
+                                    title=""></abbr></a></span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Parent ID/ Job ID</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">version</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                            <span class="phpdocumentor-tag-link">1</span>
-                                                                                
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                        </dl>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">version</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link">1</span>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>json in recordset</p>
-</section>
+                        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>json in recordset</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getRowColorRev2">
-        getRowColorRev2()
-        <a href="classes/Application-Controller-DesignDrawingController.html#method_getRowColorRev2" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DesignDrawingController.php"><a href="files/application-controller-designdrawingcontroller.html"><abbr title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">309</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getRowColorRev2">
+                    getRowColorRev2()
+                    <a href="classes/Application-Controller-DesignDrawingController.html#method_getRowColorRev2"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DesignDrawingController.php"><a
+                            href="files/application-controller-designdrawingcontroller.html"><abbr
+                                title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">309</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Get cell color of spreadsheet version 2</p>
+                <p class="phpdocumentor-summary">Get cell color of spreadsheet version 2</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">getRowColorRev2</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$number</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Sequence No.</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$number</span>
+                        : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr
+                                    title=""></abbr></a></span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Sequence No.</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Parent ID/ Job ID</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr
+                                    title=""></abbr></a></span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Parent ID/ Job ID</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">version</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                            <span class="phpdocumentor-tag-link">2</span>
-                                                                                
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                        </dl>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">version</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link">2</span>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>json in recordset</p>
-</section>
+                        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>json in recordset</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_removeRow">
-        removeRow()
-        <a href="classes/Application-Controller-DesignDrawingController.html#method_removeRow" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DesignDrawingController.php"><a href="files/application-controller-designdrawingcontroller.html"><abbr title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">475</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_removeRow">
+                    removeRow()
+                    <a href="classes/Application-Controller-DesignDrawingController.html#method_removeRow"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DesignDrawingController.php"><a
+                            href="files/application-controller-designdrawingcontroller.html"><abbr
+                                title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">475</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Spreadsheet command control remove a row</p>
+                <p class="phpdocumentor-summary">Spreadsheet command control remove a row</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">removeRow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>assinged Parent ID/Row ID from id_job_list table</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr
+                                    title=""></abbr></a></span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>assinged Parent ID/Row ID from id_job_list table</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$rowId</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Sequence No.</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$rowId</span>
+                        : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr
+                                    title=""></abbr></a></span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Sequence No.</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Command type either insert or update the row.</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$type</span>
+                        : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr
+                                    title=""></abbr></a></span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Command type either insert or update the row.</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Application\Model\DesignDrawingModel\insertUpdate()">insertUpdate()</abbr></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Application\Model\DesignDrawingModel\removeRow()">removeRow()</abbr></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><abbr
+                                title="\Application\Model\DesignDrawingModel\insertUpdate()">insertUpdate()</abbr></span>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Application\Model\DesignDrawingModel\getLastSequence()">getLastSequence()</abbr></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
+                        <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                        </dl>
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><abbr
+                                title="\Application\Model\DesignDrawingModel\removeRow()">removeRow()</abbr></span>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+                        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><abbr
+                                title="\Application\Model\DesignDrawingModel\getLastSequence()">getLastSequence()</abbr></span>
+
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-            -deprecated                                            "
->
-    <h4 class="phpdocumentor-element__name" id="method_updateColor">
-        updateColor()
-        <a href="classes/Application-Controller-DesignDrawingController.html#method_updateColor" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DesignDrawingController.php"><a href="files/application-controller-designdrawingcontroller.html"><abbr title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">369</span>
-</aside>
+            -deprecated                                            ">
+                <h4 class="phpdocumentor-element__name" id="method_updateColor">
+                    updateColor()
+                    <a href="classes/Application-Controller-DesignDrawingController.html#method_updateColor"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DesignDrawingController.php"><a
+                            href="files/application-controller-designdrawingcontroller.html"><abbr
+                                title="application/controller/DesignDrawingController.php">DesignDrawingController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">369</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Update color of spreadsheet logs</p>
+                <p class="phpdocumentor-summary">Update color of spreadsheet logs</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
+                <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">updateColor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row_cel</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$col_cel</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Parent ID/ Job ID</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr
+                                    title=""></abbr></a></span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Parent ID/ Job ID</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$row_cel</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
+                        <span class="phpdocumentor-signature__argument__name">$row_cel</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$col_cel</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
+                        <span class="phpdocumentor-signature__argument__name">$col_cel</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>type of command either insert a new record or remove a record</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$type</span>
+                        : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr
+                                    title=""></abbr></a></span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>type of command either insert a new record or remove a record</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">deprecated</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>No longer use since each log has a conditional color scheme per row. It can remove for future updates.</p>
-</section>
 
-                                    </dd>
-                        </dl>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">deprecated</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>json in recordset</p>
-</section>
+                        <section class="phpdocumentor-description">
+                            <p>No longer use since each log has a conditional color scheme per row. It can remove for
+                                future updates.</p>
+                        </section>
 
-    
-</article>
-            </section>
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>json in recordset</p>
+                </section>
+
+
+            </article>
+        </section>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
-    <section class="phpdocumentor-search-results__dialog">
-        <header class="phpdocumentor-search-results__header">
-            <h2 class="phpdocumentor-search-results__title">Search results</h2>
-            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
-        </header>
-        <section class="phpdocumentor-search-results__body">
-            <ul class="phpdocumentor-search-results__entries"></ul>
+    <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+        <section class="phpdocumentor-search-results__dialog">
+            <header class="phpdocumentor-search-results__header">
+                <h2 class="phpdocumentor-search-results__title">Search results</h2>
+                <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+            </header>
+            <section class="phpdocumentor-search-results__body">
+                <ul class="phpdocumentor-search-results__entries"></ul>
+            </section>
         </section>
     </section>
-</section>
-            </div>
-        </div>
-        <a href="classes/Application-Controller-DesignDrawingController.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+</div>
+</div>
+<a href="classes/Application-Controller-DesignDrawingController.html#top" class="phpdocumentor-back-to-top"><i
+        class="fas fa-chevron-circle-up"></i></a>
 
-    </main>
-
-    <script>
-        cssVars({});
-    </script>
-</body>
-</html>
+<?php require('../layouts/footer.html'); ?>

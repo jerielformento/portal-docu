@@ -1,176 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Documentation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="../">
-    <link rel="icon" href="images/favicon.ico"/>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/template.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
-                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
-        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
-        <script src="js/search.js"></script>
-        <script defer src="js/searchIndex.js"></script>
-    </head>
-<body id="top">
-    <header class="phpdocumentor-header phpdocumentor-section">
-    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
-    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
-    <label class="phpdocumentor-header__menu-icon" for="menu-button">
-        <i class="fas fa-bars"></i>
-    </label>
-    <section data-search-form class="phpdocumentor-search">
-    <label>
-        <span class="visually-hidden">Search for</span>
-        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
-            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
-        </svg>
-        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
-    </label>
-</section>
+<?php require('../layouts/header.html'); ?>
 
-    <nav class="phpdocumentor-topnav">
-    <ul class="phpdocumentor-topnav__menu">
-        </ul>
-</nav>
-</header>
+<p class="phpdocumentor-summary">Bolt Check Controller</p>
 
-    <main class="phpdocumentor">
-        <div class="phpdocumentor-section">
-            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
-<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
-    Menu
-</label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/application.html"><abbr title="\Application">Application</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/application-controller.html"><abbr title="\Application\Controller">Controller</abbr></a></li>
-                                            <li><a href="namespaces/application-model.html"><abbr title="\Application\Model">Model</abbr></a></li>
-                                            <li><a href="namespaces/application-views.html"><abbr title="\Application\Views">Views</abbr></a></li>
-                                    </ul>
-                        </section>
-
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Default.html"><abbr title="\Default">Default</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/PasswordManager.html"><abbr title="\PasswordManager">PasswordManager</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/BoltCheck.html"><abbr title="\BoltCheck">BoltCheck</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/CDLogs.html"><abbr title="\CDLogs">CDLogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Dashboard.html"><abbr title="\Dashboard">Dashboard</abbr></a></h3>
-                        </section>
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
-                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
-    </section>
-
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
-    </section>
-</aside>
-
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
-    </ul>
-
-    <article class="phpdocumentor-element -class">
-        <h2 class="phpdocumentor-content__title">
-    BoltCheckController
-
-        <span class="phpdocumentor-element__extends">
-        extends <abbr title="\SupportClass">SupportClass</abbr>
-    </span>
-    
-            <div class="phpdocumentor-element__package">
-            in package
-            <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/BoltCheck.html">BoltCheck</a></li>
-                            </ul>
-        </div>
-    
-    
-    </h2>
-
-        <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">25</span>
-</aside>
-
-            <p class="phpdocumentor-summary">Bolt Check Controller</p>
-
-    <section class="phpdocumentor-description"><p>This object verifies the uploaded file from the bolt checking form.
-It will identify if the bolt description is available in our database.
-The file is generated from SDS2 or Tekla Software.</p>
-<p>Uploaded file is stored in <code class="prettyprint">/public/upload/bolt_check/</code> directory</p>
-<code class="prettyprint">
+<section class="phpdocumentor-description">
+    <p>This object verifies the uploaded file from the bolt checking form.
+        It will identify if the bolt description is available in our database.
+        The file is generated from SDS2 or Tekla Software.</p>
+    <p>Uploaded file is stored in <code class="prettyprint">/public/upload/bolt_check/</code> directory</p>
+    <code class="prettyprint">
 <strong>Database/s Connected:</strong> idsporta_1dsP0rt4l, idsporta_boltcheck
 </code>
 </section>
 
 
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">filesource</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>/home/jojo/WebServer/portal_docu_files/controller/BoltCheckController.php</p>
-</section>
+<h5 class="phpdocumentor-tag-list__heading" id="tags">
+    Tags
+    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+</h5>
+<dl class="phpdocumentor-tag-list">
+    <dt class="phpdocumentor-tag-list__entry">
+        <span class="phpdocumentor-tag__name">filesource</span>
+    </dt>
+    <dd class="phpdocumentor-tag-list__definition">
 
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">link</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        <a class="phpdocumentor-tag-link" href="https://www.idsincportal.com/index.php?act=bolt-checker&amp;menu_uid=199"> https://www.idsincportal.com/index.php?act=bolt-checker&amp;menu_uid=199 </a>
-                    
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">example</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Sample uploaded file</p>
-</section>
+        <section class="phpdocumentor-description">
+            <p>/home/jojo/WebServer/portal_docu_files/controller/BoltCheckController.php</p>
+        </section>
 
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">author</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Jojo De Jesus <a href="mailto:jojo.webdeveloper@gmail.com">jojo.webdeveloper@gmail.com</a></p>
-</section>
+    </dd>
+    <dt class="phpdocumentor-tag-list__entry">
+        <span class="phpdocumentor-tag__name">link</span>
+    </dt>
+    <dd class="phpdocumentor-tag-list__definition">
+        <a class="phpdocumentor-tag-link"
+            href="https://www.idsincportal.com/index.php?act=bolt-checker&amp;menu_uid=199">
+            https://www.idsincportal.com/index.php?act=bolt-checker&amp;menu_uid=199 </a>
 
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">copyright</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Copyright (c) 2021, Isometric Diagonal Scheme, Inc.</p>
-</section>
+    </dd>
+    <dt class="phpdocumentor-tag-list__entry">
+        <span class="phpdocumentor-tag__name">example</span>
+    </dt>
+    <dd class="phpdocumentor-tag-list__definition">
 
-                                    </dd>
-                        </dl>
+        <section class="phpdocumentor-description">
+            <p>Sample uploaded file</p>
+        </section>
+
+    </dd>
+    <dt class="phpdocumentor-tag-list__entry">
+        <span class="phpdocumentor-tag__name">author</span>
+    </dt>
+    <dd class="phpdocumentor-tag-list__definition">
+
+        <section class="phpdocumentor-description">
+            <p>Jojo De Jesus <a href="mailto:jojo.webdeveloper@gmail.com">jojo.webdeveloper@gmail.com</a></p>
+        </section>
+
+    </dd>
+    <dt class="phpdocumentor-tag-list__entry">
+        <span class="phpdocumentor-tag__name">copyright</span>
+    </dt>
+    <dd class="phpdocumentor-tag-list__definition">
+
+        <section class="phpdocumentor-description">
+            <p>Copyright (c) 2021, Isometric Diagonal Scheme, Inc.</p>
+        </section>
+
+    </dd>
+</dl>
 
 
 
@@ -183,1281 +80,1362 @@ The file is generated from SDS2 or Tekla Software.</p>
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BoltCheckController.html#method___construct">__construct()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Default constructor</dd>
+    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+        <a href="classes/BoltCheckController.html#method___construct">__construct()</a>
+        <span>
+            &nbsp;: mixed </span>
+    </dt>
+    <dd>Default constructor</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BoltCheckController.html#method_ajaxBoltFileParser">ajaxBoltFileParser()</a>
-    <span>
-                        &nbsp;: mixed|<abbr title="\html">html</abbr>    </span>
-</dt>
-<dd>Bolt File Parser</dd>
+    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+        <a href="classes/BoltCheckController.html#method_ajaxBoltFileParser">ajaxBoltFileParser()</a>
+        <span>
+            &nbsp;: mixed|<abbr title="\html">html</abbr> </span>
+    </dt>
+    <dd>Bolt File Parser</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BoltCheckController.html#method_ajaxBoltFileParser2">ajaxBoltFileParser2()</a>
-    <span>
-                        &nbsp;: mixed|<abbr title="\html">html</abbr>    </span>
-</dt>
-<dd>Bolt File Parser - revision 1</dd>
+    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+        <a href="classes/BoltCheckController.html#method_ajaxBoltFileParser2">ajaxBoltFileParser2()</a>
+        <span>
+            &nbsp;: mixed|<abbr title="\html">html</abbr> </span>
+    </dt>
+    <dd>Bolt File Parser - revision 1</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BoltCheckController.html#method_boltCheckForm">boltCheckForm()</a>
-    <span>
-                        &nbsp;: mixed|<abbr title="\html">html</abbr>    </span>
-</dt>
-<dd>Bolt Check Form</dd>
+    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+        <a href="classes/BoltCheckController.html#method_boltCheckForm">boltCheckForm()</a>
+        <span>
+            &nbsp;: mixed|<abbr title="\html">html</abbr> </span>
+    </dt>
+    <dd>Bolt Check Form</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BoltCheckController.html#method_boltDataTable">boltDataTable()</a>
-    <span>
-                        &nbsp;: mixed|<abbr title="\html">html</abbr>    </span>
-</dt>
-<dd>Bolt Check List</dd>
+    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+        <a href="classes/BoltCheckController.html#method_boltDataTable">boltDataTable()</a>
+        <span>
+            &nbsp;: mixed|<abbr title="\html">html</abbr> </span>
+    </dt>
+    <dd>Bolt Check List</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BoltCheckController.html#method_boltList">boltList()</a>
-    <span>
-                        &nbsp;: mixed|<abbr title="\html">html</abbr>    </span>
-</dt>
-<dd>Bolt Check List</dd>
+    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+        <a href="classes/BoltCheckController.html#method_boltList">boltList()</a>
+        <span>
+            &nbsp;: mixed|<abbr title="\html">html</abbr> </span>
+    </dt>
+    <dd>Bolt Check List</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BoltCheckController.html#method_checkAvailabilityStat">checkAvailabilityStat()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Check the status of bolt availability</dd>
+    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+        <a href="classes/BoltCheckController.html#method_checkAvailabilityStat">checkAvailabilityStat()</a>
+        <span>
+            &nbsp;: mixed </span>
+    </dt>
+    <dd>Check the status of bolt availability</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BoltCheckController.html#method_checkAvailabilityStatRev1">checkAvailabilityStatRev1()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Check the status of bolt availability - Revision 1</dd>
+    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+        <a href="classes/BoltCheckController.html#method_checkAvailabilityStatRev1">checkAvailabilityStatRev1()</a>
+        <span>
+            &nbsp;: mixed </span>
+    </dt>
+    <dd>Check the status of bolt availability - Revision 1</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BoltCheckController.html#method_checkBoltValidValue">checkBoltValidValue()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Check Bolt Value</dd>
+    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+        <a href="classes/BoltCheckController.html#method_checkBoltValidValue">checkBoltValidValue()</a>
+        <span>
+            &nbsp;: mixed </span>
+    </dt>
+    <dd>Check Bolt Value</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BoltCheckController.html#method_checkFileValidity">checkFileValidity()</a>
-    <span>
-                        &nbsp;: mixed|<abbr title="\html">html</abbr>    </span>
-</dt>
-<dd>File Check Format</dd>
+    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+        <a href="classes/BoltCheckController.html#method_checkFileValidity">checkFileValidity()</a>
+        <span>
+            &nbsp;: mixed|<abbr title="\html">html</abbr> </span>
+    </dt>
+    <dd>File Check Format</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BoltCheckController.html#method_checkFormatSytle">checkFormatSytle()</a>
-    <span>
-                        &nbsp;: mixed|<abbr title="\html">html</abbr>    </span>
-</dt>
-<dd>Check File Format</dd>
+    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+        <a href="classes/BoltCheckController.html#method_checkFormatSytle">checkFormatSytle()</a>
+        <span>
+            &nbsp;: mixed|<abbr title="\html">html</abbr> </span>
+    </dt>
+    <dd>Check File Format</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BoltCheckController.html#method_checkLengthValidValue">checkLengthValidValue()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Check Length Value</dd>
+    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+        <a href="classes/BoltCheckController.html#method_checkLengthValidValue">checkLengthValidValue()</a>
+        <span>
+            &nbsp;: mixed </span>
+    </dt>
+    <dd>Check Length Value</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BoltCheckController.html#method_checkRowFileType">checkRowFileType()</a>
-    <span>
-                        &nbsp;: string    </span>
-</dt>
-<dd>Check the type of each row of the file</dd>
+    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+        <a href="classes/BoltCheckController.html#method_checkRowFileType">checkRowFileType()</a>
+        <span>
+            &nbsp;: string </span>
+    </dt>
+    <dd>Check the type of each row of the file</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BoltCheckController.html#method_decimalToFraction">decimalToFraction()</a>
-    <span>
-                        &nbsp;: string    </span>
-</dt>
-<dd>Decimal to Fraction</dd>
+    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+        <a href="classes/BoltCheckController.html#method_decimalToFraction">decimalToFraction()</a>
+        <span>
+            &nbsp;: string </span>
+    </dt>
+    <dd>Decimal to Fraction</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BoltCheckController.html#method_fractionToDecimal">fractionToDecimal()</a>
-    <span>
-                        &nbsp;: float    </span>
-</dt>
-<dd>Fraction to Decimal</dd>
+    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+        <a href="classes/BoltCheckController.html#method_fractionToDecimal">fractionToDecimal()</a>
+        <span>
+            &nbsp;: float </span>
+    </dt>
+    <dd>Fraction to Decimal</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BoltCheckController.html#method_getManufactureArray">getManufactureArray()</a>
-    <span>
-                        &nbsp;: string|array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd>Get Manufacturer List</dd>
+    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+        <a href="classes/BoltCheckController.html#method_getManufactureArray">getManufactureArray()</a>
+        <span>
+            &nbsp;: string|array&lt;string|int, mixed&gt; </span>
+    </dt>
+    <dd>Get Manufacturer List</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BoltCheckController.html#method_viewBoltCheckedAvailability">viewBoltCheckedAvailability()</a>
-    <span>
-                        &nbsp;: mixed|<abbr title="\html">html</abbr>    </span>
-</dt>
-<dd>Bolt Check Availability HTML file format</dd>
+    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+        <a href="classes/BoltCheckController.html#method_viewBoltCheckedAvailability">viewBoltCheckedAvailability()</a>
+        <span>
+            &nbsp;: mixed|<abbr title="\html">html</abbr> </span>
+    </dt>
+    <dd>Bolt Check Availability HTML file format</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BoltCheckController.html#method_viewBoltCheckedAvailabilityRev1">viewBoltCheckedAvailabilityRev1()</a>
-    <span>
-                        &nbsp;: mixed|<abbr title="\html">html</abbr>    </span>
-</dt>
-<dd>Bolt Check Availability HTML file format - revision 1</dd>
+    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+        <a
+            href="classes/BoltCheckController.html#method_viewBoltCheckedAvailabilityRev1">viewBoltCheckedAvailabilityRev1()</a>
+        <span>
+            &nbsp;: mixed|<abbr title="\html">html</abbr> </span>
+    </dt>
+    <dd>Bolt Check Availability HTML file format - revision 1</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BoltCheckController.html#method_viewFileUploaded">viewFileUploaded()</a>
-    <span>
-                        &nbsp;: mixed|<abbr title="\html">html</abbr>    </span>
-</dt>
-<dd>File viewer</dd>
+    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+        <a href="classes/BoltCheckController.html#method_viewFileUploaded">viewFileUploaded()</a>
+        <span>
+            &nbsp;: mixed|<abbr title="\html">html</abbr> </span>
+    </dt>
+    <dd>File viewer</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/BoltCheckController.html#method_importNow">importNow()</a>
-    <span>
-                        &nbsp;: <abbr title="\none">none</abbr>    </span>
-</dt>
-<dd>Import the contents of the file to the database.</dd>
+    <dt class="phpdocumentor-table-of-contents__entry -method -private">
+        <a href="classes/BoltCheckController.html#method_importNow">importNow()</a>
+        <span>
+            &nbsp;: <abbr title="\none">none</abbr> </span>
+    </dt>
+    <dd>Import the contents of the file to the database.</dd>
 
+</dl>
+
+
+
+
+
+
+
+<section class="phpdocumentor-methods">
+    <h3 class="phpdocumentor-elements__header" id="methods">
+        Methods
+        <a href="classes/BoltCheckController.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+    </h3>
+    <article class="phpdocumentor-element
+            -method
+            -public
+                                                        ">
+        <h4 class="phpdocumentor-element__name" id="method___construct">
+            __construct()
+            <a href="classes/BoltCheckController.html#method___construct" class="headerlink"><i
+                    class="fas fa-link"></i></a>
+        </h4>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a
+                    href="files/application-controller-boltcheckcontroller.html"><abbr
+                        title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">33</span>
+        </aside>
+
+        <p class="phpdocumentor-summary">Default constructor</p>
+
+        <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description">
+            <p>Assign the other objects to global properties</p>
+        </section>
+
+
+
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+        &mdash;
+        <section class="phpdocumentor-description"></section>
+
+
+    </article>
+    <article class="phpdocumentor-element
+            -method
+            -public
+                                                        ">
+        <h4 class="phpdocumentor-element__name" id="method_ajaxBoltFileParser">
+            ajaxBoltFileParser()
+            <a href="classes/BoltCheckController.html#method_ajaxBoltFileParser" class="headerlink"><i
+                    class="fas fa-link"></i></a>
+        </h4>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a
+                    href="files/application-controller-boltcheckcontroller.html"><abbr
+                        title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">321</span>
+        </aside>
+
+        <p class="phpdocumentor-summary">Bolt File Parser</p>
+
+        <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">ajaxBoltFileParser</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span></code>
+
+        <section class="phpdocumentor-description">
+            <p>This method will parser uploaded file content to HTML table format</p>
+            <p>Table Connected: id_job_for_submission_imported</p>
+        </section>
+
+
+
+        <h5 class="phpdocumentor-tag-list__heading" id="tags">
+            Tags
+            <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        </h5>
+        <dl class="phpdocumentor-tag-list">
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">depracated</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>this is not active, it can be removed for a future update</p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">filesource</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>/home/jojo/WebServer/portal_docu_files/application/views/bolt_checker/BoltListDatabase.php</p>
+                </section>
+
+            </dd>
+        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span>
+        &mdash;
+        <section class="phpdocumentor-description"></section>
+
+
+    </article>
+    <article class="phpdocumentor-element
+            -method
+            -public
+                                                        ">
+        <h4 class="phpdocumentor-element__name" id="method_ajaxBoltFileParser2">
+            ajaxBoltFileParser2()
+            <a href="classes/BoltCheckController.html#method_ajaxBoltFileParser2" class="headerlink"><i
+                    class="fas fa-link"></i></a>
+        </h4>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a
+                    href="files/application-controller-boltcheckcontroller.html"><abbr
+                        title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">377</span>
+        </aside>
+
+        <p class="phpdocumentor-summary">Bolt File Parser - revision 1</p>
+
+        <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">ajaxBoltFileParser2</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span></code>
+
+        <section class="phpdocumentor-description">
+            <p>This method will parser uploaded file content to HTML table format</p>
+            <p>Table Connected: id_job_for_submission_imported</p>
+        </section>
+
+
+
+        <h5 class="phpdocumentor-tag-list__heading" id="tags">
+            Tags
+            <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        </h5>
+        <dl class="phpdocumentor-tag-list">
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">filesource</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>/home/jojo/WebServer/portal_docu_files/application/views/bolt_checker/BoltListDatabase.php</p>
+                </section>
+
+            </dd>
+        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span>
+        &mdash;
+        <section class="phpdocumentor-description"></section>
+
+
+    </article>
+    <article class="phpdocumentor-element
+            -method
+            -public
+                                                        ">
+        <h4 class="phpdocumentor-element__name" id="method_boltCheckForm">
+            boltCheckForm()
+            <a href="classes/BoltCheckController.html#method_boltCheckForm" class="headerlink"><i
+                    class="fas fa-link"></i></a>
+        </h4>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a
+                    href="files/application-controller-boltcheckcontroller.html"><abbr
+                        title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">56</span>
+        </aside>
+
+        <p class="phpdocumentor-summary">Bolt Check Form</p>
+
+        <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">boltCheckForm</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span></code>
+
+        <section class="phpdocumentor-description">
+            <p>The HTML form uploader will submit the file to validate and return the status of bolt information if it's
+                available in the database.</p>
+            <code class="prettyprint">
+Required file extension .xsr
+</code>
+            <p>Tables Connected: ib_category, ib_file_verification</p>
+        </section>
+
+
+
+        <h5 class="phpdocumentor-tag-list__heading" id="tags">
+            Tags
+            <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        </h5>
+        <dl class="phpdocumentor-tag-list">
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">filesource</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>/home/jojo/WebServer/portal_docu_files/application/views/BoltCheckForm.php</p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">link</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+                <a class="phpdocumentor-tag-link"
+                    href="https://www.idsincportal.com/index.php?act=bolt-checker&amp;menu_uid=199">
+                    https://www.idsincportal.com/index.php?act=bolt-checker&amp;menu_uid=199 </a>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">source</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>10</p>
+                </section>
+
+            </dd>
+        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span>
+        &mdash;
+        <section class="phpdocumentor-description"></section>
+
+
+    </article>
+    <article class="phpdocumentor-element
+            -method
+            -public
+                                                        ">
+        <h4 class="phpdocumentor-element__name" id="method_boltDataTable">
+            boltDataTable()
+            <a href="classes/BoltCheckController.html#method_boltDataTable" class="headerlink"><i
+                    class="fas fa-link"></i></a>
+        </h4>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a
+                    href="files/application-controller-boltcheckcontroller.html"><abbr
+                        title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">145</span>
+        </aside>
+
+        <p class="phpdocumentor-summary">Bolt Check List</p>
+
+        <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">boltDataTable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span></code>
+
+        <section class="phpdocumentor-description">
+            <p>List of Bolt available from the database</p>
+            <p>Tables Connected: ib_file_verification, ib_manufacturer, ib_category, ib_bolts_available</p>
+        </section>
+
+
+
+        <h5 class="phpdocumentor-tag-list__heading" id="tags">
+            Tags
+            <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        </h5>
+        <dl class="phpdocumentor-tag-list">
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">filesource</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>/home/jojo/WebServer/portal_docu_files/application/views/bolt_checker/BoltListDatabase.php</p>
+                </section>
+
+            </dd>
+        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span>
+        &mdash;
+        <section class="phpdocumentor-description"></section>
+
+
+    </article>
+    <article class="phpdocumentor-element
+            -method
+            -public
+                                                        ">
+        <h4 class="phpdocumentor-element__name" id="method_boltList">
+            boltList()
+            <a href="classes/BoltCheckController.html#method_boltList" class="headerlink"><i
+                    class="fas fa-link"></i></a>
+        </h4>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a
+                    href="files/application-controller-boltcheckcontroller.html"><abbr
+                        title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">84</span>
+        </aside>
+
+        <p class="phpdocumentor-summary">Bolt Check List</p>
+
+        <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">boltList</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span></code>
+
+        <section class="phpdocumentor-description">
+            <p>List of available bolt categories from the database</p>
+            <p>Tables Connected: ib_file_verification, ib_manufacturer, ib_category, ib_bolts_available</p>
+        </section>
+
+
+
+        <h5 class="phpdocumentor-tag-list__heading" id="tags">
+            Tags
+            <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        </h5>
+        <dl class="phpdocumentor-tag-list">
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">filesource</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>/home/jojo/WebServer/portal_docu_files/application/views/bolt_checker/BoltListDatabase.php</p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">link</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+                <a class="phpdocumentor-tag-link"
+                    href="https://www.idsincportal.com/index.php?act=bolt-database&amp;menu_uid=199&amp;man=5&amp;cat=1">
+                    https://www.idsincportal.com/index.php?act=bolt-database&amp;menu_uid=199&amp;man=5&amp;cat=1 </a>
+
+            </dd>
+        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span>
+        &mdash;
+        <section class="phpdocumentor-description"></section>
+
+
+    </article>
+    <article class="phpdocumentor-element
+            -method
+            -public
+            -deprecated                                            ">
+        <h4 class="phpdocumentor-element__name" id="method_checkAvailabilityStat">
+            checkAvailabilityStat()
+            <a href="classes/BoltCheckController.html#method_checkAvailabilityStat" class="headerlink"><i
+                    class="fas fa-link"></i></a>
+        </h4>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a
+                    href="files/application-controller-boltcheckcontroller.html"><abbr
+                        title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">1255</span>
+        </aside>
+
+        <p class="phpdocumentor-summary">Check the status of bolt availability</p>
+
+        <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">checkAvailabilityStat</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$diameter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$length</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$man_array_ids</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description">
+            <p>This method will identify the status column of bolt availability.</p>
+            <p>Table Connected: ib_bolts_available</p>
+        </section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+            <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$diameter</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                <section class="phpdocumentor-description">
+                    <p>daimeter value</p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                <section class="phpdocumentor-description">
+                    <p>bolt type value</p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$length</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                <section class="phpdocumentor-description">
+                    <p>bolt length value</p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$man_array_ids</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                <section class="phpdocumentor-description">
+                    <p>branch/es in array</p>
+                </section>
+
+            </dd>
+        </dl>
+
+
+        <h5 class="phpdocumentor-tag-list__heading" id="tags">
+            Tags
+            <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        </h5>
+        <dl class="phpdocumentor-tag-list">
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">deprecated</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>This is not active. It can be removed for a future update since another method similar method is
+                        created.</p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">see</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+                <span class="phpdocumentor-tag-link"><abbr
+                        title="\checkAvailabilityStatRev1()">checkAvailabilityStatRev1()</abbr></span>
+
+                <section class="phpdocumentor-description"></section>
+
+            </dd>
+        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+        &mdash;
+        <section class="phpdocumentor-description"></section>
+
+
+    </article>
+    <article class="phpdocumentor-element
+            -method
+            -public
+                                                        ">
+        <h4 class="phpdocumentor-element__name" id="method_checkAvailabilityStatRev1">
+            checkAvailabilityStatRev1()
+            <a href="classes/BoltCheckController.html#method_checkAvailabilityStatRev1" class="headerlink"><i
+                    class="fas fa-link"></i></a>
+        </h4>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a
+                    href="files/application-controller-boltcheckcontroller.html"><abbr
+                        title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">1427</span>
+        </aside>
+
+        <p class="phpdocumentor-summary">Check the status of bolt availability - Revision 1</p>
+
+        <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">checkAvailabilityStatRev1</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$diameter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$length</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$man_array_ids_tmp</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description">
+            <p>This method will identify the System Remarks column in the bolt availability summary report.
+                There are 4 types of result:</p>
+            <ul>
+                <li> Available</li>
+                <li> Not Available</li>
+                <li> Type Not Found</li>
+                <li> Not Available/ Missing Diameter or Length</li>
+            </ul>
+            <p>Tables Connected: ib_bolts_available, ib_manufacturer, ib_category</p>
+        </section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+            <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$diameter</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                <section class="phpdocumentor-description">
+                    <p>daiameter value</p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                <section class="phpdocumentor-description">
+                    <p>bolt type value</p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$length</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                <section class="phpdocumentor-description">
+                    <p>bolt length value</p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$man_array_ids_tmp</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                <section class="phpdocumentor-description">
+                    <p>branch/es in array</p>
+                </section>
+
+            </dd>
+        </dl>
+
+
+        <h5 class="phpdocumentor-tag-list__heading" id="tags">
+            Tags
+            <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        </h5>
+        <dl class="phpdocumentor-tag-list">
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">version</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+                <span class="phpdocumentor-tag-link">1</span>
+
+                <section class="phpdocumentor-description"></section>
+
+            </dd>
+        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+        &mdash;
+        <section class="phpdocumentor-description"></section>
+
+
+    </article>
+    <article class="phpdocumentor-element
+            -method
+            -public
+                                                        ">
+        <h4 class="phpdocumentor-element__name" id="method_checkBoltValidValue">
+            checkBoltValidValue()
+            <a href="classes/BoltCheckController.html#method_checkBoltValidValue" class="headerlink"><i
+                    class="fas fa-link"></i></a>
+        </h4>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a
+                    href="files/application-controller-boltcheckcontroller.html"><abbr
+                        title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">1229</span>
+        </aside>
+
+        <p class="phpdocumentor-summary">Check Bolt Value</p>
+
+        <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">checkBoltValidValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description">
+            <p>This method will identify the value of Bolt</p>
+            <p>Table/s Connected: none</p>
+        </section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+            <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                <section class="phpdocumentor-description">
+                    <p>value of bolt from each row of the uploaded file</p>
+                </section>
+
+            </dd>
         </dl>
 
 
 
-        
-
-        
-
-            <section class="phpdocumentor-methods">
-        <h3 class="phpdocumentor-elements__header" id="methods">
-            Methods
-            <a href="classes/BoltCheckController.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
-        </h3>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/BoltCheckController.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">33</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Default constructor</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-        <section class="phpdocumentor-description"><p>Assign the other objects to global properties</p>
-</section>
-
-    
-    
-
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+        &mdash;
+        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+    </article>
+    <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_ajaxBoltFileParser">
-        ajaxBoltFileParser()
-        <a href="classes/BoltCheckController.html#method_ajaxBoltFileParser" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">321</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Bolt File Parser</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">ajaxBoltFileParser</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span></code>
-
-        <section class="phpdocumentor-description"><p>This method will parser uploaded file content to HTML table format</p>
-<p>Table Connected: id_job_for_submission_imported</p>
-</section>
-
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">depracated</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>this is not active, it can be removed for a future update</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">filesource</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>/home/jojo/WebServer/portal_docu_files/application/views/bolt_checker/BoltListDatabase.php</p>
-</section>
-
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_ajaxBoltFileParser2">
-        ajaxBoltFileParser2()
-        <a href="classes/BoltCheckController.html#method_ajaxBoltFileParser2" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">377</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Bolt File Parser - revision 1</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">ajaxBoltFileParser2</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span></code>
-
-        <section class="phpdocumentor-description"><p>This method will parser uploaded file content to HTML table format</p>
-<p>Table Connected: id_job_for_submission_imported</p>
-</section>
-
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">filesource</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>/home/jojo/WebServer/portal_docu_files/application/views/bolt_checker/BoltListDatabase.php</p>
-</section>
-
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_boltCheckForm">
-        boltCheckForm()
-        <a href="classes/BoltCheckController.html#method_boltCheckForm" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">56</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Bolt Check Form</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">boltCheckForm</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span></code>
-
-        <section class="phpdocumentor-description"><p>The HTML form uploader will submit the file to validate and return the status of bolt information if it's available in the database.</p>
-<code class="prettyprint">
-Required file extension .xsr
-</code>
-<p>Tables Connected: ib_category, ib_file_verification</p>
-</section>
-
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">filesource</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>/home/jojo/WebServer/portal_docu_files/application/views/BoltCheckForm.php</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">link</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        <a class="phpdocumentor-tag-link" href="https://www.idsincportal.com/index.php?act=bolt-checker&amp;menu_uid=199"> https://www.idsincportal.com/index.php?act=bolt-checker&amp;menu_uid=199 </a>
-                    
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">source</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>10</p>
-</section>
-
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_boltDataTable">
-        boltDataTable()
-        <a href="classes/BoltCheckController.html#method_boltDataTable" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">145</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Bolt Check List</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">boltDataTable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span></code>
-
-        <section class="phpdocumentor-description"><p>List of Bolt available from the database</p>
-<p>Tables Connected: ib_file_verification, ib_manufacturer, ib_category, ib_bolts_available</p>
-</section>
-
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">filesource</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>/home/jojo/WebServer/portal_docu_files/application/views/bolt_checker/BoltListDatabase.php</p>
-</section>
-
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_boltList">
-        boltList()
-        <a href="classes/BoltCheckController.html#method_boltList" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">84</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Bolt Check List</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">boltList</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span></code>
-
-        <section class="phpdocumentor-description"><p>List of available bolt categories from the database</p>
-<p>Tables Connected: ib_file_verification, ib_manufacturer, ib_category, ib_bolts_available</p>
-</section>
-
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">filesource</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>/home/jojo/WebServer/portal_docu_files/application/views/bolt_checker/BoltListDatabase.php</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">link</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        <a class="phpdocumentor-tag-link" href="https://www.idsincportal.com/index.php?act=bolt-database&amp;menu_uid=199&amp;man=5&amp;cat=1"> https://www.idsincportal.com/index.php?act=bolt-database&amp;menu_uid=199&amp;man=5&amp;cat=1 </a>
-                    
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-            -deprecated                                            "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkAvailabilityStat">
-        checkAvailabilityStat()
-        <a href="classes/BoltCheckController.html#method_checkAvailabilityStat" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1255</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Check the status of bolt availability</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">checkAvailabilityStat</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$diameter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$length</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$man_array_ids</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-        <section class="phpdocumentor-description"><p>This method will identify the status column of bolt availability.</p>
-<p>Table Connected: ib_bolts_available</p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$diameter</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>daimeter value</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>bolt type value</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$length</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>bolt length value</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$man_array_ids</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>branch/es in array</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">deprecated</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>This is not active. It can be removed for a future update since another method similar method is created.</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\checkAvailabilityStatRev1()">checkAvailabilityStatRev1()</abbr></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
-
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkAvailabilityStatRev1">
-        checkAvailabilityStatRev1()
-        <a href="classes/BoltCheckController.html#method_checkAvailabilityStatRev1" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1427</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Check the status of bolt availability - Revision 1</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">checkAvailabilityStatRev1</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$diameter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$length</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$man_array_ids_tmp</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-        <section class="phpdocumentor-description"><p>This method will identify the System Remarks column in the bolt availability summary report.
-There are 4 types of result:</p>
-<ul>
-<li> Available</li>
-<li> Not Available</li>
-<li> Type Not Found</li>
-<li> Not Available/ Missing Diameter or Length</li>
-</ul>
-<p>Tables Connected: ib_bolts_available, ib_manufacturer, ib_category</p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$diameter</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>daiameter value</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>bolt type value</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$length</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>bolt length value</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$man_array_ids_tmp</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>branch/es in array</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">version</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                            <span class="phpdocumentor-tag-link">1</span>
-                                                                                
-                                                 <section class="phpdocumentor-description"></section>
-
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkBoltValidValue">
-        checkBoltValidValue()
-        <a href="classes/BoltCheckController.html#method_checkBoltValidValue" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1229</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Check Bolt Value</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">checkBoltValidValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-        <section class="phpdocumentor-description"><p>This method will identify the value of Bolt</p>
-<p>Table/s Connected: none</p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>value of bolt from each row of the uploaded file</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkFileValidity">
-        checkFileValidity()
-        <a href="classes/BoltCheckController.html#method_checkFileValidity" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1051</span>
-</aside>
+                                                        ">
+        <h4 class="phpdocumentor-element__name" id="method_checkFileValidity">
+            checkFileValidity()
+            <a href="classes/BoltCheckController.html#method_checkFileValidity" class="headerlink"><i
+                    class="fas fa-link"></i></a>
+        </h4>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a
+                    href="files/application-controller-boltcheckcontroller.html"><abbr
+                        title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">1051</span>
+        </aside>
 
         <p class="phpdocumentor-summary">File Check Format</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">checkFileValidity</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span></code>
 
-        <section class="phpdocumentor-description"><p>This method will check the format of the uploaded file.
-There are 2 types of error that should be expected from this method.</p>
-<ul>
-<li> 1. Missing Type or Description Column</li>
-<li> 2. Missing Length Column</li>
-</u>
-<p>Table/s Connected: none</p>
-</section>
+        <section class="phpdocumentor-description">
+            <p>This method will check the format of the uploaded file.
+                There are 2 types of error that should be expected from this method.</p>
+            <ul>
+                <li> 1. Missing Type or Description Column</li>
+                <li> 2. Missing Length Column</li>
+                </u>
+                <p>Table/s Connected: none</p>
+        </section>
 
-    
-    
+
+
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+        <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span>
+        &mdash;
+        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+    </article>
+    <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkFormatSytle">
-        checkFormatSytle()
-        <a href="classes/BoltCheckController.html#method_checkFormatSytle" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1118</span>
-</aside>
+                                                        ">
+        <h4 class="phpdocumentor-element__name" id="method_checkFormatSytle">
+            checkFormatSytle()
+            <a href="classes/BoltCheckController.html#method_checkFormatSytle" class="headerlink"><i
+                    class="fas fa-link"></i></a>
+        </h4>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a
+                    href="files/application-controller-boltcheckcontroller.html"><abbr
+                        title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">1118</span>
+        </aside>
 
         <p class="phpdocumentor-summary">Check File Format</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">checkFormatSytle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file_line_content</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span></code>
 
-        <section class="phpdocumentor-description"><p>This method will identify the type of uploaded file. There are 4 different types of file format.</p>
-<ul>
-<li>1. quantity | type | diameter | length</li>
-<li>2. quantity | description | length | remarks | diameter</li>
-<li>3. ln | count | description | length | remarks</li>
-<li>4. ln | count | dia | type | length</li>
-</ul>
-<p>Table Connected: ib_manufacturer</p>
-</section>
+        <section class="phpdocumentor-description">
+            <p>This method will identify the type of uploaded file. There are 4 different types of file format.</p>
+            <ul>
+                <li>1. quantity | type | diameter | length</li>
+                <li>2. quantity | description | length | remarks | diameter</li>
+                <li>3. ln | count | description | length | remarks</li>
+                <li>4. ln | count | dia | type | length</li>
+            </ul>
+            <p>Table Connected: ib_manufacturer</p>
+        </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
+        <dl class="phpdocumentor-argument-list">
+            <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$file_line_content</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
+            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>file content</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>file content</p>
+                </section>
 
             </dd>
-            </dl>
+        </dl>
 
-    
+
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+        <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span>
+        &mdash;
+        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+    </article>
+    <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkLengthValidValue">
-        checkLengthValidValue()
-        <a href="classes/BoltCheckController.html#method_checkLengthValidValue" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1208</span>
-</aside>
+                                                        ">
+        <h4 class="phpdocumentor-element__name" id="method_checkLengthValidValue">
+            checkLengthValidValue()
+            <a href="classes/BoltCheckController.html#method_checkLengthValidValue" class="headerlink"><i
+                    class="fas fa-link"></i></a>
+        </h4>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a
+                    href="files/application-controller-boltcheckcontroller.html"><abbr
+                        title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">1208</span>
+        </aside>
 
         <p class="phpdocumentor-summary">Check Length Value</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">checkLengthValidValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>This method will identify the number of length values.</p>
-<p>Table Connected: none</p>
-</section>
+        <section class="phpdocumentor-description">
+            <p>This method will identify the number of length values.</p>
+            <p>Table Connected: none</p>
+        </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
+        <dl class="phpdocumentor-argument-list">
+            <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$value</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
+            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>value of length from each row of uploaded file</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>value of length from each row of uploaded file</p>
+                </section>
 
             </dd>
-            </dl>
+        </dl>
 
-    
+
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+        &mdash;
+        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+    </article>
+    <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkRowFileType">
-        checkRowFileType()
-        <a href="classes/BoltCheckController.html#method_checkRowFileType" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1499</span>
-</aside>
+                                                        ">
+        <h4 class="phpdocumentor-element__name" id="method_checkRowFileType">
+            checkRowFileType()
+            <a href="classes/BoltCheckController.html#method_checkRowFileType" class="headerlink"><i
+                    class="fas fa-link"></i></a>
+        </h4>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a
+                    href="files/application-controller-boltcheckcontroller.html"><abbr
+                        title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">1499</span>
+        </aside>
 
         <p class="phpdocumentor-summary">Check the type of each row of the file</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">checkRowFileType</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"><p>This method will identify each row from the uploaded file if the type is TC or Hex</p>
-<p>Table/s Connected: none</p>
-</section>
+        <section class="phpdocumentor-description">
+            <p>This method will identify each row from the uploaded file if the type is TC or Hex</p>
+            <p>Table/s Connected: none</p>
+        </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
+        <dl class="phpdocumentor-argument-list">
+            <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$type</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
+            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>bolt type if TC or Hex</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>bolt type if TC or Hex</p>
+                </section>
 
             </dd>
-            </dl>
+        </dl>
 
-    
+
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>return two types either TC or HEX</p>
-</section>
+        <span class="phpdocumentor-signature__response_type">string</span>
+        &mdash;
+        <section class="phpdocumentor-description">
+            <p>return two types either TC or HEX</p>
+        </section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+    </article>
+    <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_decimalToFraction">
-        decimalToFraction()
-        <a href="classes/BoltCheckController.html#method_decimalToFraction" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1561</span>
-</aside>
+                                                        ">
+        <h4 class="phpdocumentor-element__name" id="method_decimalToFraction">
+            decimalToFraction()
+            <a href="classes/BoltCheckController.html#method_decimalToFraction" class="headerlink"><i
+                    class="fas fa-link"></i></a>
+        </h4>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a
+                    href="files/application-controller-boltcheckcontroller.html"><abbr
+                        title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">1561</span>
+        </aside>
 
         <p class="phpdocumentor-summary">Decimal to Fraction</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">decimalToFraction</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$decimal</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"><p>This method will convert the value from Decimal to Fraction (e.g 0.25 to 1/4)</p>
-<p>Table/s Connected: none</p>
-<code class="prettyprint">
+        <section class="phpdocumentor-description">
+            <p>This method will convert the value from Decimal to Fraction (e.g 0.25 to 1/4)</p>
+            <p>Table/s Connected: none</p>
+            <code class="prettyprint">
 $this->decimalToFraction('0.25');
 </code>
-</section>
+        </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
+        <dl class="phpdocumentor-argument-list">
+            <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$decimal</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
+            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>decimal value (e.g 0.25 to 1/4)</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>decimal value (e.g 0.25 to 1/4)</p>
+                </section>
 
             </dd>
-            </dl>
+        </dl>
 
-    
+
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+        <span class="phpdocumentor-signature__response_type">string</span>
+        &mdash;
+        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+    </article>
+    <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_fractionToDecimal">
-        fractionToDecimal()
-        <a href="classes/BoltCheckController.html#method_fractionToDecimal" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1526</span>
-</aside>
+                                                        ">
+        <h4 class="phpdocumentor-element__name" id="method_fractionToDecimal">
+            fractionToDecimal()
+            <a href="classes/BoltCheckController.html#method_fractionToDecimal" class="headerlink"><i
+                    class="fas fa-link"></i></a>
+        </h4>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a
+                    href="files/application-controller-boltcheckcontroller.html"><abbr
+                        title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">1526</span>
+        </aside>
 
         <p class="phpdocumentor-summary">Fraction to Decimal</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">fractionToDecimal</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fraction</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">float</span></code>
 
-        <section class="phpdocumentor-description"><p>This method will convert the value from Fraction to Decimal (1/4 to 0.25)</p>
-<p>Table/s Connected: none</p>
-<code class="prettyprint">
+        <section class="phpdocumentor-description">
+            <p>This method will convert the value from Fraction to Decimal (1/4 to 0.25)</p>
+            <p>Table/s Connected: none</p>
+            <code class="prettyprint">
 $this->fractionToDecimal('1/4');
 </code>
-</section>
+        </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
+        <dl class="phpdocumentor-argument-list">
+            <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$fraction</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
+            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>fraction value (e.g 1/4 to 0.25)</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>fraction value (e.g 1/4 to 0.25)</p>
+                </section>
 
             </dd>
-            </dl>
+        </dl>
 
-    
+
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">float</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+        <span class="phpdocumentor-signature__response_type">float</span>
+        &mdash;
+        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+    </article>
+    <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getManufactureArray">
-        getManufactureArray()
-        <a href="classes/BoltCheckController.html#method_getManufactureArray" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1373</span>
-</aside>
+                                                        ">
+        <h4 class="phpdocumentor-element__name" id="method_getManufactureArray">
+            getManufactureArray()
+            <a href="classes/BoltCheckController.html#method_getManufactureArray" class="headerlink"><i
+                    class="fas fa-link"></i></a>
+        </h4>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a
+                    href="files/application-controller-boltcheckcontroller.html"><abbr
+                        title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">1373</span>
+        </aside>
 
         <p class="phpdocumentor-summary">Get Manufacturer List</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getManufactureArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"><p>This method will identify all manufacturer available in the database and push all result in an array format.</p>
-<p>Tables Connected: ib_manufacturer, ib_category</p>
-</section>
+        <section class="phpdocumentor-description">
+            <p>This method will identify all manufacturer available in the database and push all result in an array
+                format.</p>
+            <p>Tables Connected: ib_manufacturer, ib_category</p>
+        </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
+        <dl class="phpdocumentor-argument-list">
+            <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$type</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
+            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>bolt type if TC or Hex</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>bolt type if TC or Hex</p>
+                </section>
 
             </dd>
-            </dl>
+        </dl>
 
-    
+
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+        <span class="phpdocumentor-signature__response_type">string|array&lt;string|int, mixed&gt;</span>
+        &mdash;
+        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+    </article>
+    <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_viewBoltCheckedAvailability">
-        viewBoltCheckedAvailability()
-        <a href="classes/BoltCheckController.html#method_viewBoltCheckedAvailability" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">492</span>
-</aside>
+                                                        ">
+        <h4 class="phpdocumentor-element__name" id="method_viewBoltCheckedAvailability">
+            viewBoltCheckedAvailability()
+            <a href="classes/BoltCheckController.html#method_viewBoltCheckedAvailability" class="headerlink"><i
+                    class="fas fa-link"></i></a>
+        </h4>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a
+                    href="files/application-controller-boltcheckcontroller.html"><abbr
+                        title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">492</span>
+        </aside>
 
         <p class="phpdocumentor-summary">Bolt Check Availability HTML file format</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">viewBoltCheckedAvailability</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span></code>
 
-        <section class="phpdocumentor-description"><p>This method will render content of uploaded file to HTML table format.</p>
-<p>Table Connected: ib_manufacturer</p>
-</section>
+        <section class="phpdocumentor-description">
+            <p>This method will render content of uploaded file to HTML table format.</p>
+            <p>Table Connected: ib_manufacturer</p>
+        </section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">depracated</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>This is not active. It can be removed for a future update since another method similar method is created.</p>
-</section>
 
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\viewBoltCheckedAvailabilityRev1()">viewBoltCheckedAvailabilityRev1()</abbr></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                        </dl>
+        <h5 class="phpdocumentor-tag-list__heading" id="tags">
+            Tags
+            <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        </h5>
+        <dl class="phpdocumentor-tag-list">
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">depracated</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>This is not active. It can be removed for a future update since another method similar method is
+                        created.</p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">see</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+                <span class="phpdocumentor-tag-link"><abbr
+                        title="\viewBoltCheckedAvailabilityRev1()">viewBoltCheckedAvailabilityRev1()</abbr></span>
+
+                <section class="phpdocumentor-description"></section>
+
+            </dd>
+        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+        <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span>
+        &mdash;
+        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+    </article>
+    <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_viewBoltCheckedAvailabilityRev1">
-        viewBoltCheckedAvailabilityRev1()
-        <a href="classes/BoltCheckController.html#method_viewBoltCheckedAvailabilityRev1" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">728</span>
-</aside>
+                                                        ">
+        <h4 class="phpdocumentor-element__name" id="method_viewBoltCheckedAvailabilityRev1">
+            viewBoltCheckedAvailabilityRev1()
+            <a href="classes/BoltCheckController.html#method_viewBoltCheckedAvailabilityRev1" class="headerlink"><i
+                    class="fas fa-link"></i></a>
+        </h4>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a
+                    href="files/application-controller-boltcheckcontroller.html"><abbr
+                        title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">728</span>
+        </aside>
 
         <p class="phpdocumentor-summary">Bolt Check Availability HTML file format - revision 1</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">viewBoltCheckedAvailabilityRev1</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span></code>
 
-        <section class="phpdocumentor-description"><p>This method will render content of uploaded file to HTML table format.</p>
-<p>Table Connected: ib_manufacturer</p>
-</section>
+        <section class="phpdocumentor-description">
+            <p>This method will render content of uploaded file to HTML table format.</p>
+            <p>Table Connected: ib_manufacturer</p>
+        </section>
 
-    
-    
+
+
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+        <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span>
+        &mdash;
+        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+    </article>
+    <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_viewFileUploaded">
-        viewFileUploaded()
-        <a href="classes/BoltCheckController.html#method_viewFileUploaded" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">436</span>
-</aside>
+                                                        ">
+        <h4 class="phpdocumentor-element__name" id="method_viewFileUploaded">
+            viewFileUploaded()
+            <a href="classes/BoltCheckController.html#method_viewFileUploaded" class="headerlink"><i
+                    class="fas fa-link"></i></a>
+        </h4>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a
+                    href="files/application-controller-boltcheckcontroller.html"><abbr
+                        title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">436</span>
+        </aside>
 
         <p class="phpdocumentor-summary">File viewer</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">viewFileUploaded</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file_location</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span></code>
 
-        <section class="phpdocumentor-description"><p>This method will parser uploaded file content to html table format</p>
-<p>Table Connected: none</p>
-</section>
+        <section class="phpdocumentor-description">
+            <p>This method will parser uploaded file content to html table format</p>
+            <p>Table Connected: none</p>
+        </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
+        <dl class="phpdocumentor-argument-list">
+            <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$file_location</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
+            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>directory location of uploaded file</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>directory location of uploaded file</p>
+                </section>
 
             </dd>
-            </dl>
+        </dl>
 
-    
+
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+        <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\html">html</abbr></span>
+        &mdash;
+        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+    </article>
+    <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_importNow">
-        importNow()
-        <a href="classes/BoltCheckController.html#method_importNow" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a href="files/application-controller-boltcheckcontroller.html"><abbr title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">300</span>
-</aside>
+                                                        ">
+        <h4 class="phpdocumentor-element__name" id="method_importNow">
+            importNow()
+            <a href="classes/BoltCheckController.html#method_importNow" class="headerlink"><i
+                    class="fas fa-link"></i></a>
+        </h4>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/BoltCheckController.php"><a
+                    href="files/application-controller-boltcheckcontroller.html"><abbr
+                        title="application/controller/BoltCheckController.php">BoltCheckController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">300</span>
+        </aside>
 
         <p class="phpdocumentor-summary">Import the contents of the file to the database.</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">importNow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sql_insert</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\none">none</abbr></span></code>
 
-        <section class="phpdocumentor-description"><p>This method will import the contents of the file to the database.</p>
-<p>Table Connected: id_job_for_submission_imported</p>
-</section>
+        <section class="phpdocumentor-description">
+            <p>This method will import the contents of the file to the database.</p>
+            <p>Table Connected: id_job_for_submission_imported</p>
+        </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
+        <dl class="phpdocumentor-argument-list">
+            <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$sql_insert</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
-                            </dt>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr
+                            title=""></abbr></a></span>
+            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>value of row from uploaded file (i.e Job No., Job Code, Fabricator, Detailed In, Version, Date, Remarks, Date Imported, Status)</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>value of row from uploaded file (i.e Job No., Job Code, Fabricator, Detailed In, Version, Date,
+                        Remarks, Date Imported, Status)</p>
+                </section>
 
             </dd>
-            </dl>
+        </dl>
 
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">filesource</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>/home/jojo/WebServer/portal_docu_files/application/views/bolt_checker/BoltListDatabase.php</p>
-</section>
 
-                                    </dd>
-                        </dl>
+        <h5 class="phpdocumentor-tag-list__heading" id="tags">
+            Tags
+            <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        </h5>
+        <dl class="phpdocumentor-tag-list">
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">filesource</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>/home/jojo/WebServer/portal_docu_files/application/views/bolt_checker/BoltListDatabase.php</p>
+                </section>
+
+            </dd>
+        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\none">none</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\none">none</abbr></span>
+        &mdash;
+        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-            </section>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+</section>
+
+</article>
+<section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -1468,14 +1446,9 @@ $this->fractionToDecimal('1/4');
         </section>
     </section>
 </section>
-            </div>
-        </div>
-        <a href="classes/BoltCheckController.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+</div>
+</div>
+<a href="classes/BoltCheckController.html#top" class="phpdocumentor-back-to-top"><i
+        class="fas fa-chevron-circle-up"></i></a>
 
-    </main>
-
-    <script>
-        cssVars({});
-    </script>
-</body>
-</html>
+<?php require('../layouts/footer.html'); ?>

@@ -1,2031 +1,2072 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Documentation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="../">
-    <link rel="icon" href="images/favicon.ico"/>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/template.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
-                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
-        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
-        <script src="js/search.js"></script>
-        <script defer src="js/searchIndex.js"></script>
-    </head>
-<body id="top">
-    <header class="phpdocumentor-header phpdocumentor-section">
-    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
-    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
-    <label class="phpdocumentor-header__menu-icon" for="menu-button">
-        <i class="fas fa-bars"></i>
-    </label>
-    <section data-search-form class="phpdocumentor-search">
-    <label>
-        <span class="visually-hidden">Search for</span>
-        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
-            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
-        </svg>
-        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
-    </label>
-</section>
+<?php require('../layouts/header.html'); ?>
 
-    <nav class="phpdocumentor-topnav">
-    <ul class="phpdocumentor-topnav__menu">
-        </ul>
-</nav>
-</header>
-
-    <main class="phpdocumentor">
-        <div class="phpdocumentor-section">
-            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
-<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
-    Menu
-</label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/application.html"><abbr title="\application">application</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/application-controller.html"><abbr title="\application\controller">controller</abbr></a></li>
-                                    </ul>
-                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/dashboard.html"><abbr title="\Dashboard">Dashboard</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                    </ul>
-                        </section>
-
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Default.html"><abbr title="\Default">Default</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/PasswordManager.html"><abbr title="\PasswordManager">PasswordManager</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/BoltCheck.html"><abbr title="\BoltCheck">BoltCheck</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/CDLogs.html"><abbr title="\CDLogs">CDLogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Dashboard.html"><abbr title="\Dashboard">Dashboard</abbr></a></h3>
-                        </section>
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
-                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
-    </section>
-
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
-    </section>
-</aside>
-
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/application.html">application</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/application-controller.html">controller</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/application-controller-dashboard.html">Dashboard</a></li>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+    <ul class="phpdocumentor-breadcrumbs">
+        <li class="phpdocumentor-breadcrumb"><a href="namespaces/application.html">application</a></li>
+        <li class="phpdocumentor-breadcrumb"><a href="namespaces/application-controller.html">controller</a></li>
+        <li class="phpdocumentor-breadcrumb"><a href="namespaces/application-controller-dashboard.html">Dashboard</a>
+        </li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    DashBoardController
+            DashBoardController
 
-        <span class="phpdocumentor-element__extends">
-        extends <abbr title="\application\controller\Dashboard\SupportClass">SupportClass</abbr>
-    </span>
-    
+            <span class="phpdocumentor-element__extends">
+                extends <abbr title="\application\controller\Dashboard\SupportClass">SupportClass</abbr>
+            </span>
+
             <div class="phpdocumentor-element__package">
-            in package
-            <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Dashboard.html">Dashboard</a></li>
-                            </ul>
-        </div>
-    
-    
-    </h2>
+                in package
+                <ul class="phpdocumentor-breadcrumbs">
+                    <li class="phpdocumentor-breadcrumb"><a href="packages/Dashboard.html">Dashboard</a></li>
+                </ul>
+            </div>
+
+
+        </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">36</span>
-</aside>
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a
+                    href="files/application-controller-dashboardcontroller.html"><abbr
+                        title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">36</span>
+        </aside>
 
-            <p class="phpdocumentor-summary">Dashboard Controller</p>
+        <p class="phpdocumentor-summary">Dashboard Controller</p>
 
-    <section class="phpdocumentor-description"><p>This object contains the summary and report monitoring in Dashboard.
-Such as the following;</p>
-<ul>
-<li> Root Cause Monitoring</li>
-<li> Manpower with Issue</li>
-<li> Tardiness Monitoring</li>
-<li> Leave Balance</li>
-<li> Reimbursement</li>
-<li> Reports</li>
-<li> Non-Compliance Logs</li>
-<li> Scheduled Suspension</li>
-<li> Engineering Delinquent Timesheet Monitoring</li>
-<li> Scheduled LeavesMemorandum & News/Articles</li>
-<li> Popup notifications (Personal Memo, Health Declaration, Health on and Insurance)</li>
-</ul>
-<p>Datatabase Connected: idsporta_1dsP0rt4l, idsporta_idshrms</p>
-</section>
-
-
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">example</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"></section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">filesource</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>/home/jojo/WebServer/portal_docu_files/application/controller/DashBoardController.php</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\application\controller\Dashboard\DashBoardModel">DashBoardModel</abbr></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">link</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        <a class="phpdocumentor-tag-link" href="https://www.idsincportal.com/"> https://www.idsincportal.com/ </a>
-                    
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">author</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Jojo De Jesus <a href="mailto:jojo.webdeveloper@gmail.com">jojo.webdeveloper@gmail.com</a></p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">copyright</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Copyright (c) 2015 - 2021, Isometric Diagonal Scheme, Inc.</p>
-</section>
-
-                                    </dd>
-                        </dl>
+        <section class="phpdocumentor-description">
+            <p>This object contains the summary and report monitoring in Dashboard.
+                Such as the following;</p>
+            <ul>
+                <li> Root Cause Monitoring</li>
+                <li> Manpower with Issue</li>
+                <li> Tardiness Monitoring</li>
+                <li> Leave Balance</li>
+                <li> Reimbursement</li>
+                <li> Reports</li>
+                <li> Non-Compliance Logs</li>
+                <li> Scheduled Suspension</li>
+                <li> Engineering Delinquent Timesheet Monitoring</li>
+                <li> Scheduled LeavesMemorandum & News/Articles</li>
+                <li> Popup notifications (Personal Memo, Health Declaration, Health on and Insurance)</li>
+            </ul>
+            <p>Datatabase Connected: idsporta_1dsP0rt4l, idsporta_idshrms</p>
+        </section>
 
 
+        <h5 class="phpdocumentor-tag-list__heading" id="tags">
+            Tags
+            <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        </h5>
+        <dl class="phpdocumentor-tag-list">
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">example</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description"></section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">filesource</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>/home/jojo/WebServer/portal_docu_files/application/controller/DashBoardController.php</p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">see</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+                <span class="phpdocumentor-tag-link"><abbr
+                        title="\application\controller\Dashboard\DashBoardModel">DashBoardModel</abbr></span>
+
+                <section class="phpdocumentor-description"></section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">link</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+                <a class="phpdocumentor-tag-link" href="https://www.idsincportal.com/"> https://www.idsincportal.com/
+                </a>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">author</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>Jojo De Jesus <a href="mailto:jojo.webdeveloper@gmail.com">jojo.webdeveloper@gmail.com</a></p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">copyright</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>Copyright (c) 2015 - 2021, Isometric Diagonal Scheme, Inc.</p>
+                </section>
+
+            </dd>
+        </dl>
 
 
 
 
-<h3 id="toc">
-    Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
 
-<dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method___construct">__construct()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Default constructor</dd>
+
+        <h3 id="toc">
+            Table of Contents
+            <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+
+        <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method___construct">__construct()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Default constructor</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_ajaxViewLeaveByID">ajaxViewLeaveByID()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_ajaxViewLeaveByID">ajaxViewLeaveByID()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_alertHealthCareInsurance">alertHealthCareInsurance()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_alertHealthCareInsurance">alertHealthCareInsurance()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_alertMemo">alertMemo()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_alertMemo">alertMemo()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_alertNotification">alertNotification()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_alertNotification">alertNotification()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_alertNotificationDetails">alertNotificationDetails()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_alertNotificationDetails">alertNotificationDetails()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_calcDateDiffWoWeekend">calcDateDiffWoWeekend()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_calcDateDiffWoWeekend">calcDateDiffWoWeekend()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_checkEmployeeName">checkEmployeeName()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_checkEmployeeName">checkEmployeeName()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_checkForUnreadMemo">checkForUnreadMemo()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_checkForUnreadMemo">checkForUnreadMemo()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_checkLastDate">checkLastDate()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_checkLastDate">checkLastDate()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_checkOffice">checkOffice()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_checkOffice">checkOffice()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countAbsent">countAbsent()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_countAbsent">countAbsent()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countAbsentDetails">countAbsentDetails()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_countAbsentDetails">countAbsentDetails()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLate1">countLate1()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_countLate1">countLate1()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLate1Details">countLate1Details()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_countLate1Details">countLate1Details()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLate2">countLate2()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_countLate2">countLate2()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLate2Details">countLate2Details()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_countLate2Details">countLate2Details()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLeave1">countLeave1()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_countLeave1">countLeave1()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLeave2">countLeave2()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_countLeave2">countLeave2()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLeave3">countLeave3()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_countLeave3">countLeave3()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countMemo">countMemo()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_countMemo">countMemo()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countVLSL">countVLSL()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_countVLSL">countVLSL()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countVLSLDetails">countVLSLDetails()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_countVLSLDetails">countVLSLDetails()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_dashBoard">dashBoard()</a>
-    <span>
-                        &nbsp;: mixed|<abbr title="\application\controller\Dashboard\HTML">HTML</abbr>    </span>
-</dt>
-<dd>Dashboard HTML elements</dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_dashBoard">dashBoard()</a>
+                <span>
+                    &nbsp;: mixed|<abbr title="\application\controller\Dashboard\HTML">HTML</abbr> </span>
+            </dt>
+            <dd>Dashboard HTML elements</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_delinquentTimeSheet">delinquentTimeSheet()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_delinquentTimeSheet">delinquentTimeSheet()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_delinquentTimeSheetV2">delinquentTimeSheetV2()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_delinquentTimeSheetV2">delinquentTimeSheetV2()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_delinquentTimeSheetV3">delinquentTimeSheetV3()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_delinquentTimeSheetV3">delinquentTimeSheetV3()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_getLeaveSchedule_1">getLeaveSchedule_1()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_getLeaveSchedule_1">getLeaveSchedule_1()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_getLeaveSchedule_2_DataTable">getLeaveSchedule_2_DataTable()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_getLeaveSchedule_2_DataTable">getLeaveSchedule_2_DataTable()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_getLeaveSchedule_3_DataTable">getLeaveSchedule_3_DataTable()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_getLeaveSchedule_3_DataTable">getLeaveSchedule_3_DataTable()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_nonComplianceLogsDatatable">nonComplianceLogsDatatable()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Data table, retrieve</dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_nonComplianceLogsDatatable">nonComplianceLogsDatatable()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Data table, retrieve</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_readMessage">readMessage()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_readMessage">readMessage()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_surveyDetails">surveyDetails()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_surveyDetails">surveyDetails()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_tardinessMonitoring">tardinessMonitoring()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>submit new employee information</dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_tardinessMonitoring">tardinessMonitoring()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>submit new employee information</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_workOutSchedule">workOutSchedule()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_workOutSchedule">workOutSchedule()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_lastUpdate">lastUpdate()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
+                <a
+                    href="classes/application-controller-Dashboard-DashBoardController.html#method_lastUpdate">lastUpdate()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd></dd>
 
         </dl>
 
 
 
-        
 
-        
 
-            <section class="phpdocumentor-methods">
-        <h3 class="phpdocumentor-elements__header" id="methods">
-            Methods
-            <a href="classes/application-controller-Dashboard-DashBoardController.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
-        </h3>
-                    <article
-        class="phpdocumentor-element
+
+
+        <section class="phpdocumentor-methods">
+            <h3 class="phpdocumentor-elements__header" id="methods">
+                Methods
+                <a href="classes/application-controller-Dashboard-DashBoardController.html#methods"
+                    class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">44</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method___construct">
+                    __construct()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method___construct"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">44</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Default constructor</p>
+                <p class="phpdocumentor-summary">Default constructor</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Assign the other objects to global properties</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Assign the other objects to global properties</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_ajaxViewLeaveByID">
-        ajaxViewLeaveByID()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_ajaxViewLeaveByID" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1071</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_ajaxViewLeaveByID">
+                    ajaxViewLeaveByID()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_ajaxViewLeaveByID"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1071</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">ajaxViewLeaveByID</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_alertHealthCareInsurance">
-        alertHealthCareInsurance()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_alertHealthCareInsurance" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">2107</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_alertHealthCareInsurance">
+                    alertHealthCareInsurance()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_alertHealthCareInsurance"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">2107</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">alertHealthCareInsurance</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_alertMemo">
-        alertMemo()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_alertMemo" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">827</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_alertMemo">
+                    alertMemo()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_alertMemo"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">827</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">alertMemo</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_alertNotification">
-        alertNotification()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_alertNotification" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1038</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_alertNotification">
+                    alertNotification()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_alertNotification"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1038</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">alertNotification</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_alertNotificationDetails">
-        alertNotificationDetails()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_alertNotificationDetails" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1054</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_alertNotificationDetails">
+                    alertNotificationDetails()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_alertNotificationDetails"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1054</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">alertNotificationDetails</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_calcDateDiffWoWeekend">
-        calcDateDiffWoWeekend()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_calcDateDiffWoWeekend" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">744</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_calcDateDiffWoWeekend">
+                    calcDateDiffWoWeekend()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_calcDateDiffWoWeekend"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">744</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">calcDateDiffWoWeekend</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$startDate</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$endDate</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$holidays</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&quot;&quot;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$startDate</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$endDate</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$holidays</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&quot;&quot;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
 
-    
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$startDate</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$endDate</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$holidays</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                        = <span class="phpdocumentor-signature__argument__default-value">&quot;&quot;</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
+                </dl>
+
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkEmployeeName">
-        checkEmployeeName()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_checkEmployeeName" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">2500</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkEmployeeName">
+                    checkEmployeeName()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_checkEmployeeName"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">2500</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">checkEmployeeName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$employee_no</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$employee_no</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$employee_no</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkForUnreadMemo">
-        checkForUnreadMemo()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_checkForUnreadMemo" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">848</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkForUnreadMemo">
+                    checkForUnreadMemo()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_checkForUnreadMemo"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">848</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">checkForUnreadMemo</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$memo_type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$array</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$memo_type</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
+                        <span class="phpdocumentor-signature__argument__name">$memo_type</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                        = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$array</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$array</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                        = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkLastDate">
-        checkLastDate()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_checkLastDate" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">2406</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkLastDate">
+                    checkLastDate()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_checkLastDate"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">2406</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">checkLastDate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkOffice">
-        checkOffice()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_checkOffice" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">2513</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkOffice">
+                    checkOffice()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_checkOffice"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">2513</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">checkOffice</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$office_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$office_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$office_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_countAbsent">
-        countAbsent()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countAbsent" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1174</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_countAbsent">
+                    countAbsent()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countAbsent"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1174</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">countAbsent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emp_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$first_day</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$last_day</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$emp_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$first_day</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$last_day</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
 
-    
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$emp_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$first_day</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$last_day</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
+                </dl>
+
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_countAbsentDetails">
-        countAbsentDetails()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countAbsentDetails" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1193</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_countAbsentDetails">
+                    countAbsentDetails()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countAbsentDetails"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1193</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">countAbsentDetails</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emp_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$first_day</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$last_day</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$emp_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$first_day</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$last_day</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
 
-    
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$emp_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$first_day</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$last_day</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
+                </dl>
+
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_countLate1">
-        countLate1()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLate1" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1675</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_countLate1">
+                    countLate1()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLate1"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1675</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">countLate1</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emp_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$first_day</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$last_day</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$emp_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$first_day</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$last_day</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
 
-    
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$emp_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$first_day</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$last_day</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
+                </dl>
+
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_countLate1Details">
-        countLate1Details()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLate1Details" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1884</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_countLate1Details">
+                    countLate1Details()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLate1Details"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1884</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">countLate1Details</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emp_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$first_day</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$last_day</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$emp_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$first_day</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$last_day</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
 
-    
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$emp_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$first_day</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$last_day</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
+                </dl>
+
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_countLate2">
-        countLate2()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLate2" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1233</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_countLate2">
+                    countLate2()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLate2"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1233</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">countLate2</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emp_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$first_day</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$last_day</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$emp_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$first_day</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$last_day</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
 
-    
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$emp_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$first_day</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$last_day</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
+                </dl>
+
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_countLate2Details">
-        countLate2Details()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLate2Details" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1522</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_countLate2Details">
+                    countLate2Details()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLate2Details"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1522</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">countLate2Details</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emp_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$first_day</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$last_day</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$emp_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$first_day</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$last_day</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
 
-    
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$emp_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$first_day</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$last_day</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
+                </dl>
+
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_countLeave1">
-        countLeave1()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLeave1" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">2423</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_countLeave1">
+                    countLeave1()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLeave1"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">2423</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">countLeave1</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_countLeave2">
-        countLeave2()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLeave2" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">2447</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_countLeave2">
+                    countLeave2()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLeave2"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">2447</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">countLeave2</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_countLeave3">
-        countLeave3()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLeave3" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">2479</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_countLeave3">
+                    countLeave3()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countLeave3"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">2479</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">countLeave3</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_countMemo">
-        countMemo()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countMemo" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1129</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_countMemo">
+                    countMemo()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countMemo"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1129</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">countMemo</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emp_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$emp_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$emp_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_countVLSL">
-        countVLSL()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countVLSL" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">2039</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_countVLSL">
+                    countVLSL()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countVLSL"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">2039</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">countVLSL</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emp_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$first_day</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$last_day</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$emp_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$first_day</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$last_day</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
 
-    
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$emp_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$first_day</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$last_day</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
+                </dl>
+
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_countVLSLDetails">
-        countVLSLDetails()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countVLSLDetails" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">2058</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_countVLSLDetails">
+                    countVLSLDetails()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_countVLSLDetails"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">2058</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">countVLSLDetails</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emp_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$first_day</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$last_day</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$emp_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$first_day</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$last_day</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
 
-    
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$emp_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$first_day</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                        <span class="phpdocumentor-signature__argument__name">$last_day</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
+                </dl>
+
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_dashBoard">
-        dashBoard()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_dashBoard" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">80</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_dashBoard">
+                    dashBoard()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_dashBoard"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">80</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Dashboard HTML elements</p>
+                <p class="phpdocumentor-summary">Dashboard HTML elements</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">dashBoard</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|<abbr title="\application\controller\Dashboard\HTML">HTML</abbr></span></code>
 
-        <section class="phpdocumentor-description"><p>This method will show the main HTML elements of the dashboard.
-There are 3 different kinds of Dashboard HTML</p>
-<ul>
-<li> For Philippines and India Employees</li>
-<li> For United States Employees</li>
-<li> For Remote office employees</li>
-</ul>
-<p>Tables Connected: im_memo, form_healthcare, form_insurance, im_employees, im_department, im_branch</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>This method will show the main HTML elements of the dashboard.
+                        There are 3 different kinds of Dashboard HTML</p>
+                    <ul>
+                        <li> For Philippines and India Employees</li>
+                        <li> For United States Employees</li>
+                        <li> For Remote office employees</li>
+                    </ul>
+                    <p>Tables Connected: im_memo, form_healthcare, form_insurance, im_employees, im_department,
+                        im_branch</p>
+                </section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\application\controller\Dashboard\MemoModel::getMemoInfo()">MemoModel::getMemoInfo()</abbr></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>MemoModel::getArticleInfo();</p>
-</section>
 
-                                    </dd>
-                        </dl>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><abbr
+                                title="\application\controller\Dashboard\MemoModel::getMemoInfo()">MemoModel::getMemoInfo()</abbr></span>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\application\controller\Dashboard\HTML">HTML</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>elements /application/views/DashBoard.php, DashBoard_RemoteOffice.php</p>
-</section>
+                        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+
+                        <section class="phpdocumentor-description">
+                            <p>MemoModel::getArticleInfo();</p>
+                        </section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed|<abbr
+                        title="\application\controller\Dashboard\HTML">HTML</abbr></span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>elements /application/views/DashBoard.php, DashBoard_RemoteOffice.php</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_delinquentTimeSheet">
-        delinquentTimeSheet()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_delinquentTimeSheet" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">283</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_delinquentTimeSheet">
+                    delinquentTimeSheet()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_delinquentTimeSheet"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">283</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">delinquentTimeSheet</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emp_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$emp_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$emp_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_delinquentTimeSheetV2">
-        delinquentTimeSheetV2()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_delinquentTimeSheetV2" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">483</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_delinquentTimeSheetV2">
+                    delinquentTimeSheetV2()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_delinquentTimeSheetV2"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">483</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">delinquentTimeSheetV2</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emp_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$emp_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$emp_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_delinquentTimeSheetV3">
-        delinquentTimeSheetV3()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_delinquentTimeSheetV3" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">622</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_delinquentTimeSheetV3">
+                    delinquentTimeSheetV3()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_delinquentTimeSheetV3"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">622</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">delinquentTimeSheetV3</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emp_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date_hired</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$emp_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
+                        <span class="phpdocumentor-signature__argument__name">$emp_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$date_hired</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$date_hired</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getLeaveSchedule_1">
-        getLeaveSchedule_1()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_getLeaveSchedule_1" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">2172</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getLeaveSchedule_1">
+                    getLeaveSchedule_1()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_getLeaveSchedule_1"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">2172</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getLeaveSchedule_1</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getLeaveSchedule_2_DataTable">
-        getLeaveSchedule_2_DataTable()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_getLeaveSchedule_2_DataTable" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">2180</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getLeaveSchedule_2_DataTable">
+                    getLeaveSchedule_2_DataTable()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_getLeaveSchedule_2_DataTable"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">2180</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getLeaveSchedule_2_DataTable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getLeaveSchedule_3_DataTable">
-        getLeaveSchedule_3_DataTable()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_getLeaveSchedule_3_DataTable" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">2298</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getLeaveSchedule_3_DataTable">
+                    getLeaveSchedule_3_DataTable()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_getLeaveSchedule_3_DataTable"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">2298</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getLeaveSchedule_3_DataTable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_nonComplianceLogsDatatable">
-        nonComplianceLogsDatatable()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_nonComplianceLogsDatatable" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">917</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_nonComplianceLogsDatatable">
+                    nonComplianceLogsDatatable()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_nonComplianceLogsDatatable"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">917</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Data table, retrieve</p>
+                <p class="phpdocumentor-summary">Data table, retrieve</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">nonComplianceLogsDatatable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>script   : none
-type     : ajax
-plugins  : datatable
-return   : json datasource</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>script : none
+                        type : ajax
+                        plugins : datatable
+                        return : json datasource</p>
+                </section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_readMessage">
-        readMessage()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_readMessage" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">815</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_readMessage">
+                    readMessage()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_readMessage"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">815</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">readMessage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_surveyDetails">
-        surveyDetails()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_surveyDetails" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">803</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_surveyDetails">
+                    surveyDetails()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_surveyDetails"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">803</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">surveyDetails</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_tardinessMonitoring">
-        tardinessMonitoring()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_tardinessMonitoring" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1101</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_tardinessMonitoring">
+                    tardinessMonitoring()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_tardinessMonitoring"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1101</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">submit new employee information</p>
+                <p class="phpdocumentor-summary">submit new employee information</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">tardinessMonitoring</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mode</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$mode</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$mode</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_workOutSchedule">
-        workOutSchedule()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_workOutSchedule" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">2098</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_workOutSchedule">
+                    workOutSchedule()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_workOutSchedule"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">2098</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">workOutSchedule</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emp_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$emp_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$emp_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_lastUpdate">
-        lastUpdate()
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#method_lastUpdate" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/DashBoardController.php"><a href="files/application-controller-dashboardcontroller.html"><abbr title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1023</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_lastUpdate">
+                    lastUpdate()
+                    <a href="classes/application-controller-Dashboard-DashBoardController.html#method_lastUpdate"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/DashBoardController.php"><a
+                            href="files/application-controller-dashboardcontroller.html"><abbr
+                                title="application/controller/DashBoardController.php">DashBoardController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1023</span>
+                </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">lastUpdate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menu_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
+                        <span class="phpdocumentor-signature__argument__name">$uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$menu_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$menu_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-            </section>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+        </section>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
-    <section class="phpdocumentor-search-results__dialog">
-        <header class="phpdocumentor-search-results__header">
-            <h2 class="phpdocumentor-search-results__title">Search results</h2>
-            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
-        </header>
-        <section class="phpdocumentor-search-results__body">
-            <ul class="phpdocumentor-search-results__entries"></ul>
+    <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+        <section class="phpdocumentor-search-results__dialog">
+            <header class="phpdocumentor-search-results__header">
+                <h2 class="phpdocumentor-search-results__title">Search results</h2>
+                <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+            </header>
+            <section class="phpdocumentor-search-results__body">
+                <ul class="phpdocumentor-search-results__entries"></ul>
+            </section>
         </section>
     </section>
-</section>
-            </div>
-        </div>
-        <a href="classes/application-controller-Dashboard-DashBoardController.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+</div>
+</div>
+<a href="classes/application-controller-Dashboard-DashBoardController.html#top" class="phpdocumentor-back-to-top"><i
+        class="fas fa-chevron-circle-up"></i></a>
 
-    </main>
-
-    <script>
-        cssVars({});
-    </script>
-</body>
-</html>
+<?php require('../layouts/footer.html'); ?>

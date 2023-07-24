@@ -1,1098 +1,1068 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>IDSPORTAL DOCU</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="../">
-    <link rel="icon" href="images/favicon.ico"/>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/template.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
-                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
-        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
-        <script src="js/search.js"></script>
-        <script defer src="js/searchIndex.js"></script>
-    </head>
-<body id="top">
-    <header class="phpdocumentor-header phpdocumentor-section">
-    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">IDSPORTAL DOCU</a></h1>
-    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
-    <label class="phpdocumentor-header__menu-icon" for="menu-button">
-        <i class="fas fa-bars"></i>
-    </label>
-    <section data-search-form class="phpdocumentor-search">
-    <label>
-        <span class="visually-hidden">Search for</span>
-        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
-            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
-        </svg>
-        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
-    </label>
-</section>
+<?php require('../layouts/header.html'); ?>
 
-    <nav class="phpdocumentor-topnav">
-    <ul class="phpdocumentor-topnav__menu">
-        </ul>
-</nav>
-</header>
-
-    <main class="phpdocumentor">
-        <div class="phpdocumentor-section">
-            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
-<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
-    Menu
-</label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/application.html"><abbr title="\Application">Application</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/application-controller.html"><abbr title="\Application\Controller">Controller</abbr></a></li>
-                                            <li><a href="namespaces/application-model.html"><abbr title="\Application\Model">Model</abbr></a></li>
-                                            <li><a href="namespaces/application-views.html"><abbr title="\Application\Views">Views</abbr></a></li>
-                                    </ul>
-                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/connect.html"><abbr title="\Connect">Connect</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                    </ul>
-                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/core.html"><abbr title="\Core">Core</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/core-init.html"><abbr title="\Core\init">init</abbr></a></li>
-                                    </ul>
-                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/library.html"><abbr title="\Library">Library</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                    </ul>
-                        </section>
-
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Default.html"><abbr title="\Default">Default</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/AccountsManager.html"><abbr title="\AccountsManager">AccountsManager</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/BoltCheck.html"><abbr title="\BoltCheck">BoltCheck</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/CDLogs.html"><abbr title="\CDLogs">CDLogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Dashboard.html"><abbr title="\Dashboard">Dashboard</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/DesignDrawingLog.html"><abbr title="\DesignDrawingLog">DesignDrawingLog</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/DetailedIn.html"><abbr title="\DetailedIn">DetailedIn</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/ENGQRDrawingMonitoring.html"><abbr title="\ENGQRDrawingMonitoring">ENGQRDrawingMonitoring</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Employee201File.html"><abbr title="\Employee201File">Employee201File</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/EPRP.html"><abbr title="\EPRP">EPRP</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/FabricatorStandard.html"><abbr title="\FabricatorStandard">FabricatorStandard</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/GizaDepartment.html"><abbr title="\GizaDepartment">GizaDepartment</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/HRMSMemoContactInfo.html"><abbr title="\HRMSMemoContactInfo">HRMSMemoContactInfo</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/InhouseHourMonitoring.html"><abbr title="\InhouseHourMonitoring">InhouseHourMonitoring</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Ipap.html"><abbr title="\Ipap">Ipap</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/CanamJob.html"><abbr title="\CanamJob">CanamJob</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Job.html"><abbr title="\Job">Job</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Late.html"><abbr title="\Late">Late</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Leave.html"><abbr title="\Leave">Leave</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/JobLogs.html"><abbr title="\JobLogs">JobLogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Manpower.html"><abbr title="\Manpower">Manpower</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Memorandum.html"><abbr title="\Memorandum">Memorandum</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Menu.html"><abbr title="\Menu">Menu</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/OpenJobs.html"><abbr title="\OpenJobs">OpenJobs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Reports.html"><abbr title="\Reports">Reports</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/RFILogs.html"><abbr title="\RFILogs">RFILogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/RFQ.html"><abbr title="\RFQ">RFQ</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/ROM.html"><abbr title="\ROM">ROM</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/RootCause.html"><abbr title="\RootCause">RootCause</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/RORating.html"><abbr title="\RORating">RORating</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/DrawingLog.html"><abbr title="\DrawingLog">DrawingLog</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/SOV.html"><abbr title="\SOV">SOV</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/StatusReport.html"><abbr title="\StatusReport">StatusReport</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/TimeSheet.html"><abbr title="\TimeSheet">TimeSheet</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/TransmittalLogs.html"><abbr title="\TransmittalLogs">TransmittalLogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Reimbursement.html"><abbr title="\Reimbursement">Reimbursement</abbr></a></h3>
-                        </section>
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
-                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
-    </section>
-
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
-    </section>
-</aside>
-
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/application.html">Application</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/application-controller.html">Controller</a></li>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+    <ul class="phpdocumentor-breadcrumbs">
+        <li class="phpdocumentor-breadcrumb"><a href="namespaces/application.html">Application</a></li>
+        <li class="phpdocumentor-breadcrumb"><a href="namespaces/application-controller.html">Controller</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    OpenJobsController
+            OpenJobsController
 
-        <span class="phpdocumentor-element__extends">
-        extends <abbr title="\Application\Controller\SupportClass">SupportClass</abbr>
-    </span>
-    
+            <span class="phpdocumentor-element__extends">
+                extends <abbr title="\Application\Controller\SupportClass">SupportClass</abbr>
+            </span>
+
             <div class="phpdocumentor-element__package">
-            in package
-            <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/OpenJobs.html">OpenJobs</a></li>
-                            </ul>
-        </div>
-    
-    
-    </h2>
+                in package
+                <ul class="phpdocumentor-breadcrumbs">
+                    <li class="phpdocumentor-breadcrumb"><a href="packages/OpenJobs.html">OpenJobs</a></li>
+                </ul>
+            </div>
+
+
+        </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/OpenJobsController.php"><a href="files/application-controller-openjobscontroller.html"><abbr title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">26</span>
-</aside>
+            <abbr class="phpdocumentor-element-found-in__file" title="application/controller/OpenJobsController.php"><a
+                    href="files/application-controller-openjobscontroller.html"><abbr
+                        title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">26</span>
+        </aside>
 
-            <p class="phpdocumentor-summary">Open Jobs Controller</p>
+        <p class="phpdocumentor-summary">Open Jobs Controller</p>
 
-    <section class="phpdocumentor-description"><p>This object is limited to Open Jobs Controller.
-Open Job is limited only for Lead Project Managers (LPM) in the USA office.
-It's a summary monitoring status of their Jobs. The LPMs fill out the open Job form weekly.</p>
-<p>Datatabase Connected: idsporta_1dsP0rt4l, idsporta_idshrms</p>
-</section>
-
-
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">example</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"></section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">filesource</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>/home/jojo/WebServer/portal_docu_files/application/controller/OpenJobsController.php</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Application\Model\OpenJobModel">OpenJobModel</abbr></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">source</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"></section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">author</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Jojo De Jesus <a href="mailto:jojo.webdeveloper@gmail.com">jojo.webdeveloper@gmail.com</a></p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">copyright</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Copyright (c) 2015 - 2021, Isometric Diagonal Scheme, Inc.</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">link</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        <a class="phpdocumentor-tag-link" href="https://www.idsincportal.com/index.php?act=open-jobs&amp;cmd=view&amp;mode=0&amp;menu_uid=138"> https://www.idsincportal.com/index.php?act=open-jobs&amp;cmd=view&amp;mode=0&amp;menu_uid=138 </a>
-                    
-                                    </dd>
-                        </dl>
+        <section class="phpdocumentor-description">
+            <p>This object is limited to Open Jobs Controller.
+                Open Job is limited only for Lead Project Managers (LPM) in the USA office.
+                It's a summary monitoring status of their Jobs. The LPMs fill out the open Job form weekly.</p>
+            <p>Datatabase Connected: idsporta_1dsP0rt4l, idsporta_idshrms</p>
+        </section>
 
 
+        <h5 class="phpdocumentor-tag-list__heading" id="tags">
+            Tags
+            <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        </h5>
+        <dl class="phpdocumentor-tag-list">
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">example</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description"></section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">filesource</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>/home/jojo/WebServer/portal_docu_files/application/controller/OpenJobsController.php</p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">see</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+                <span class="phpdocumentor-tag-link"><abbr
+                        title="\Application\Model\OpenJobModel">OpenJobModel</abbr></span>
+
+                <section class="phpdocumentor-description"></section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">source</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description"></section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">author</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>Jojo De Jesus <a href="mailto:jojo.webdeveloper@gmail.com">jojo.webdeveloper@gmail.com</a></p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">copyright</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>Copyright (c) 2015 - 2021, Isometric Diagonal Scheme, Inc.</p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">link</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+                <a class="phpdocumentor-tag-link"
+                    href="https://www.idsincportal.com/index.php?act=open-jobs&amp;cmd=view&amp;mode=0&amp;menu_uid=138">
+                    https://www.idsincportal.com/index.php?act=open-jobs&amp;cmd=view&amp;mode=0&amp;menu_uid=138 </a>
+
+            </dd>
+        </dl>
 
 
 
 
-<h3 id="toc">
-    Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
 
-<dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-OpenJobsController.html#method___construct">__construct()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Constructor</dd>
+
+        <h3 id="toc">
+            Table of Contents
+            <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+
+        <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+                <a href="classes/Application-Controller-OpenJobsController.html#method___construct">__construct()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Constructor</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-OpenJobsController.html#method_addJobToMonitoring">addJobToMonitoring()</a>
-    <span>
-                        &nbsp;: void    </span>
-</dt>
-<dd>Add job to open job monitoring</dd>
+                <a
+                    href="classes/Application-Controller-OpenJobsController.html#method_addJobToMonitoring">addJobToMonitoring()</a>
+                <span>
+                    &nbsp;: void </span>
+            </dt>
+            <dd>Add job to open job monitoring</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-OpenJobsController.html#method_exportToExcel">exportToExcel()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Export Open Jobs List</dd>
+                <a
+                    href="classes/Application-Controller-OpenJobsController.html#method_exportToExcel">exportToExcel()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Export Open Jobs List</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-OpenJobsController.html#method_jobListAjax">jobListAjax()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Show a list of available jobs</dd>
+                <a href="classes/Application-Controller-OpenJobsController.html#method_jobListAjax">jobListAjax()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Show a list of available jobs</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-OpenJobsController.html#method_openJobsDatatable">openJobsDatatable()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Show Open Jobs List in Datatable</dd>
+                <a
+                    href="classes/Application-Controller-OpenJobsController.html#method_openJobsDatatable">openJobsDatatable()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Show Open Jobs List in Datatable</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-OpenJobsController.html#method_openJobsForm">openJobsForm()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>View open job form</dd>
+                <a href="classes/Application-Controller-OpenJobsController.html#method_openJobsForm">openJobsForm()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>View open job form</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-OpenJobsController.html#method_saveOpenJobNoteInput">saveOpenJobNoteInput()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Save open jobs status</dd>
+                <a
+                    href="classes/Application-Controller-OpenJobsController.html#method_saveOpenJobNoteInput">saveOpenJobNoteInput()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Save open jobs status</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-OpenJobsController.html#method_saveOpenJobValueInput">saveOpenJobValueInput()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Save open jobs value/remarks</dd>
+                <a
+                    href="classes/Application-Controller-OpenJobsController.html#method_saveOpenJobValueInput">saveOpenJobValueInput()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Save open jobs value/remarks</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Controller-OpenJobsController.html#method_checkOpenJobMonitoring">checkOpenJobMonitoring()</a>
-    <span>
-                        &nbsp;: string    </span>
-</dt>
-<dd>Check open jobs status</dd>
+                <a
+                    href="classes/Application-Controller-OpenJobsController.html#method_checkOpenJobMonitoring">checkOpenJobMonitoring()</a>
+                <span>
+                    &nbsp;: string </span>
+            </dt>
+            <dd>Check open jobs status</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Controller-OpenJobsController.html#method_formatDigit">formatDigit()</a>
-    <span>
-                        &nbsp;: int    </span>
-</dt>
-<dd>Format digit into percentage format</dd>
+                <a href="classes/Application-Controller-OpenJobsController.html#method_formatDigit">formatDigit()</a>
+                <span>
+                    &nbsp;: int </span>
+            </dt>
+            <dd>Format digit into percentage format</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Controller-OpenJobsController.html#method_substrwords">substrwords()</a>
-    <span>
-                        &nbsp;: int    </span>
-</dt>
-<dd>Shorten string with a &quot;...&quot; body</dd>
+                <a href="classes/Application-Controller-OpenJobsController.html#method_substrwords">substrwords()</a>
+                <span>
+                    &nbsp;: int </span>
+            </dt>
+            <dd>Shorten string with a &quot;...&quot; body</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Controller-OpenJobsController.html#method_substrwordsv2">substrwordsv2()</a>
-    <span>
-                        &nbsp;: int    </span>
-</dt>
-<dd>Shorten string with a &quot;...&quot; body, version 2</dd>
+                <a
+                    href="classes/Application-Controller-OpenJobsController.html#method_substrwordsv2">substrwordsv2()</a>
+                <span>
+                    &nbsp;: int </span>
+            </dt>
+            <dd>Shorten string with a &quot;...&quot; body, version 2</dd>
 
         </dl>
 
 
 
-        
 
-        
 
-            <section class="phpdocumentor-methods">
-        <h3 class="phpdocumentor-elements__header" id="methods">
-            Methods
-            <a href="classes/Application-Controller-OpenJobsController.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
-        </h3>
-                    <article
-        class="phpdocumentor-element
+
+
+        <section class="phpdocumentor-methods">
+            <h3 class="phpdocumentor-elements__header" id="methods">
+                Methods
+                <a href="classes/Application-Controller-OpenJobsController.html#methods" class="headerlink"><i
+                        class="fas fa-link"></i></a>
+            </h3>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/Application-Controller-OpenJobsController.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/OpenJobsController.php"><a href="files/application-controller-openjobscontroller.html"><abbr title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">39</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method___construct">
+                    __construct()
+                    <a href="classes/Application-Controller-OpenJobsController.html#method___construct"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/OpenJobsController.php"><a
+                            href="files/application-controller-openjobscontroller.html"><abbr
+                                title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">39</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Constructor</p>
+                <p class="phpdocumentor-summary">Constructor</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Assign the other objects to global scope properties</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Assign the other objects to global scope properties</p>
+                </section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-UserModel.html"><abbr title="\Application\Model\UserModel">UserModel</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-Common-CommonModel.html"><abbr title="\Application\Model\Common\CommonModel">CommonModel</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-JobModel.html"><abbr title="\Application\Model\JobModel">JobModel</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-UserModel.html"><abbr
+                                    title="\Application\Model\UserModel">UserModel</abbr></a></span>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-OpenJobsModel.html"><abbr title="\Application\Model\OpenJobsModel">OpenJobsModel</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
+                        <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                        </dl>
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="classes/Application-Model-Common-CommonModel.html"><abbr
+                                    title="\Application\Model\Common\CommonModel">CommonModel</abbr></a></span>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+                        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-JobModel.html"><abbr
+                                    title="\Application\Model\JobModel">JobModel</abbr></a></span>
+
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="classes/Application-Model-OpenJobsModel.html"><abbr
+                                    title="\Application\Model\OpenJobsModel">OpenJobsModel</abbr></a></span>
+
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_addJobToMonitoring">
-        addJobToMonitoring()
-        <a href="classes/Application-Controller-OpenJobsController.html#method_addJobToMonitoring" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/OpenJobsController.php"><a href="files/application-controller-openjobscontroller.html"><abbr title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">476</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_addJobToMonitoring">
+                    addJobToMonitoring()
+                    <a href="classes/Application-Controller-OpenJobsController.html#method_addJobToMonitoring"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/OpenJobsController.php"><a
+                            href="files/application-controller-openjobscontroller.html"><abbr
+                                title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">476</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Add job to open job monitoring</p>
+                <p class="phpdocumentor-summary">Add job to open job monitoring</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">addJobToMonitoring</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: TBL_JOB_LIST, TBL_EMPLOYEES</p>
-<p>Internal Parameters:</p>
-<ul>
-<li> $_GET['job_id'] = Job row Id</li>
-<li> $_GET['lpm_id'] = LPM row Id/ Employee row Id</li>
-</ul>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: TBL_JOB_LIST, TBL_EMPLOYEES</p>
+                    <p>Internal Parameters:</p>
+                    <ul>
+                        <li> $_GET['job_id'] = Job row Id</li>
+                        <li> $_GET['lpm_id'] = LPM row Id/ Employee row Id</li>
+                    </ul>
+                </section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Application\Model\OpenJobModel::addToOpenJobMonitoring()">OpenJobModel::addToOpenJobMonitoring()</abbr></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                        </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><abbr
+                                title="\Application\Model\OpenJobModel::addToOpenJobMonitoring()">OpenJobModel::addToOpenJobMonitoring()</abbr></span>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">void</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_exportToExcel">
-        exportToExcel()
-        <a href="classes/Application-Controller-OpenJobsController.html#method_exportToExcel" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/OpenJobsController.php"><a href="files/application-controller-openjobscontroller.html"><abbr title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">120</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_exportToExcel">
+                    exportToExcel()
+                    <a href="classes/Application-Controller-OpenJobsController.html#method_exportToExcel"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/OpenJobsController.php"><a
+                            href="files/application-controller-openjobscontroller.html"><abbr
+                                title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">120</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Export Open Jobs List</p>
+                <p class="phpdocumentor-summary">Export Open Jobs List</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">exportToExcel</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: id_open_job_monitoring</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: id_open_job_monitoring</p>
+                </section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="namespaces/application-views-openjobs.html#function_OpenJobListExcelHTML"><abbr title="\Application\Views\OpenJobs\OpenJobListExcelHTML()">OpenJobListExcelHTML()</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Application\Model\OpenJobModel::openJobListV4()">OpenJobModel::openJobListV4()</abbr></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">link</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        <a class="phpdocumentor-tag-link" href="https://www.idsincportal.com/index.php?act=open-jobs&amp;cmd=view&amp;mode=0&amp;menu_uid=138"> https://www.idsincportal.com/index.php?act=open-jobs&amp;cmd=view&amp;mode=0&amp;menu_uid=138 </a>
-                    
-                                    </dd>
-                        </dl>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="namespaces/application-views-openjobs.html#function_OpenJobListExcelHTML"><abbr
+                                    title="\Application\Views\OpenJobs\OpenJobListExcelHTML()">OpenJobListExcelHTML()</abbr></a></span>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>html file /application/views/open_jobs/OpenJobListExcel.php</p>
-</section>
+                        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><abbr
+                                title="\Application\Model\OpenJobModel::openJobListV4()">OpenJobModel::openJobListV4()</abbr></span>
+
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">link</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <a class="phpdocumentor-tag-link"
+                            href="https://www.idsincportal.com/index.php?act=open-jobs&amp;cmd=view&amp;mode=0&amp;menu_uid=138">
+                            https://www.idsincportal.com/index.php?act=open-jobs&amp;cmd=view&amp;mode=0&amp;menu_uid=138
+                        </a>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>html file /application/views/open_jobs/OpenJobListExcel.php</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_jobListAjax">
-        jobListAjax()
-        <a href="classes/Application-Controller-OpenJobsController.html#method_jobListAjax" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/OpenJobsController.php"><a href="files/application-controller-openjobscontroller.html"><abbr title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">425</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_jobListAjax">
+                    jobListAjax()
+                    <a href="classes/Application-Controller-OpenJobsController.html#method_jobListAjax"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/OpenJobsController.php"><a
+                            href="files/application-controller-openjobscontroller.html"><abbr
+                                title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">425</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Show a list of available jobs</p>
+                <p class="phpdocumentor-summary">Show a list of available jobs</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">jobListAjax</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: TBL_JOB_LIST, TBL_EMPLOYEES</p>
-<p>Internal Parameters:</p>
-<ul>
-<li> $_GET['lpm'] = LPM row Id/ Employee row Id</li>
-</ul>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: TBL_JOB_LIST, TBL_EMPLOYEES</p>
+                    <p>Internal Parameters:</p>
+                    <ul>
+                        <li> $_GET['lpm'] = LPM row Id/ Employee row Id</li>
+                    </ul>
+                </section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="namespaces/application-views-openjobs.html#function_OpenJobContentHTML"><abbr title="\Application\Views\OpenJobs\OpenJobContentHTML()">OpenJobContentHTML()</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                        </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>html file /application/views/open_jobs/OpenJobList_Content.php</p>
-</section>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="namespaces/application-views-openjobs.html#function_OpenJobContentHTML"><abbr
+                                    title="\Application\Views\OpenJobs\OpenJobContentHTML()">OpenJobContentHTML()</abbr></a></span>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>html file /application/views/open_jobs/OpenJobList_Content.php</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_openJobsDatatable">
-        openJobsDatatable()
-        <a href="classes/Application-Controller-OpenJobsController.html#method_openJobsDatatable" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/OpenJobsController.php"><a href="files/application-controller-openjobscontroller.html"><abbr title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">169</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_openJobsDatatable">
+                    openJobsDatatable()
+                    <a href="classes/Application-Controller-OpenJobsController.html#method_openJobsDatatable"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/OpenJobsController.php"><a
+                            href="files/application-controller-openjobscontroller.html"><abbr
+                                title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">169</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Show Open Jobs List in Datatable</p>
+                <p class="phpdocumentor-summary">Show Open Jobs List in Datatable</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">openJobsDatatable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: id_open_job_monitoring</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: id_open_job_monitoring</p>
+                </section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="namespaces/application-views-openjobs.html#function_OpenJobListExcelHTML"><abbr title="\Application\Views\OpenJobs\OpenJobListExcelHTML()">OpenJobListExcelHTML()</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Application\Model\OpenJobModel::openJobListV4()">OpenJobModel::openJobListV4()</abbr></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">link</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        <a class="phpdocumentor-tag-link" href="https://www.idsincportal.com/index.php?act=open-jobs&amp;cmd=view&amp;mode=0&amp;menu_uid=138"> https://www.idsincportal.com/index.php?act=open-jobs&amp;cmd=view&amp;mode=0&amp;menu_uid=138 </a>
-                    
-                                    </dd>
-                        </dl>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="namespaces/application-views-openjobs.html#function_OpenJobListExcelHTML"><abbr
+                                    title="\Application\Views\OpenJobs\OpenJobListExcelHTML()">OpenJobListExcelHTML()</abbr></a></span>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>mulitple recordset</p>
-</section>
+                        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><abbr
+                                title="\Application\Model\OpenJobModel::openJobListV4()">OpenJobModel::openJobListV4()</abbr></span>
+
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">link</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <a class="phpdocumentor-tag-link"
+                            href="https://www.idsincportal.com/index.php?act=open-jobs&amp;cmd=view&amp;mode=0&amp;menu_uid=138">
+                            https://www.idsincportal.com/index.php?act=open-jobs&amp;cmd=view&amp;mode=0&amp;menu_uid=138
+                        </a>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>mulitple recordset</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_openJobsForm">
-        openJobsForm()
-        <a href="classes/Application-Controller-OpenJobsController.html#method_openJobsForm" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/OpenJobsController.php"><a href="files/application-controller-openjobscontroller.html"><abbr title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">56</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_openJobsForm">
+                    openJobsForm()
+                    <a href="classes/Application-Controller-OpenJobsController.html#method_openJobsForm"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/OpenJobsController.php"><a
+                            href="files/application-controller-openjobscontroller.html"><abbr
+                                title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">56</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">View open job form</p>
+                <p class="phpdocumentor-summary">View open job form</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">openJobsForm</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Application\Views\Memo\OpenJobListHTML()">OpenJobListHTML()</abbr></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Application\Model\OpenJobModel::getLPMv4()">OpenJobModel::getLPMv4()</abbr></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">link</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        <a class="phpdocumentor-tag-link" href="https://www.idsincportal.com/index.php?act=open-jobs&amp;cmd=view&amp;mode=0&amp;menu_uid=138"> https://www.idsincportal.com/index.php?act=open-jobs&amp;cmd=view&amp;mode=0&amp;menu_uid=138 </a>
-                    
-                                    </dd>
-                        </dl>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><abbr
+                                title="\Application\Views\Memo\OpenJobListHTML()">OpenJobListHTML()</abbr></span>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>html file /application/views/open_jobs/OpenJobList.php</p>
-</section>
+                        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><abbr
+                                title="\Application\Model\OpenJobModel::getLPMv4()">OpenJobModel::getLPMv4()</abbr></span>
+
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">link</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <a class="phpdocumentor-tag-link"
+                            href="https://www.idsincportal.com/index.php?act=open-jobs&amp;cmd=view&amp;mode=0&amp;menu_uid=138">
+                            https://www.idsincportal.com/index.php?act=open-jobs&amp;cmd=view&amp;mode=0&amp;menu_uid=138
+                        </a>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>html file /application/views/open_jobs/OpenJobList.php</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_saveOpenJobNoteInput">
-        saveOpenJobNoteInput()
-        <a href="classes/Application-Controller-OpenJobsController.html#method_saveOpenJobNoteInput" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/OpenJobsController.php"><a href="files/application-controller-openjobscontroller.html"><abbr title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">365</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_saveOpenJobNoteInput">
+                    saveOpenJobNoteInput()
+                    <a href="classes/Application-Controller-OpenJobsController.html#method_saveOpenJobNoteInput"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/OpenJobsController.php"><a
+                            href="files/application-controller-openjobscontroller.html"><abbr
+                                title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">365</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Save open jobs status</p>
+                <p class="phpdocumentor-summary">Save open jobs status</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">saveOpenJobNoteInput</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: TBL_OPEN_JOB_MONITOR</p>
-<p>Internal Parameters:</p>
-<ul>
-<li> $_POST['input_rowid'] = Row Id</li>
-<li> $_POST['input_val'] = Input value</li>
-<li> $_POST['input_type'] = Input Type</li>
-</ul>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: TBL_OPEN_JOB_MONITOR</p>
+                    <p>Internal Parameters:</p>
+                    <ul>
+                        <li> $_POST['input_rowid'] = Row Id</li>
+                        <li> $_POST['input_val'] = Input value</li>
+                        <li> $_POST['input_type'] = Input Type</li>
+                    </ul>
+                </section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Application\Model\OpenJobModel::updateJobNote()">OpenJobModel::updateJobNote()</abbr></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                        </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>save status</p>
-</section>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><abbr
+                                title="\Application\Model\OpenJobModel::updateJobNote()">OpenJobModel::updateJobNote()</abbr></span>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>save status</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_saveOpenJobValueInput">
-        saveOpenJobValueInput()
-        <a href="classes/Application-Controller-OpenJobsController.html#method_saveOpenJobValueInput" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/OpenJobsController.php"><a href="files/application-controller-openjobscontroller.html"><abbr title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">396</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_saveOpenJobValueInput">
+                    saveOpenJobValueInput()
+                    <a href="classes/Application-Controller-OpenJobsController.html#method_saveOpenJobValueInput"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/OpenJobsController.php"><a
+                            href="files/application-controller-openjobscontroller.html"><abbr
+                                title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">396</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Save open jobs value/remarks</p>
+                <p class="phpdocumentor-summary">Save open jobs value/remarks</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">saveOpenJobValueInput</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: TBL_OPEN_JOB_MONITOR</p>
-<p>Internal Parameters:</p>
-<ul>
-<li> $_POST['input_rowid'] = Row Id</li>
-<li> $_POST['input_val'] = Input value</li>
-<li> $_POST['input_type'] = Input Type</li>
-</ul>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: TBL_OPEN_JOB_MONITOR</p>
+                    <p>Internal Parameters:</p>
+                    <ul>
+                        <li> $_POST['input_rowid'] = Row Id</li>
+                        <li> $_POST['input_val'] = Input value</li>
+                        <li> $_POST['input_type'] = Input Type</li>
+                    </ul>
+                </section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Application\Model\OpenJobModel::updateJobValue()">OpenJobModel::updateJobValue()</abbr></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                        </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>save status</p>
-</section>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><abbr
+                                title="\Application\Model\OpenJobModel::updateJobValue()">OpenJobModel::updateJobValue()</abbr></span>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>save status</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkOpenJobMonitoring">
-        checkOpenJobMonitoring()
-        <a href="classes/Application-Controller-OpenJobsController.html#method_checkOpenJobMonitoring" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/OpenJobsController.php"><a href="files/application-controller-openjobscontroller.html"><abbr title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">333</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkOpenJobMonitoring">
+                    checkOpenJobMonitoring()
+                    <a href="classes/Application-Controller-OpenJobsController.html#method_checkOpenJobMonitoring"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/OpenJobsController.php"><a
+                            href="files/application-controller-openjobscontroller.html"><abbr
+                                title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">333</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Check open jobs status</p>
+                <p class="phpdocumentor-summary">Check open jobs status</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">checkOpenJobMonitoring</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$job_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lpm_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"><p>Table Connected: TBL_OPEN_JOB_MONITOR</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Table Connected: TBL_OPEN_JOB_MONITOR</p>
+                </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$job_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Job row Id</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$job_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Job row Id</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$lpm_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>LPM row Id or Employee row Id</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$lpm_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>LPM row Id or Employee row Id</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Open job status</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">string</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>Open job status</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_formatDigit">
-        formatDigit()
-        <a href="classes/Application-Controller-OpenJobsController.html#method_formatDigit" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/OpenJobsController.php"><a href="files/application-controller-openjobscontroller.html"><abbr title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">492</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_formatDigit">
+                    formatDigit()
+                    <a href="classes/Application-Controller-OpenJobsController.html#method_formatDigit"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/OpenJobsController.php"><a
+                            href="files/application-controller-openjobscontroller.html"><abbr
+                                title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">492</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Format digit into percentage format</p>
+                <p class="phpdocumentor-summary">Format digit into percentage format</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">formatDigit</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$intDigit</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$intDigit</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Original digit</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$intDigit</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Original digit</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Type of digit number format or percentage format</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$type</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                        = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Type of digit number format or percentage format</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>converted digit to new format</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">int</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>converted digit to new format</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_substrwords">
-        substrwords()
-        <a href="classes/Application-Controller-OpenJobsController.html#method_substrwords" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/OpenJobsController.php"><a href="files/application-controller-openjobscontroller.html"><abbr title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">518</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_substrwords">
+                    substrwords()
+                    <a href="classes/Application-Controller-OpenJobsController.html#method_substrwords"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/OpenJobsController.php"><a
+                            href="files/application-controller-openjobscontroller.html"><abbr
+                                title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">518</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Shorten string with a &quot;...&quot; body</p>
+                <p class="phpdocumentor-summary">Shorten string with a &quot;...&quot; body</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">substrwords</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maxchar</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$end</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;...&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$text</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Original text</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$text</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Original text</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$maxchar</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Length of text to limit</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$maxchar</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Length of text to limit</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$end</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;...&#039;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Add 3 dots as default value</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$end</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                        = <span class="phpdocumentor-signature__argument__default-value">&#039;...&#039;</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Add 3 dots as default value</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>shorten string</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">int</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>shorten string</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_substrwordsv2">
-        substrwordsv2()
-        <a href="classes/Application-Controller-OpenJobsController.html#method_substrwordsv2" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/OpenJobsController.php"><a href="files/application-controller-openjobscontroller.html"><abbr title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">551</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_substrwordsv2">
+                    substrwordsv2()
+                    <a href="classes/Application-Controller-OpenJobsController.html#method_substrwordsv2"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/OpenJobsController.php"><a
+                            href="files/application-controller-openjobscontroller.html"><abbr
+                                title="application/controller/OpenJobsController.php">OpenJobsController.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">551</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Shorten string with a &quot;...&quot; body, version 2</p>
+                <p class="phpdocumentor-summary">Shorten string with a &quot;...&quot; body, version 2</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">substrwordsv2</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$summary</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$summary</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Original text</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$summary</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Original text</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$limit</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Length of text to limit</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$limit</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Length of text to limit</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>shorten string</p>
-</section>
 
-    
-</article>
-            </section>
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">int</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>shorten string</p>
+                </section>
+
+
+            </article>
+        </section>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
-    <section class="phpdocumentor-search-results__dialog">
-        <header class="phpdocumentor-search-results__header">
-            <h2 class="phpdocumentor-search-results__title">Search results</h2>
-            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
-        </header>
-        <section class="phpdocumentor-search-results__body">
-            <ul class="phpdocumentor-search-results__entries"></ul>
+    <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+        <section class="phpdocumentor-search-results__dialog">
+            <header class="phpdocumentor-search-results__header">
+                <h2 class="phpdocumentor-search-results__title">Search results</h2>
+                <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+            </header>
+            <section class="phpdocumentor-search-results__body">
+                <ul class="phpdocumentor-search-results__entries"></ul>
+            </section>
         </section>
     </section>
-</section>
-            </div>
-        </div>
-        <a href="classes/Application-Controller-OpenJobsController.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+</div>
+</div>
+<a href="classes/Application-Controller-OpenJobsController.html#top" class="phpdocumentor-back-to-top"><i
+        class="fas fa-chevron-circle-up"></i></a>
 
-    </main>
-
-    <script>
-        cssVars({});
-    </script>
-</body>
-</html>
+<?php require('../layouts/footer.html'); ?>

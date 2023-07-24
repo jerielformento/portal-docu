@@ -1,1599 +1,1600 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>IDSPORTAL DOCU</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="../">
-    <link rel="icon" href="images/favicon.ico"/>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/template.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
-                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
-        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
-        <script src="js/search.js"></script>
-        <script defer src="js/searchIndex.js"></script>
-    </head>
-<body id="top">
-    <header class="phpdocumentor-header phpdocumentor-section">
-    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">IDSPORTAL DOCU</a></h1>
-    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
-    <label class="phpdocumentor-header__menu-icon" for="menu-button">
-        <i class="fas fa-bars"></i>
-    </label>
-    <section data-search-form class="phpdocumentor-search">
-    <label>
-        <span class="visually-hidden">Search for</span>
-        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
-            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
-        </svg>
-        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
-    </label>
-</section>
+<?php require('../layouts/header.html'); ?>
 
-    <nav class="phpdocumentor-topnav">
-    <ul class="phpdocumentor-topnav__menu">
-        </ul>
-</nav>
-</header>
-
-    <main class="phpdocumentor">
-        <div class="phpdocumentor-section">
-            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
-<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
-    Menu
-</label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/application.html"><abbr title="\Application">Application</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/application-controller.html"><abbr title="\Application\Controller">Controller</abbr></a></li>
-                                            <li><a href="namespaces/application-model.html"><abbr title="\Application\Model">Model</abbr></a></li>
-                                            <li><a href="namespaces/application-views.html"><abbr title="\Application\Views">Views</abbr></a></li>
-                                    </ul>
-                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/connect.html"><abbr title="\Connect">Connect</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                    </ul>
-                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/core.html"><abbr title="\Core">Core</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/core-init.html"><abbr title="\Core\init">init</abbr></a></li>
-                                    </ul>
-                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/library.html"><abbr title="\Library">Library</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                    </ul>
-                        </section>
-
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Default.html"><abbr title="\Default">Default</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/AccountsManager.html"><abbr title="\AccountsManager">AccountsManager</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/BoltCheck.html"><abbr title="\BoltCheck">BoltCheck</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/CDLogs.html"><abbr title="\CDLogs">CDLogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Dashboard.html"><abbr title="\Dashboard">Dashboard</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/DesignDrawingLog.html"><abbr title="\DesignDrawingLog">DesignDrawingLog</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/DetailedIn.html"><abbr title="\DetailedIn">DetailedIn</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/ENGQRDrawingMonitoring.html"><abbr title="\ENGQRDrawingMonitoring">ENGQRDrawingMonitoring</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Employee201File.html"><abbr title="\Employee201File">Employee201File</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/EPRP.html"><abbr title="\EPRP">EPRP</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/FabricatorStandard.html"><abbr title="\FabricatorStandard">FabricatorStandard</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/GizaDepartment.html"><abbr title="\GizaDepartment">GizaDepartment</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/HRMSMemoContactInfo.html"><abbr title="\HRMSMemoContactInfo">HRMSMemoContactInfo</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/InhouseHourMonitoring.html"><abbr title="\InhouseHourMonitoring">InhouseHourMonitoring</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Ipap.html"><abbr title="\Ipap">Ipap</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/CanamJob.html"><abbr title="\CanamJob">CanamJob</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Job.html"><abbr title="\Job">Job</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Late.html"><abbr title="\Late">Late</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Leave.html"><abbr title="\Leave">Leave</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/JobLogs.html"><abbr title="\JobLogs">JobLogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Manpower.html"><abbr title="\Manpower">Manpower</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Memorandum.html"><abbr title="\Memorandum">Memorandum</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Menu.html"><abbr title="\Menu">Menu</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/OpenJobs.html"><abbr title="\OpenJobs">OpenJobs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Reports.html"><abbr title="\Reports">Reports</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/RFILogs.html"><abbr title="\RFILogs">RFILogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/RFQ.html"><abbr title="\RFQ">RFQ</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/ROM.html"><abbr title="\ROM">ROM</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/RootCause.html"><abbr title="\RootCause">RootCause</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/RORating.html"><abbr title="\RORating">RORating</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/DrawingLog.html"><abbr title="\DrawingLog">DrawingLog</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/SOV.html"><abbr title="\SOV">SOV</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/StatusReport.html"><abbr title="\StatusReport">StatusReport</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/TimeSheet.html"><abbr title="\TimeSheet">TimeSheet</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/TransmittalLogs.html"><abbr title="\TransmittalLogs">TransmittalLogs</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Reimbursement.html"><abbr title="\Reimbursement">Reimbursement</abbr></a></h3>
-                        </section>
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
-                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
-    </section>
-
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
-    </section>
-</aside>
-
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/application.html">Application</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/application-controller.html">Controller</a></li>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+    <ul class="phpdocumentor-breadcrumbs">
+        <li class="phpdocumentor-breadcrumb"><a href="namespaces/application.html">Application</a></li>
+        <li class="phpdocumentor-breadcrumb"><a href="namespaces/application-controller.html">Controller</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    TimeSheetControllerExt
+            TimeSheetControllerExt
 
-        <span class="phpdocumentor-element__extends">
-        extends <abbr title="\Application\Controller\SupportClass">SupportClass</abbr>
-    </span>
-    
+            <span class="phpdocumentor-element__extends">
+                extends <abbr title="\Application\Controller\SupportClass">SupportClass</abbr>
+            </span>
+
             <div class="phpdocumentor-element__package">
-            in package
-            <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/TimeSheet.html">TimeSheet</a></li>
-                            </ul>
-        </div>
-    
-    
-    </h2>
+                in package
+                <ul class="phpdocumentor-breadcrumbs">
+                    <li class="phpdocumentor-breadcrumb"><a href="packages/TimeSheet.html">TimeSheet</a></li>
+                </ul>
+            </div>
+
+
+        </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">22</span>
-</aside>
+            <abbr class="phpdocumentor-element-found-in__file"
+                title="application/controller/TimeSheetControllerExt.php"><a
+                    href="files/application-controller-timesheetcontrollerext.html"><abbr
+                        title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">22</span>
+        </aside>
 
-            <p class="phpdocumentor-summary">TimeSheet Controller Extension/ Overtime Object</p>
+        <p class="phpdocumentor-summary">TimeSheet Controller Extension/ Overtime Object</p>
 
-    <section class="phpdocumentor-description"><p>This object is limited to Overtime activities such as OT request, OT for approval, and OT summary.</p>
-<p>Datatabase/s Connected: idsporta_1dsP0rt4l</p>
-</section>
-
-
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">example</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"></section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">filesource</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>/home/jojo/WebServer/portal_docu_files/application/controller/TimeSheetController.php</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">link</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        <a class="phpdocumentor-tag-link" href="https://www.idsincportal.com/index.php?act=time_sheet&amp;menu_uid=17"> https://www.idsincportal.com/index.php?act=time_sheet&amp;menu_uid=17 </a>
-                    
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">author</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Jojo De Jesus <a href="mailto:jojo.webdeveloper@gmail.com">jojo.webdeveloper@gmail.com</a></p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">copyright</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Copyright (c) 2015 - 2021, Isometric Diagonal Scheme, Inc.</p>
-</section>
-
-                                    </dd>
-                        </dl>
+        <section class="phpdocumentor-description">
+            <p>This object is limited to Overtime activities such as OT request, OT for approval, and OT summary.</p>
+            <p>Datatabase/s Connected: idsporta_1dsP0rt4l</p>
+        </section>
 
 
+        <h5 class="phpdocumentor-tag-list__heading" id="tags">
+            Tags
+            <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        </h5>
+        <dl class="phpdocumentor-tag-list">
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">example</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description"></section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">filesource</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>/home/jojo/WebServer/portal_docu_files/application/controller/TimeSheetController.php</p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">link</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+                <a class="phpdocumentor-tag-link"
+                    href="https://www.idsincportal.com/index.php?act=time_sheet&amp;menu_uid=17">
+                    https://www.idsincportal.com/index.php?act=time_sheet&amp;menu_uid=17 </a>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">author</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>Jojo De Jesus <a href="mailto:jojo.webdeveloper@gmail.com">jojo.webdeveloper@gmail.com</a></p>
+                </section>
+
+            </dd>
+            <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">copyright</span>
+            </dt>
+            <dd class="phpdocumentor-tag-list__definition">
+
+                <section class="phpdocumentor-description">
+                    <p>Copyright (c) 2015 - 2021, Isometric Diagonal Scheme, Inc.</p>
+                </section>
+
+            </dd>
+        </dl>
 
 
 
 
-<h3 id="toc">
-    Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
 
-<dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method___construct">__construct()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Constructor</dd>
+
+        <h3 id="toc">
+            Table of Contents
+            <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+
+        <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+                <a
+                    href="classes/Application-Controller-TimeSheetControllerExt.html#method___construct">__construct()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Constructor</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_ajaxAutoSaveOTApprove">ajaxAutoSaveOTApprove()</a>
-    <span>
-                        &nbsp;: void    </span>
-</dt>
-<dd>Approve command for Ot request, version 1</dd>
+                <a
+                    href="classes/Application-Controller-TimeSheetControllerExt.html#method_ajaxAutoSaveOTApprove">ajaxAutoSaveOTApprove()</a>
+                <span>
+                    &nbsp;: void </span>
+            </dt>
+            <dd>Approve command for Ot request, version 1</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_ajaxAutoSaveOTApproveNew">ajaxAutoSaveOTApproveNew()</a>
-    <span>
-                        &nbsp;: void    </span>
-</dt>
-<dd>Approve command for Ot request, version 2</dd>
+                <a
+                    href="classes/Application-Controller-TimeSheetControllerExt.html#method_ajaxAutoSaveOTApproveNew">ajaxAutoSaveOTApproveNew()</a>
+                <span>
+                    &nbsp;: void </span>
+            </dt>
+            <dd>Approve command for Ot request, version 2</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_calcTotalHours">calcTotalHours()</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd>Calculate total OT hours from work out schedule</dd>
+                <a
+                    href="classes/Application-Controller-TimeSheetControllerExt.html#method_calcTotalHours">calcTotalHours()</a>
+                <span>
+                    &nbsp;: array&lt;string|int, mixed&gt; </span>
+            </dt>
+            <dd>Calculate total OT hours from work out schedule</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkIfStillHavePending">checkIfStillHavePending()</a>
-    <span>
-                        &nbsp;: int    </span>
-</dt>
-<dd>Check overtime pending request</dd>
+                <a
+                    href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkIfStillHavePending">checkIfStillHavePending()</a>
+                <span>
+                    &nbsp;: int </span>
+            </dt>
+            <dd>Check overtime pending request</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_getNextRequest">getNextRequest()</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd>Move to next OT pending request</dd>
+                <a
+                    href="classes/Application-Controller-TimeSheetControllerExt.html#method_getNextRequest">getNextRequest()</a>
+                <span>
+                    &nbsp;: array&lt;string|int, mixed&gt; </span>
+            </dt>
+            <dd>Move to next OT pending request</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_getOverAllTotalOTRequest">getOverAllTotalOTRequest()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Retrieve all overtime request</dd>
+                <a
+                    href="classes/Application-Controller-TimeSheetControllerExt.html#method_getOverAllTotalOTRequest">getOverAllTotalOTRequest()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Retrieve all overtime request</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_timesheetOTApproval">timesheetOTApproval()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Request Overtime for Approval</dd>
+                <a
+                    href="classes/Application-Controller-TimeSheetControllerExt.html#method_timesheetOTApproval">timesheetOTApproval()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Request Overtime for Approval</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_timesheetOTApprovalAjaxPH">timesheetOTApprovalAjaxPH()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Retrieve all overtime request details</dd>
+                <a
+                    href="classes/Application-Controller-TimeSheetControllerExt.html#method_timesheetOTApprovalAjaxPH">timesheetOTApprovalAjaxPH()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Retrieve all overtime request details</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_timesheetOTApprovalAjaxPHnew">timesheetOTApprovalAjaxPHnew()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Retrieve all overtime request details, version 2</dd>
+                <a
+                    href="classes/Application-Controller-TimeSheetControllerExt.html#method_timesheetOTApprovalAjaxPHnew">timesheetOTApprovalAjaxPHnew()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Retrieve all overtime request details, version 2</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_timesheetOTApprovalNew">timesheetOTApprovalNew()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Request Overtime for Approval, version 2</dd>
+                <a
+                    href="classes/Application-Controller-TimeSheetControllerExt.html#method_timesheetOTApprovalNew">timesheetOTApprovalNew()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Request Overtime for Approval, version 2</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_timesheetOTForApprovalAdmin">timesheetOTForApprovalAdmin()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Retrieve Request Overtime approval for Admin page</dd>
+                <a
+                    href="classes/Application-Controller-TimeSheetControllerExt.html#method_timesheetOTForApprovalAdmin">timesheetOTForApprovalAdmin()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Retrieve Request Overtime approval for Admin page</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_addNewApprovalList">addNewApprovalList()</a>
-    <span>
-                        &nbsp;: void    </span>
-</dt>
-<dd>Save Overtime Request</dd>
+                <a
+                    href="classes/Application-Controller-TimeSheetControllerExt.html#method_addNewApprovalList">addNewApprovalList()</a>
+                <span>
+                    &nbsp;: void </span>
+            </dt>
+            <dd>Save Overtime Request</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkCheckBox">checkCheckBox()</a>
-    <span>
-                        &nbsp;: string    </span>
-</dt>
-<dd>Identify if the employee has a request for overtime</dd>
+                <a
+                    href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkCheckBox">checkCheckBox()</a>
+                <span>
+                    &nbsp;: string </span>
+            </dt>
+            <dd>Identify if the employee has a request for overtime</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkMoreOT">checkMoreOT()</a>
-    <span>
-                        &nbsp;: string    </span>
-</dt>
-<dd>Identify other Overtime request</dd>
+                <a
+                    href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkMoreOT">checkMoreOT()</a>
+                <span>
+                    &nbsp;: string </span>
+            </dt>
+            <dd>Identify other Overtime request</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkOT">checkOT()</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd>Identify Overtime request, version 1</dd>
+                <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkOT">checkOT()</a>
+                <span>
+                    &nbsp;: array&lt;string|int, mixed&gt; </span>
+            </dt>
+            <dd>Identify Overtime request, version 1</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkOTv2">checkOTv2()</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd>Identify Overtime request, version 2</dd>
+                <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkOTv2">checkOTv2()</a>
+                <span>
+                    &nbsp;: array&lt;string|int, mixed&gt; </span>
+            </dt>
+            <dd>Identify Overtime request, version 2</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkOTv3">checkOTv3()</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd>Identify Overtime request, version 3</dd>
+                <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkOTv3">checkOTv3()</a>
+                <span>
+                    &nbsp;: array&lt;string|int, mixed&gt; </span>
+            </dt>
+            <dd>Identify Overtime request, version 3</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkWorkSchedule">checkWorkSchedule()</a>
-    <span>
-                        &nbsp;: string    </span>
-</dt>
-<dd>Check Work Schedule of Employee</dd>
+                <a
+                    href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkWorkSchedule">checkWorkSchedule()</a>
+                <span>
+                    &nbsp;: string </span>
+            </dt>
+            <dd>Check Work Schedule of Employee</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_getApprovalListID">getApprovalListID()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Retrieve Request Overtime for approval</dd>
+                <a
+                    href="classes/Application-Controller-TimeSheetControllerExt.html#method_getApprovalListID">getApprovalListID()</a>
+                <span>
+                    &nbsp;: mixed </span>
+            </dt>
+            <dd>Retrieve Request Overtime for approval</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_otTimeFormat">otTimeFormat()</a>
-    <span>
-                        &nbsp;: string    </span>
-</dt>
-<dd>Time format converstion</dd>
+                <a
+                    href="classes/Application-Controller-TimeSheetControllerExt.html#method_otTimeFormat">otTimeFormat()</a>
+                <span>
+                    &nbsp;: string </span>
+            </dt>
+            <dd>Time format converstion</dd>
 
         </dl>
 
 
 
-        
 
-        
 
-            <section class="phpdocumentor-methods">
-        <h3 class="phpdocumentor-elements__header" id="methods">
-            Methods
-            <a href="classes/Application-Controller-TimeSheetControllerExt.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
-        </h3>
-                    <article
-        class="phpdocumentor-element
+
+
+        <section class="phpdocumentor-methods">
+            <h3 class="phpdocumentor-elements__header" id="methods">
+                Methods
+                <a href="classes/Application-Controller-TimeSheetControllerExt.html#methods" class="headerlink"><i
+                        class="fas fa-link"></i></a>
+            </h3>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">36</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method___construct">
+                    __construct()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method___construct"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">36</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Constructor</p>
+                <p class="phpdocumentor-summary">Constructor</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>Assign the other objects to global scope properties</p>
-</section>
+                <section class="phpdocumentor-description">
+                    <p>Assign the other objects to global scope properties</p>
+                </section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-TimeSheetModel.html"><abbr title="\Application\Model\TimeSheetModel">TimeSheetModel</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-TimeSheetPHModel.html"><abbr title="\Application\Model\TimeSheetPHModel">TimeSheetPHModel</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Library-SupportClass.html"><abbr title="\Library\SupportClass">SupportClass</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="classes/Application-Model-TimeSheetModel.html"><abbr
+                                    title="\Application\Model\TimeSheetModel">TimeSheetModel</abbr></a></span>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Application-Model-Common-CommonModel.html"><abbr title="\Application\Model\Common\CommonModel">CommonModel</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"></section>
+                        <section class="phpdocumentor-description"></section>
 
-                                    </dd>
-                        </dl>
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="classes/Application-Model-TimeSheetPHModel.html"><abbr
+                                    title="\Application\Model\TimeSheetPHModel">TimeSheetPHModel</abbr></a></span>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+                        <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a href="classes/Library-SupportClass.html"><abbr
+                                    title="\Library\SupportClass">SupportClass</abbr></a></span>
+
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+                        <span class="phpdocumentor-tag-link"><a
+                                href="classes/Application-Model-Common-CommonModel.html"><abbr
+                                    title="\Application\Model\Common\CommonModel">CommonModel</abbr></a></span>
+
+                        <section class="phpdocumentor-description"></section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_ajaxAutoSaveOTApprove">
-        ajaxAutoSaveOTApprove()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_ajaxAutoSaveOTApprove" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">612</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_ajaxAutoSaveOTApprove">
+                    ajaxAutoSaveOTApprove()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_ajaxAutoSaveOTApprove"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">612</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Approve command for Ot request, version 1</p>
+                <p class="phpdocumentor-summary">Approve command for Ot request, version 1</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">ajaxAutoSaveOTApprove</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">version</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>version 1</p>
-</section>
 
-                                    </dd>
-                        </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">version</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                        <section class="phpdocumentor-description">
+                            <p>version 1</p>
+                        </section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">void</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_ajaxAutoSaveOTApproveNew">
-        ajaxAutoSaveOTApproveNew()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_ajaxAutoSaveOTApproveNew" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">660</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_ajaxAutoSaveOTApproveNew">
+                    ajaxAutoSaveOTApproveNew()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_ajaxAutoSaveOTApproveNew"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">660</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Approve command for Ot request, version 2</p>
+                <p class="phpdocumentor-summary">Approve command for Ot request, version 2</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">ajaxAutoSaveOTApproveNew</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">version</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>version 2</p>
-</section>
 
-                                    </dd>
-                        </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">version</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                        <section class="phpdocumentor-description">
+                            <p>version 2</p>
+                        </section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">void</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_calcTotalHours">
-        calcTotalHours()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_calcTotalHours" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1028</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_calcTotalHours">
+                    calcTotalHours()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_calcTotalHours"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1028</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Calculate total OT hours from work out schedule</p>
+                <p class="phpdocumentor-summary">Calculate total OT hours from work out schedule</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">calcTotalHours</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ot_date</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ot_time</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emp_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$ot_date</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Date OT requested</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$ot_date</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Date OT requested</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$ot_time</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Time OT requested</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$ot_time</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Time OT requested</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$emp_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Employee row Id</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$emp_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Employee row Id</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>OT time</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>OT time</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkIfStillHavePending">
-        checkIfStillHavePending()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkIfStillHavePending" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">155</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkIfStillHavePending">
+                    checkIfStillHavePending()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkIfStillHavePending"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">155</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Check overtime pending request</p>
+                <p class="phpdocumentor-summary">Check overtime pending request</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">checkIfStillHavePending</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$requested_by</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date_request</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$requested_by</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Employee row Id</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$requested_by</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Employee row Id</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$date_request</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Date OT requested</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$date_request</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Date OT requested</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>total requested OT</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">int</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>total requested OT</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getNextRequest">
-        getNextRequest()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_getNextRequest" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">181</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getNextRequest">
+                    getNextRequest()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_getNextRequest"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">181</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Move to next OT pending request</p>
+                <p class="phpdocumentor-summary">Move to next OT pending request</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getNextRequest</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date_request</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$requested_by</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$date_request</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Date OT requested</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$date_request</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Date OT requested</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$requested_by</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Employee row Id</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$requested_by</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Employee row Id</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Date, Requested by, OT row Id, Branch Id</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>Date, Requested by, OT row Id, Branch Id</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getOverAllTotalOTRequest">
-        getOverAllTotalOTRequest()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_getOverAllTotalOTRequest" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">223</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getOverAllTotalOTRequest">
+                    getOverAllTotalOTRequest()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_getOverAllTotalOTRequest"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">223</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Retrieve all overtime request</p>
+                <p class="phpdocumentor-summary">Retrieve all overtime request</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getOverAllTotalOTRequest</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_timesheetOTApproval">
-        timesheetOTApproval()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_timesheetOTApproval" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">50</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_timesheetOTApproval">
+                    timesheetOTApproval()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_timesheetOTApproval"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">50</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Request Overtime for Approval</p>
+                <p class="phpdocumentor-summary">Request Overtime for Approval</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">timesheetOTApproval</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>html file /application/views/timesheet/TimeSheetOverTimeApproval.php</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>html file /application/views/timesheet/TimeSheetOverTimeApproval.php</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_timesheetOTApprovalAjaxPH">
-        timesheetOTApprovalAjaxPH()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_timesheetOTApprovalAjaxPH" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">258</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_timesheetOTApprovalAjaxPH">
+                    timesheetOTApprovalAjaxPH()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_timesheetOTApprovalAjaxPH"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">258</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Retrieve all overtime request details</p>
+                <p class="phpdocumentor-summary">Retrieve all overtime request details</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">timesheetOTApprovalAjaxPH</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>\Application\Views\timesheet\TimeSheetOverTimeApprovalContent.php</p>
-</section>
 
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">version</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>version 1</p>
-</section>
 
-                                    </dd>
-                        </dl>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>html file /application/views/timesheet/TimeSheetOverTimeApprovalContent.php</p>
-</section>
+                        <section class="phpdocumentor-description">
+                            <p>\Application\Views\timesheet\TimeSheetOverTimeApprovalContent.php</p>
+                        </section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">version</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+
+                        <section class="phpdocumentor-description">
+                            <p>version 1</p>
+                        </section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>html file /application/views/timesheet/TimeSheetOverTimeApprovalContent.php</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_timesheetOTApprovalAjaxPHnew">
-        timesheetOTApprovalAjaxPHnew()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_timesheetOTApprovalAjaxPHnew" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">497</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_timesheetOTApprovalAjaxPHnew">
+                    timesheetOTApprovalAjaxPHnew()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_timesheetOTApprovalAjaxPHnew"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">497</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Retrieve all overtime request details, version 2</p>
+                <p class="phpdocumentor-summary">Retrieve all overtime request details, version 2</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">timesheetOTApprovalAjaxPHnew</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>\Application\Views\timesheet\TimeSheetOverTimeApprovalContentViewPM.php</p>
-</section>
 
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>\Application\Views\timesheet\TimeSheetOverTimeApprovalContentViewPM.php</p>
-</section>
 
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">version</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>version 2</p>
-</section>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
 
-                                    </dd>
-                        </dl>
+                        <section class="phpdocumentor-description">
+                            <p>\Application\Views\timesheet\TimeSheetOverTimeApprovalContentViewPM.php</p>
+                        </section>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>html file /application/views/timesheet/TimeSheetOverTimeApprovalContentViewPM.php,  TimeSheetOverTimeApprovalContentViewPM.php</p>
-</section>
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                        <section class="phpdocumentor-description">
+                            <p>\Application\Views\timesheet\TimeSheetOverTimeApprovalContentViewPM.php</p>
+                        </section>
+
+                    </dd>
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">version</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
+
+                        <section class="phpdocumentor-description">
+                            <p>version 2</p>
+                        </section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>html file /application/views/timesheet/TimeSheetOverTimeApprovalContentViewPM.php,
+                        TimeSheetOverTimeApprovalContentViewPM.php</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_timesheetOTApprovalNew">
-        timesheetOTApprovalNew()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_timesheetOTApprovalNew" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">87</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_timesheetOTApprovalNew">
+                    timesheetOTApprovalNew()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_timesheetOTApprovalNew"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">87</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Request Overtime for Approval, version 2</p>
+                <p class="phpdocumentor-summary">Request Overtime for Approval, version 2</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">timesheetOTApprovalNew</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">version</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>version 2</p>
-</section>
 
-                                    </dd>
-                        </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>html file /application/views/timesheet/TimeSheetOverTimeApprovalNew.php</p>
-</section>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">version</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                        <section class="phpdocumentor-description">
+                            <p>version 2</p>
+                        </section>
+
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>html file /application/views/timesheet/TimeSheetOverTimeApprovalNew.php</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_timesheetOTForApprovalAdmin">
-        timesheetOTForApprovalAdmin()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_timesheetOTForApprovalAdmin" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">745</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_timesheetOTForApprovalAdmin">
+                    timesheetOTForApprovalAdmin()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_timesheetOTForApprovalAdmin"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">745</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Retrieve Request Overtime approval for Admin page</p>
+                <p class="phpdocumentor-summary">Retrieve Request Overtime approval for Admin page</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">timesheetOTForApprovalAdmin</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>html file /application/views/timesheet/TimeSheetOverTimeApprovalAdmn.php</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>html file /application/views/timesheet/TimeSheetOverTimeApprovalAdmn.php</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_addNewApprovalList">
-        addNewApprovalList()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_addNewApprovalList" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">587</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_addNewApprovalList">
+                    addNewApprovalList()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_addNewApprovalList"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">587</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Save Overtime Request</p>
+                <p class="phpdocumentor-summary">Save Overtime Request</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">addNewApprovalList</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emp_uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date_from</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$emp_uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Employee row Id</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$emp_uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Employee row Id</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$date_from</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Date requested</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$date_from</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Date requested</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">void</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkCheckBox">
-        checkCheckBox()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkCheckBox" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">841</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkCheckBox">
+                    checkCheckBox()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkCheckBox"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">841</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Identify if the employee has a request for overtime</p>
+                <p class="phpdocumentor-summary">Identify if the employee has a request for overtime</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">checkCheckBox</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$em_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ot_date</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ot_time</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$em_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
+                        <span class="phpdocumentor-signature__argument__name">$em_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$ot_date</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Date OT requested</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$ot_date</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Date OT requested</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$ot_time</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Time OT requested</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$ot_time</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Time OT requested</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">string</span>
+                &mdash;
+                <section class="phpdocumentor-description"></section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkMoreOT">
-        checkMoreOT()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkMoreOT" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">863</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkMoreOT">
+                    checkMoreOT()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkMoreOT"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">863</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Identify other Overtime request</p>
+                <p class="phpdocumentor-summary">Identify other Overtime request</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">checkMoreOT</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$em_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ot_date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$em_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
+                        <span class="phpdocumentor-signature__argument__name">$em_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$ot_date</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Date OT requested</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$ot_date</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Date OT requested</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>OT time</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">string</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>OT time</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkOT">
-        checkOT()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkOT" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">887</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkOT">
+                    checkOT()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkOT"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">887</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Identify Overtime request, version 1</p>
+                <p class="phpdocumentor-summary">Identify Overtime request, version 1</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">checkOT</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$em_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ot_date</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rev_no</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$em_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Employee row Id</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$em_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Employee row Id</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$ot_date</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Date OT requested</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$ot_date</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Date OT requested</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$rev_no</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Date OT requested</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$rev_no</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Date OT requested</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">version</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>version 1</p>
-</section>
 
-                                    </dd>
-                        </dl>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">version</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>OT time</p>
-</section>
+                        <section class="phpdocumentor-description">
+                            <p>version 1</p>
+                        </section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>OT time</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkOTv2">
-        checkOTv2()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkOTv2" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">911</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkOTv2">
+                    checkOTv2()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkOTv2"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">911</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Identify Overtime request, version 2</p>
+                <p class="phpdocumentor-summary">Identify Overtime request, version 2</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">checkOTv2</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$em_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ot_date</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rev_no</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$em_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Employee row Id</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$em_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Employee row Id</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$ot_date</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Date OT requested</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$ot_date</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Date OT requested</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$rev_no</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Date OT requested</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$rev_no</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Date OT requested</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">version</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>version 2</p>
-</section>
 
-                                    </dd>
-                        </dl>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">version</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>OT time</p>
-</section>
+                        <section class="phpdocumentor-description">
+                            <p>version 2</p>
+                        </section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>OT time</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkOTv3">
-        checkOTv3()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkOTv3" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">967</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkOTv3">
+                    checkOTv3()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkOTv3"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">967</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Identify Overtime request, version 3</p>
+                <p class="phpdocumentor-summary">Identify Overtime request, version 3</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">checkOTv3</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$em_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ot_date</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rev_no</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$em_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Employee row Id</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$em_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Employee row Id</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$ot_date</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Date OT requested</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$ot_date</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Date OT requested</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$rev_no</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Date OT requested</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$rev_no</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Date OT requested</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">version</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>version 3</p>
-</section>
 
-                                    </dd>
-                        </dl>
+                <h5 class="phpdocumentor-tag-list__heading" id="tags">
+                    Tags
+                    <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+                </h5>
+                <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">version</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition">
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>OT time</p>
-</section>
+                        <section class="phpdocumentor-description">
+                            <p>version 3</p>
+                        </section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                    </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>OT time</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkWorkSchedule">
-        checkWorkSchedule()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkWorkSchedule" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1077</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_checkWorkSchedule">
+                    checkWorkSchedule()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_checkWorkSchedule"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">1077</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Check Work Schedule of Employee</p>
+                <p class="phpdocumentor-summary">Check Work Schedule of Employee</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">checkWorkSchedule</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$em_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$em_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Employee row Id</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$em_id</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Employee row Id</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Office work schedule</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">string</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>Office work schedule</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getApprovalListID">
-        getApprovalListID()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_getApprovalListID" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">718</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_getApprovalListID">
+                    getApprovalListID()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_getApprovalListID"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">718</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Retrieve Request Overtime for approval</p>
+                <p class="phpdocumentor-summary">Retrieve Request Overtime for approval</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">getApprovalListID</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$emp_uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date_from</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$emp_uid</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Employee row Id</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$emp_uid</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Employee row Id</p>
+                        </section>
 
-            </dd>
+                    </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$date_from</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Date from</p>
-</section>
+                        <span class="phpdocumentor-signature__argument__name">$date_from</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
+                        <section class="phpdocumentor-description">
+                            <p>Date from</p>
+                        </section>
 
-            </dd>
-            </dl>
+                    </dd>
+                </dl>
 
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>OT row Id and OT status</p>
-</section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">mixed</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>OT row Id and OT status</p>
+                </section>
+
+
+            </article>
+            <article class="phpdocumentor-element
             -method
             -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_otTimeFormat">
-        otTimeFormat()
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_otTimeFormat" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="application/controller/TimeSheetControllerExt.php"><a href="files/application-controller-timesheetcontrollerext.html"><abbr title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">770</span>
-</aside>
+                                                        ">
+                <h4 class="phpdocumentor-element__name" id="method_otTimeFormat">
+                    otTimeFormat()
+                    <a href="classes/Application-Controller-TimeSheetControllerExt.html#method_otTimeFormat"
+                        class="headerlink"><i class="fas fa-link"></i></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                    <abbr class="phpdocumentor-element-found-in__file"
+                        title="application/controller/TimeSheetControllerExt.php"><a
+                            href="files/application-controller-timesheetcontrollerext.html"><abbr
+                                title="application/controller/TimeSheetControllerExt.php">TimeSheetControllerExt.php</abbr></a></abbr>
+                    :
+                    <span class="phpdocumentor-element-found-in__line">770</span>
+                </aside>
 
-        <p class="phpdocumentor-summary">Time format converstion</p>
+                <p class="phpdocumentor-summary">Time format converstion</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+                <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">otTimeFormat</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ot_time</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
+                <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$ot_time</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
+                        <span class="phpdocumentor-signature__argument__name">$ot_time</span>
+                        : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                    </dt>
+                    <dd class="phpdocumentor-argument-list__definition">
 
-    
+                    </dd>
+                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>new time format</p>
-</section>
 
-    
-</article>
-            </section>
+
+                <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+                <span class="phpdocumentor-signature__response_type">string</span>
+                &mdash;
+                <section class="phpdocumentor-description">
+                    <p>new time format</p>
+                </section>
+
+
+            </article>
+        </section>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
-    <section class="phpdocumentor-search-results__dialog">
-        <header class="phpdocumentor-search-results__header">
-            <h2 class="phpdocumentor-search-results__title">Search results</h2>
-            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
-        </header>
-        <section class="phpdocumentor-search-results__body">
-            <ul class="phpdocumentor-search-results__entries"></ul>
+    <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+        <section class="phpdocumentor-search-results__dialog">
+            <header class="phpdocumentor-search-results__header">
+                <h2 class="phpdocumentor-search-results__title">Search results</h2>
+                <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+            </header>
+            <section class="phpdocumentor-search-results__body">
+                <ul class="phpdocumentor-search-results__entries"></ul>
+            </section>
         </section>
     </section>
-</section>
-            </div>
-        </div>
-        <a href="classes/Application-Controller-TimeSheetControllerExt.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+</div>
+</div>
+<a href="classes/Application-Controller-TimeSheetControllerExt.html#top" class="phpdocumentor-back-to-top"><i
+        class="fas fa-chevron-circle-up"></i></a>
 
-    </main>
-
-    <script>
-        cssVars({});
-    </script>
-</body>
-</html>
+<?php require('../layouts/footer.html'); ?>
